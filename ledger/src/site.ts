@@ -196,7 +196,8 @@ function releaseBox(label: string, rec: LedgerReport['from']): string {
   return `<div class="release">
   <h3>${esc(label)}: <span class="mono">${esc(rec.version)}</span></h3>
   <dl>
-    <dt>Installer</dt><dd class="mono small">${href ? `<a href="${href}">${esc(rec.url)}</a>` : esc(rec.url)}</dd>
+    <dt>Installer</dt><dd class="mono small">${href ? `<a href="${href}">${esc(rec.url)}</a>` : rec.url ? esc(rec.url) : 'local copy'}</dd>
+    ${rec.note ? `<dt>Note</dt><dd>${esc(rec.note)}</dd>` : ''}
     <dt>Size</dt><dd>${fmtMB(rec.bytes)}</dd>
     <dt>SHA-256</dt><dd class="mono small">${esc(rec.sha256)}</dd>
     <dt>Scanned</dt><dd>${fmtDate(rec.scannedAt)}</dd>

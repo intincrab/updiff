@@ -200,4 +200,31 @@ describe('backfilling an older release', () => {
     assert.equal(o.status, 'updated', o.error);
     assert.equal(o.counts?.high, 6);
   });
+
+  test('can replace a baseline with a saved installer when the URL has no version', async () => {
+    const store = new LedgerStore(join(root, 'data-d'));
+    const app = { cask: 'fixture' };
+    // Like Chrome: the cask URL always serves the latest release.
+    cask = { ...caskFor('2.0.0', 'Fixture-2.0.0.dmg'), sha256: 'no_check' };
+    assert.equal((await updateApp(app, { store, workRoot: root })).status, 'baseline');
+
+    const saved = join(files, 'Fixture-1.0.0.zip');
+    await assert.rejects(backfill(app, '9.9.9', { store, workRoot: root, file: saved, force: true }), /holds Fixture 1\.0\.0 .*not 9\.9\.9/);
+    const b = await backfill(app, '1.0.0', { store, workRoot: root, file: saved, url: cask.url as string, force: true });
+    assert.equal(b.status, 'baseline');
+    const state = await store.loadState('fixture');
+    assert.equal(state?.history.length, 1);
+    assert.equal(state?.latest?.sha256, sha(saved));
+    assert.match(state?.latest?.note ?? '', /saved copy of the installer \(Fixture-1\.0\.0\.zip\); that URL now serves a newer release/);
+
+    const o = await updateApp(app, { store, workRoot: root });
+    assert.equal(o.status, 'updated', o.error);
+    assert.equal(o.from, '1.0.0');
+    assert.equal(o.counts?.high, 6);
+
+    const out = join(root, 'site-d');
+    await buildSite(store, [app], { out });
+    const page = readFileSync(join(out, 'updates', 'fixture', readdirSync(join(out, 'updates', 'fixture'))[0]!), 'utf8');
+    assert.match(page, /<dt>Note<\/dt><dd>Scanned from a saved copy of the installer/);
+  });
 });

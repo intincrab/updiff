@@ -10,7 +10,7 @@ const USAGE = `updiff ledger: follow Mac apps through Homebrew and record what e
 Usage:
   npm run ledger -- update [--only a,b]         Scan new releases and write reports
   npm run ledger -- backfill <cask> <version>   Record an older release as the baseline
-                    [--url <installer url>] [--force]
+                    [--url <installer url>] [--file <saved installer>] [--force]
   npm run ledger -- site [--out dir] [--base-url url] [--repo-url url]
                                                 Build the static site
   npm run ledger -- status                      Show what's recorded
@@ -33,6 +33,7 @@ async function main(argv: string[]): Promise<number> {
     options: {
       only: { type: 'string' },
       url: { type: 'string' },
+      file: { type: 'string' },
       force: { type: 'boolean' },
       out: { type: 'string' },
       'base-url': { type: 'string' },
@@ -78,7 +79,7 @@ async function main(argv: string[]): Promise<number> {
     const [cask, version] = args;
     if (!cask || !version) throw new Error('backfill needs a cask and a version.');
     const app = apps.find((a) => a.cask === cask) ?? { cask };
-    const outcome = await backfill(app, version, { ...common, url: v.url, force: v.force === true });
+    const outcome = await backfill(app, version, { ...common, url: v.url, file: v.file ? resolve(v.file) : undefined, force: v.force === true });
     line(`${cask}: baseline ${outcome.version} recorded in ${(outcome.ms / 1000).toFixed(1)} s. The next update will compare against it.`);
     return 0;
   }

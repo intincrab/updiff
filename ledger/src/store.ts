@@ -17,6 +17,8 @@ export interface ReleaseRecord {
   fingerprint: string;
   /** Report comparing this release with the one before it, relative to the app folder. */
   report?: string;
+  /** How the installer was obtained, when it was not a plain download of `url`. */
+  note?: string;
 }
 
 export interface AppState {
