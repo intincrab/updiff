@@ -119,7 +119,8 @@ export function renderScan(s: Snapshot, options: { color?: boolean } = {}): stri
   if (s.notarization) {
     const n = s.notarization;
     const stapled = n.stapled === undefined ? '' : n.stapled ? ', ticket stapled' : ', ticket not stapled';
-    lines.push(`Gatekeeper     ${n.assessment}${n.source ? ` (${n.source})` : ''}${stapled}`);
+    if (n.error) lines.push(`Gatekeeper     could not verify the signature: ${n.error}`);
+    else lines.push(`Gatekeeper     ${n.assessment}${n.source ? ` (${n.source})` : ''}${stapled}`);
   }
   if (s.info.appStoreReceipt) lines.push('App Store      yes (bundle has a Mac App Store receipt)');
   lines.push(`Sandbox        ${sandboxed ? 'yes' : 'no'}`);

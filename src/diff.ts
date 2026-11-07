@@ -398,7 +398,16 @@ function diffNotarization(a: Snapshot, b: Snapshot, out: Finding[]): void {
   // Older snapshots (and scans with notarization off) have nothing to compare.
   if (!na || !nb) return;
   const where = [b.app.path];
-  if (na.assessment === 'accepted' && nb.assessment === 'rejected') {
+  if (na.assessment === 'accepted' && nb.assessment === 'unknown' && nb.error) {
+    out.push({
+      severity: 'high',
+      category: 'signing',
+      change: 'changed',
+      title: "Gatekeeper can no longer verify the app's signature",
+      detail: nb.error,
+      where,
+    });
+  } else if (na.assessment === 'accepted' && nb.assessment === 'rejected') {
     out.push({
       severity: 'high',
       category: 'signing',

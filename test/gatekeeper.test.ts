@@ -60,7 +60,7 @@ test('parses spctl verdicts', () => {
   );
   assert.deepEqual(parseSpctl('/tmp/x: rejected\n'), { assessment: 'rejected' });
   assert.deepEqual(parseSpctl('/tmp/x: rejected\nsource=no usable signature\n'), { assessment: 'rejected', source: 'no usable signature' });
-  assert.deepEqual(parseSpctl('spctl: some failure'), { assessment: 'unknown' });
+  assert.deepEqual(parseSpctl('/Applications/X.app: a sealed resource is missing or invalid\n'), { assessment: 'unknown', error: 'a sealed resource is missing or invalid' });
 });
 
 test('reads stapler by its message, not its exit status', () => {
@@ -104,6 +104,13 @@ test('flags an update that is no longer notarized', () => {
   const titles = r.findings.map((f) => `${f.severity}: ${f.title}`);
   assert.ok(titles.includes('high: No longer notarized by Apple'));
   assert.ok(titles.includes('info: Notarization ticket no longer stapled'));
+});
+
+test('flags an update whose signature is broken', () => {
+  const r = diffSnapshots(snap({ notarization: NOTARIZED }), snap({ fingerprint: 'b', notarization: { assessment: 'unknown', error: 'a sealed resource is missing or invalid' } }));
+  const f = r.findings.find((x) => x.severity === 'high')!;
+  assert.equal(f.title, "Gatekeeper can no longer verify the app's signature");
+  assert.equal(f.detail, 'a sealed resource is missing or invalid');
 });
 
 test('flags an update that Gatekeeper rejects', () => {

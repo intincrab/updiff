@@ -127,8 +127,7 @@ async function walk(root: string): Promise<WalkEntry[]> {
       const r = rel ? `${rel}/${d.name}` : d.name;
       if (d.isDirectory()) {
         out.push({ rel: r, isDir: true, size: 0 });
-        // Don't descend into app bundles; they are reported as apps.
-        if (!d.name.endsWith('.app')) queue.push(r);
+        queue.push(r);
       } else if (d.isFile() || d.isSymbolicLink()) {
         let size = 0;
         try {
@@ -196,7 +195,8 @@ async function readComponent(dir: string, scriptMaxBytes: number): Promise<PkgCo
       const signing = await readSigning(join(payloadDir, e.rel));
       apps.push({ path, bundleId: id?.bundleId, version: id?.version, teamId: signing.teamId });
     }
-    const launchd = /^\/Library\/(LaunchDaemons|LaunchAgents)\/[^/]+\.plist$/.exec(path);
+    // System-wide launchd jobs, or ones an app registers from inside its bundle (SMAppService).
+    const launchd = /^\/Library\/(LaunchDaemons|LaunchAgents)\/[^/]+\.plist$/.exec(path) ?? /\.app\/Contents\/Library\/(LaunchDaemons|LaunchAgents)\/[^/]+\.plist$/.exec(path);
     if (launchd && !e.isDir) {
       const plist = await readPlistFile(join(payloadDir, e.rel));
       const args = plist?.ProgramArguments;
@@ -204,12 +204,12 @@ async function readComponent(dir: string, scriptMaxBytes: number): Promise<PkgCo
         path,
         kind: launchd[1] === 'LaunchDaemons' ? 'daemon' : 'agent',
         label: str(plist?.Label),
-        program: str(plist?.Program) ?? (Array.isArray(args) && typeof args[0] === 'string' ? args[0] : undefined),
+        program: str(plist?.Program) ?? str(plist?.BundleProgram) ?? (Array.isArray(args) && typeof args[0] === 'string' ? args[0] : undefined),
         runAtLoad: plist?.RunAtLoad === true,
         keepAlive: plist?.KeepAlive === true || (typeof plist?.KeepAlive === 'object' && plist.KeepAlive !== null),
       });
     }
-    if (/\.(kext|systemextension)$/.test(path) || /^\/Library\/PrivilegedHelperTools\/[^/]+$/.test(path)) systemLevel.push(path);
+    if ((e.isDir && /\.(kext|systemextension|dext)$/.test(path)) || /^\/Library\/PrivilegedHelperTools\/[^/]+$/.test(path)) systemLevel.push(path);
     if (!path.startsWith('/Applications/') && path !== '/Applications' && !e.isDir) {
       // Collapse to the first three levels so a framework doesn't list every file.
       outside.add(path.split('/').slice(0, 4).join('/'));

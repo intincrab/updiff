@@ -102,6 +102,15 @@ describe('inspecting an installer package', () => {
     assert.deepEqual(c.apps.map((a) => [a.path, a.bundleId, a.version]), [['/Applications/Fixture.app', 'com.example.updiff-fixture', '2.0.0']]);
     assert.deepEqual(c.launchItems, [
       {
+        // The app registers its own agent from inside its bundle (SMAppService).
+        path: '/Applications/Fixture.app/Contents/Library/LaunchAgents/com.example.updiff-fixture.agent.plist',
+        kind: 'agent',
+        label: 'com.example.updiff-fixture.agent',
+        program: 'Contents/MacOS/Fixture',
+        runAtLoad: true,
+        keepAlive: true,
+      },
+      {
         path: '/Library/LaunchDaemons/com.example.fixture.helper.plist',
         kind: 'daemon',
         label: 'com.example.fixture.helper',

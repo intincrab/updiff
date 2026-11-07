@@ -91,6 +91,8 @@ export interface NotarizationInfo {
   origin?: string;
   /** Undefined when `stapler` is not available. */
   stapled?: boolean;
+  /** Gatekeeper's message when it could not assess the bundle, e.g. "a sealed resource is missing or invalid". */
+  error?: string;
 }
 
 /** Settings read from this Mac rather than the bundle. Shown, never diffed. */

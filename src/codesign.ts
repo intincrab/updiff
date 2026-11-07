@@ -63,14 +63,18 @@ export async function readEntitlements(path: string): Promise<PlistDict> {
  *   source=Notarized Developer ID
  *   origin=Developer ID Application: Example Inc (TEAMID)
  */
-export function parseSpctl(output: string): Pick<NotarizationInfo, 'assessment' | 'source' | 'origin'> {
+export function parseSpctl(output: string): Pick<NotarizationInfo, 'assessment' | 'source' | 'origin' | 'error'> {
   const verdict = /:\s*(accepted|rejected)\s*$/m.exec(output)?.[1];
   const source = /^source=(.+)$/m.exec(output)?.[1]?.trim();
   const origin = /^origin=(.+)$/m.exec(output)?.[1]?.trim();
+  const assessment = verdict === 'accepted' || verdict === 'rejected' ? verdict : 'unknown';
+  // Without a verdict spctl prints "<path>: <reason>", e.g. a broken seal.
+  const error = assessment === 'unknown' ? /^.*?:\s*(.+)$/m.exec(output.trim())?.[1]?.trim() : undefined;
   return {
-    assessment: verdict === 'accepted' || verdict === 'rejected' ? verdict : 'unknown',
+    assessment,
     ...(source ? { source } : {}),
     ...(origin ? { origin } : {}),
+    ...(error ? { error } : {}),
   };
 }
 
