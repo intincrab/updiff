@@ -54,7 +54,11 @@ jobs:
       - id: pack
         name: Pack
         run: |
-          tarball="$(npm pack --silent)"
+          packed="$(npm pack --silent)"
+          # npm names the scoped package intincrab-updiff-X.tgz; the release asset keeps
+          # the plain updiff-X.tgz name the Homebrew tap looks for.
+          tarball="updiff-${GITHUB_REF_NAME#v}.tgz"
+          mv "$packed" "$tarball"
           echo "tarball=$tarball" >> "$GITHUB_OUTPUT"
           shasum -a 256 "$tarball" | tee "$tarball.sha256"
 

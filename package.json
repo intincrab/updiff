@@ -1,6 +1,6 @@
 {
-  "name": "updiff",
-  "version": "0.1.0",
+  "name": "@intincrab/updiff",
+  "version": "0.1.1",
   "description": "See what a macOS app update actually changed: entitlements, privacy prompts, background items, helpers, bundled packages and hostnames.",
   "repository": {
     "type": "git",

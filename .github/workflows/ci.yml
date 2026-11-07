@@ -39,7 +39,7 @@ jobs:
       - uses: actions/upload-artifact@v7
         with:
           name: package
-          path: updiff-*.tgz
+          path: "*updiff-*.tgz"
 
   package:
     name: Installed package on Node ${{ matrix.node }}
@@ -60,7 +60,7 @@ jobs:
           name: package
 
       - name: Install the packed tarball
-        run: npm install -g ./updiff-*.tgz
+        run: npm install -g ./*updiff-*.tgz
 
       - name: Run it
         run: |

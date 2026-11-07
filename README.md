@@ -94,14 +94,16 @@ With Homebrew:
 brew install intincrab/tap/updiff
 ```
 
-With npm, or without installing at all (macOS, Node.js 20 or newer):
+With npm, or without installing at all (macOS, Node.js 20 or newer). npm doesn't allow
+the plain name `updiff` (it is too close to the existing `diff` package), so the package
+lives under the `@intincrab` scope; the command is still `updiff`:
 
 ```bash
-npm install -g updiff
+npm install -g @intincrab/updiff
 ```
 
 ```bash
-npx updiff scan Slack
+npx @intincrab/updiff scan Slack
 ```
 
 From source:
