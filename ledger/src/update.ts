@@ -6,8 +6,8 @@ import { basename, join } from 'node:path';
 import { scanBundle } from '../../src/bundle.ts';
 import { diffSnapshots } from '../../src/diff.ts';
 import type { Severity, Snapshot } from '../../src/types.ts';
-import { fetchCask, urlForVersion, type CaskInfo } from './cask.ts';
-import { download, extractApp } from './fetch-app.ts';
+import { fetchCask, urlForVersion, type CaskInfo } from '../../src/cask.ts';
+import { download, extractApp } from '../../src/installer.ts';
 import type { AppState, LedgerStore, ReleaseRecord, TrackedApp } from './store.ts';
 
 export interface UpdateOptions {

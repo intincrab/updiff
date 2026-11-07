@@ -1,6 +1,6 @@
 import { run } from './exec.ts';
 import { isDict, parsePlistXml, type PlistDict } from './plist.ts';
-import type { SigningInfo } from './types.ts';
+import type { NotarizationInfo, SigningInfo } from './types.ts';
 
 /** Parses the stderr of `codesign -dvvv`. Exported for tests. */
 export function parseCodesignDetails(stderr: string, code: number): SigningInfo {
@@ -55,4 +55,41 @@ export async function readEntitlements(path: string): Promise<PlistDict> {
   } catch {
     return {};
   }
+}
+
+/**
+ * Parses `spctl -a -vvv -t exec` output:
+ *   /Applications/X.app: accepted
+ *   source=Notarized Developer ID
+ *   origin=Developer ID Application: Example Inc (TEAMID)
+ */
+export function parseSpctl(output: string): Pick<NotarizationInfo, 'assessment' | 'source' | 'origin'> {
+  const verdict = /:\s*(accepted|rejected)\s*$/m.exec(output)?.[1];
+  const source = /^source=(.+)$/m.exec(output)?.[1]?.trim();
+  const origin = /^origin=(.+)$/m.exec(output)?.[1]?.trim();
+  return {
+    assessment: verdict === 'accepted' || verdict === 'rejected' ? verdict : 'unknown',
+    ...(source ? { source } : {}),
+    ...(origin ? { origin } : {}),
+  };
+}
+
+/**
+ * Reads `stapler validate` by its message: its exit status is 0 whether or not a
+ * ticket is stapled. Undefined when stapler isn't available (no Xcode tools).
+ */
+export function parseStapler(res: { stdout: string; stderr: string }): boolean | undefined {
+  const text = `${res.stdout}\n${res.stderr}`;
+  if (/The validate action worked/i.test(text)) return true;
+  if (/does not have a ticket stapled/i.test(text)) return false;
+  return undefined;
+}
+
+/** Asks Gatekeeper about a bundle and checks for a stapled notarization ticket. */
+export async function readNotarization(path: string): Promise<NotarizationInfo> {
+  const spctl = await run('/usr/sbin/spctl', ['-a', '-vvv', '-t', 'exec', path], 120_000);
+  const info: NotarizationInfo = parseSpctl(`${spctl.stdout}\n${spctl.stderr}`);
+  const stapled = parseStapler((await run('/usr/bin/xcrun', ['stapler', 'validate', path], 60_000)));
+  if (stapled !== undefined) info.stapled = stapled;
+  return info;
 }

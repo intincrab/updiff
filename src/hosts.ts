@@ -131,3 +131,21 @@ export function mergeHosts(into: HostMap, from: HostMap): HostMap {
   }
   return into;
 }
+
+// Only characters that may appear in a URL path: binaries separate strings with NUL bytes.
+const URL_FULL_RE = /\bhttps?:\/\/[a-z0-9.-]+(?::\d+)?\/[A-Za-z0-9._~%\/?=&+:@!$,;#-]*/gi;
+
+/**
+ * Finds Sparkle update feeds in code: URLs with "appcast" in them, or, when the app
+ * bundles Sparkle, .xml URLs whose path mentions updates or releases.
+ */
+export function extractFeedUrls(text: string, sparkle: boolean, into: Set<string> = new Set()): Set<string> {
+  for (const m of text.matchAll(URL_FULL_RE)) {
+    const url = m[0].replace(/[.,;:]+$/, '');
+    const lower = url.toLowerCase();
+    const isAppcast = lower.includes('appcast');
+    const isUpdateXml = sparkle && /\.xml(\?|$)/.test(lower) && /(update|sparkle|release)/.test(lower);
+    if ((isAppcast || isUpdateXml) && !isIgnoredHost(new URL(url).hostname)) into.add(url);
+  }
+  return into;
+}

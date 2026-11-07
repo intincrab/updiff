@@ -15,7 +15,7 @@ export interface CaskInfo {
 }
 
 export function caskApiBase(): string {
-  return (process.env.LEDGER_CASK_API ?? 'https://formulae.brew.sh/api/cask').replace(/\/$/, '');
+  return (process.env.UPDIFF_CASK_API ?? process.env.LEDGER_CASK_API ?? 'https://formulae.brew.sh/api/cask').replace(/\/$/, '');
 }
 
 type Artifact = Record<string, unknown>;

@@ -76,7 +76,28 @@ export interface InfoSummary {
   backgroundOnly: boolean;
   sparkleFeedUrl?: string;
   sparklePublicKey?: string;
+  /** Sparkle feed URLs found in the code, for apps that set the feed there instead of Info.plist. */
+  sparkleFeedsInCode?: string[];
   privilegedExecutables: string[];
+  /** The bundle carries a Mac App Store receipt. */
+  appStoreReceipt?: boolean;
+}
+
+/** Gatekeeper's verdict on the bundle (`spctl -a -t exec`) and whether a ticket is stapled. */
+export interface NotarizationInfo {
+  assessment: 'accepted' | 'rejected' | 'unknown';
+  /** "Notarized Developer ID", "Developer ID", "Mac App Store", "Apple System"… */
+  source?: string;
+  origin?: string;
+  /** Undefined when `stapler` is not available. */
+  stapled?: boolean;
+}
+
+/** Settings read from this Mac rather than the bundle. Shown, never diffed. */
+export interface LocalSettings {
+  sparkleFeedInDefaults?: string;
+  sparkleAutomaticChecks?: boolean;
+  sparkleAutomaticallyUpdate?: boolean;
 }
 
 export interface Snapshot {
@@ -99,6 +120,10 @@ export interface Snapshot {
   backgroundItems: BackgroundItem[];
   electron?: ElectronInfo;
   hosts: Record<string, HostRecord>;
+  notarization?: NotarizationInfo;
+  /** Binaries that are FairPlay-encrypted, whose strings can't be read. */
+  encryptedBinaries?: string[];
+  local?: LocalSettings;
   stats: {
     scanMs: number;
     filesScanned: number;
@@ -139,4 +164,6 @@ export interface DiffReport {
   findings: Finding[];
   counts: Record<Severity, number>;
   identical: boolean;
+  /** Caveats about what could not be compared. */
+  notes?: string[];
 }

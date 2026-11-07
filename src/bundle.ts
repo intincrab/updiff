@@ -2,9 +2,11 @@ import { createHash } from 'node:crypto';
 import { open, readdir, readFile, readlink, lstat, realpath, stat } from 'node:fs/promises';
 import { basename, join } from 'node:path';
 import { AsarArchive, type AsarFile } from './asar.ts';
-import { readEntitlements, readSigning } from './codesign.ts';
-import { extractHosts, mergeHosts, type HostMap } from './hosts.ts';
-import { isDict, readPlistFile, str, type PlistDict } from './plist.ts';
+import { readEntitlements, readNotarization, readSigning } from './codesign.ts';
+import { run } from './exec.ts';
+import { extractFeedUrls, extractHosts, mergeHosts, type HostMap } from './hosts.ts';
+import { isEncryptedMachO } from './macho.ts';
+import { isDict, parsePlistXml, readPlistFile, str, type PlistDict, type PlistValue } from './plist.ts';
 import {
   SNAPSHOT_SCHEMA,
   type BackgroundItem,
@@ -12,6 +14,7 @@ import {
   type CodeKind,
   type ElectronInfo,
   type InfoSummary,
+  type LocalSettings,
   type Snapshot,
 } from './types.ts';
 import { mapLimit, sortedUnique } from './util.ts';
@@ -24,6 +27,10 @@ export interface ScanOptions {
   maxFileBytes?: number;
   /** Stop reading for hostnames after this many bytes in total. */
   maxTotalBytes?: number;
+  /** Ask Gatekeeper about the bundle (spctl, stapler). Default true. */
+  notarization?: boolean;
+  /** Read this Mac's settings for the app (Sparkle feed and update preferences). Default false. */
+  userDefaults?: boolean;
 }
 
 interface Entry {
@@ -236,6 +243,30 @@ async function fingerprintOf(appPath: string, infoPath: string, mainExe: string 
   return hash.digest('hex').slice(0, 32);
 }
 
+/** This Mac's update settings for an app, from its user defaults domain. */
+async function readLocalSettings(bundleId: string | undefined): Promise<LocalSettings> {
+  if (!bundleId) return {};
+  const res = await run('/usr/bin/defaults', ['export', bundleId, '-']);
+  if (res.code !== 0) return {};
+  let prefs: PlistDict = {};
+  try {
+    const value = parsePlistXml(res.stdout);
+    if (isDict(value)) prefs = value;
+  } catch {
+    return {};
+  }
+  const out: LocalSettings = {};
+  const feed = str(prefs.SUFeedURL);
+  if (feed) out.sparkleFeedInDefaults = feed;
+  const flag = (v: PlistValue | undefined): boolean | undefined =>
+    v === undefined ? undefined : v === true || v === 1 || v === '1' || v === 'YES';
+  const checks = flag(prefs.SUEnableAutomaticChecks);
+  const auto = flag(prefs.SUAutomaticallyUpdate);
+  if (checks !== undefined) out.sparkleAutomaticChecks = checks;
+  if (auto !== undefined) out.sparkleAutomaticallyUpdate = auto;
+  return out;
+}
+
 /** Reads the Info.plist identity of a bundle without scanning it. */
 export async function readIdentity(appPath: string): Promise<{ bundleId: string; name: string; version: string; build: string } | undefined> {
   const info = await readPlistFile(join(appPath, 'Contents/Info.plist'));
@@ -300,6 +331,10 @@ class HostScanner {
   readonly truncatedFiles: string[] = [];
   readonly domainLists: Array<{ where: string; count: number }> = [];
   totalLimitHit = false;
+  /** Set once the bundle is known to ship Sparkle; widens what counts as an update feed. */
+  sparkle = false;
+  readonly feeds = new Set<string>();
+  readonly encrypted: string[] = [];
   private readonly maxFile: number;
   private readonly maxTotal: number;
 
@@ -333,7 +368,9 @@ class HostScanner {
   scanBuffer(buf: Buffer, where: string, binary: boolean): void {
     this.filesScanned++;
     this.bytesScanned += buf.length;
-    this.commit(extractHosts(buf.toString(binary ? 'latin1' : 'utf8'), where, new Map(), true), where);
+    const text = buf.toString(binary ? 'latin1' : 'utf8');
+    extractFeedUrls(text, this.sparkle, this.feeds);
+    this.commit(extractHosts(text, where, new Map(), true), where);
   }
 
   async scanFile(abs: string, size: number, where: string, binary: boolean): Promise<void> {
@@ -349,6 +386,11 @@ class HostScanner {
         const slice = pickFatSlice(head.subarray(0, bytesRead), size);
         if (slice) ({ offset: start, size: length } = slice);
       }
+      if (binary) {
+        const head = Buffer.alloc(Math.min(65536, length));
+        const { bytesRead } = await fh.read(head, 0, head.length, start);
+        if (isEncryptedMachO(head.subarray(0, bytesRead))) this.encrypted.push(where);
+      }
       const n = this.budget(length, where);
       if (n <= 0) return;
       this.filesScanned++;
@@ -360,7 +402,9 @@ class HostScanner {
         const buf = Buffer.alloc(len);
         const { bytesRead } = await fh.read(buf, 0, len, start + pos);
         this.bytesScanned += Math.min(bytesRead, CHUNK);
-        extractHosts(buf.toString(binary ? 'latin1' : 'utf8', 0, bytesRead), where, found, true);
+        const text = buf.toString(binary ? 'latin1' : 'utf8', 0, bytesRead);
+        extractFeedUrls(text, this.sparkle, this.feeds);
+        extractHosts(text, where, found, true);
         if (bytesRead < len) break;
       }
       this.commit(found, where);
@@ -462,6 +506,9 @@ export async function scanBundle(inputPath: string, options: ScanOptions = {}): 
   });
 
   // Privileged helpers installed through SMJobBless.
+  scanner.sparkle = nestedItems.some((c) => c.kind === 'framework' && c.path.endsWith('/Sparkle.framework'));
+  summary.appStoreReceipt = entries.some((e) => e.rel === 'Contents/_MASReceipt');
+
   const helperFiles = files.filter((f) => /(^|\/)Contents\/Library\/LaunchServices\/[^/]+$/.test(f.rel));
   const helperItems = await mapLimit(helperFiles, 4, async (f): Promise<CodeItem> => {
     bundleExecutables.add(f.rel);
@@ -602,6 +649,18 @@ export async function scanBundle(inputPath: string, options: ScanOptions = {}): 
     warnings.push(`Skipped ${list.count} bare hostnames in ${list.where}: it looks like a bundled domain list, not code.`);
   }
 
+  if (scanner.encrypted.length) {
+    warnings.push(
+      `${scanner.encrypted.length} binar${scanner.encrypted.length === 1 ? 'y is' : 'ies are'} encrypted (an iPhone or iPad app): hostnames inside can't be read (${scanner.encrypted.slice(0, 3).join(', ')}).`,
+    );
+  }
+
+  const feedsInCode = [...scanner.feeds].filter((u) => u !== summary.sparkleFeedUrl).sort();
+  if (feedsInCode.length) summary.sparkleFeedsInCode = feedsInCode.slice(0, 10);
+
+  const notarization = options.notarization === false ? undefined : await readNotarization(appPath);
+  const local = options.userDefaults ? await readLocalSettings(str(info.CFBundleIdentifier)) : undefined;
+
   const hosts: Snapshot['hosts'] = {};
   for (const host of [...scanner.hosts.keys()].sort()) hosts[host] = scanner.hosts.get(host)!;
 
@@ -628,6 +687,9 @@ export async function scanBundle(inputPath: string, options: ScanOptions = {}): 
     backgroundItems,
     electron,
     hosts,
+    ...(notarization ? { notarization } : {}),
+    ...(scanner.encrypted.length ? { encryptedBinaries: [...scanner.encrypted].sort() } : {}),
+    ...(local && Object.keys(local).length ? { local } : {}),
     stats: {
       scanMs: Date.now() - started,
       filesScanned: scanner.filesScanned,

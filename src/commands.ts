@@ -51,6 +51,7 @@ Options:
   --interval <seconds>              agent install: fallback timer (default 21600)
   --dry-run                         agent install: print the LaunchAgent, change nothing
   --no-load                         agent install/uninstall: write files, skip launchctl
+  --no-gatekeeper                   Skip the Gatekeeper/notarization check (faster)
   --no-color                        Plain text output
   -h, --help                        Show this help
   -v, --version                     Show the version
@@ -96,6 +97,7 @@ function parse(argv: string[]) {
       'dry-run': { type: 'boolean' },
       'no-load': { type: 'boolean' },
       'no-color': { type: 'boolean' },
+      'no-gatekeeper': { type: 'boolean' },
       help: { type: 'boolean', short: 'h' },
       version: { type: 'boolean', short: 'v' },
     },
@@ -200,7 +202,8 @@ async function cmdScan(ctx: Ctx, args: string[]): Promise<number> {
   if (args.length !== 1) throw new UsageError('scan needs exactly one app.');
   const app = await findAppByName(args[0]!, ctx.appsDirs);
   if (!app) throw new UsageError(`Can't find app "${args[0]}".`);
-  const s = await scanBundle(app, ctx.scan);
+  // A one-off scan of an installed app also shows this Mac's update settings for it.
+  const s = await scanBundle(app, { ...ctx.scan, userDefaults: true });
   const text = ctx.format === 'json' ? renderJson(s) : renderScan(s, { color: ctx.io.color && !ctx.out });
   if (ctx.out) {
     await writeFile(ctx.out, text);
@@ -466,7 +469,7 @@ export async function main(argv: string[], io: IO): Promise<number> {
       io: { ...io, color: io.color && !v['no-color'] && format === 'text' },
       store: new Store(v.home ? resolve(v.home) : undefined),
       appsDirs: (v['apps-dir'] ?? defaultAppsDirs()).map((d) => resolve(d)),
-      scan: { deep: v.deep === true },
+      scan: { deep: v.deep === true, notarization: !v['no-gatekeeper'] },
       format,
       minSeverity,
       out: v.out,

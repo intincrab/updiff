@@ -4,15 +4,16 @@ import { mkdir, open, readdir, rm } from 'node:fs/promises';
 import { join } from 'node:path';
 import { Readable, Transform } from 'node:stream';
 import { pipeline } from 'node:stream/promises';
-import { run } from '../../src/exec.ts';
+import { run } from './exec.ts';
+import { TOOL_VERSION } from './version.ts';
 
-export const USER_AGENT = 'updiff-ledger/0.1 (+https://github.com/intincrab/updiff)';
+export const USER_AGENT = `updiff/${TOOL_VERSION} (+https://github.com/intincrab/updiff)`;
 /**
  * Some vendors serve their Homebrew download URL only to Homebrew clients (Warp
  * answers 404 otherwise). The ledger fetches exactly what a cask points to, so it
  * retries those with a User-Agent that says it is Homebrew-compatible and still names itself.
  */
-export const HOMEBREW_COMPAT_USER_AGENT = 'Homebrew/4.6 (compatible; updiff-ledger/0.1; +https://github.com/intincrab/updiff)';
+export const HOMEBREW_COMPAT_USER_AGENT = `Homebrew/4.6 (compatible; updiff/${TOOL_VERSION}; +https://github.com/intincrab/updiff)`;
 
 export interface Downloaded {
   file: string;

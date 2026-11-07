@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { parseCask, urlForVersion } from '../ledger/src/cask.ts';
-import { detectContainer } from '../ledger/src/fetch-app.ts';
+import { parseCask, urlForVersion } from '../src/cask.ts';
+import { detectContainer } from '../src/installer.ts';
 import { esc, safeHref } from '../ledger/src/site.ts';
 
 const SLACK = {

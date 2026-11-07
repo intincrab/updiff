@@ -389,6 +389,71 @@ function diffInfo(a: Snapshot, b: Snapshot, out: Finding[]): void {
   }
 }
 
+/** Apple has vouched for it: notarized, or distributed by Apple (App Store, system). */
+const isApproved = (source: string | undefined): boolean => /notarized|mac app store|apple system/i.test(source ?? '');
+
+function diffNotarization(a: Snapshot, b: Snapshot, out: Finding[]): void {
+  const na = a.notarization;
+  const nb = b.notarization;
+  // Older snapshots (and scans with notarization off) have nothing to compare.
+  if (!na || !nb) return;
+  const where = [b.app.path];
+  if (na.assessment === 'accepted' && nb.assessment === 'rejected') {
+    out.push({
+      severity: 'high',
+      category: 'signing',
+      change: 'changed',
+      title: 'Gatekeeper now rejects the app',
+      detail: `${na.source ?? 'accepted'} → rejected`,
+      where,
+    });
+  } else if (isApproved(na.source) && !isApproved(nb.source) && nb.assessment !== 'unknown') {
+    out.push({
+      severity: 'high',
+      category: 'signing',
+      change: 'removed',
+      title: 'No longer notarized by Apple',
+      detail: `${na.source} → ${nb.source ?? nb.assessment}`,
+      where,
+    });
+  } else if (na.source && nb.source && na.source !== nb.source) {
+    out.push({ severity: 'notable', category: 'signing', change: 'changed', title: 'Distribution changed', detail: `${na.source} → ${nb.source}`, where });
+  }
+  if (na.stapled === true && nb.stapled === false) {
+    out.push({
+      severity: 'info',
+      category: 'signing',
+      change: 'removed',
+      title: 'Notarization ticket no longer stapled',
+      detail: 'Gatekeeper checks it online instead; first launch offline may fail.',
+      where,
+    });
+  } else if (na.stapled === false && nb.stapled === true) {
+    out.push({ severity: 'info', category: 'signing', change: 'added', title: 'Notarization ticket now stapled', where });
+  }
+}
+
+function diffSparkleCode(a: Snapshot, b: Snapshot, out: Finding[]): void {
+  const fa = a.info.sparkleFeedsInCode ?? [];
+  const fb = b.info.sparkleFeedsInCode ?? [];
+  const added = fb.filter((u) => !fa.includes(u));
+  const removed = fa.filter((u) => !fb.includes(u));
+  if (added.length && fa.length) {
+    out.push({
+      severity: 'notable',
+      category: 'updater',
+      change: 'changed',
+      title: 'Update feed in the code changed',
+      detail: `${removed.length ? `${removed.join(', ')} → ` : ''}${added.join(', ')}`,
+      where: [b.app.path],
+    });
+  } else if (added.length) {
+    out.push({ severity: 'notable', category: 'updater', change: 'added', title: 'Update feed set in the code', detail: added.join(', '), where: [b.app.path] });
+  } else if (removed.length) {
+    out.push({ severity: 'info', category: 'updater', change: 'removed', title: 'Update feed no longer in the code', detail: removed.join(', '), where: [b.app.path] });
+  }
+}
+
 function diffElectron(a: Snapshot, b: Snapshot, out: Finding[]): void {
   const pa = a.electron?.packages ?? {};
   const pb = b.electron?.packages ?? {};
@@ -484,6 +549,16 @@ export function diffSnapshots(a: Snapshot, b: Snapshot): DiffReport {
   diffCode(a, b, findings);
   diffBackground(a.backgroundItems, b.backgroundItems, findings);
   diffElectron(a, b, findings);
+  diffNotarization(a, b, findings);
+  diffSparkleCode(a, b, findings);
+  if (!a.info.appStoreReceipt !== !b.info.appStoreReceipt) {
+    findings.push({
+      severity: 'notable',
+      category: 'identity',
+      change: b.info.appStoreReceipt ? 'added' : 'removed',
+      title: b.info.appStoreReceipt ? 'Now distributed through the Mac App Store' : 'No longer a Mac App Store build',
+    });
+  }
   diffHosts(a, b, findings);
 
   const substantive = findings.length;
@@ -504,6 +579,12 @@ export function diffSnapshots(a: Snapshot, b: Snapshot): DiffReport {
   );
   const counts: Record<Severity, number> = { high: 0, notable: 0, info: 0 };
   for (const f of findings) counts[f.severity]++;
+  const notes: string[] = [];
+  const encrypted = [...new Set([...(a.encryptedBinaries ?? []), ...(b.encryptedBinaries ?? [])])];
+  if (encrypted.length) {
+    notes.push(`Encrypted binaries (an iPhone or iPad app) can't be searched for hostnames: ${encrypted.slice(0, 3).join(', ')}${encrypted.length > 3 ? '…' : ''}.`);
+  }
+  if (!a.notarization !== !b.notarization) notes.push('Notarization was only checked on one side, so it was not compared.');
   return {
     app: { name: b.app.name, bundleId: b.app.bundleId },
     from: { version: a.app.version, build: a.app.build, takenAt: a.takenAt, path: a.app.path },
@@ -511,6 +592,7 @@ export function diffSnapshots(a: Snapshot, b: Snapshot): DiffReport {
     findings,
     counts,
     identical: substantive === 0 && a.fingerprint === b.fingerprint,
+    ...(notes.length ? { notes } : {}),
   };
 }
 
