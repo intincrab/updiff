@@ -16,10 +16,14 @@ camera, register something that starts at login, ship a new helper that runs as 
 bundle a new analytics package, or start talking to a new service. updiff takes a
 snapshot of each app and, after every update, shows you exactly what changed inside it.
 
-- **Read-only.** It never runs the app, never changes it and never touches the network.
-- **Local.** Snapshots and reports stay in `~/.updiff`. Nothing is uploaded.
-- **Fast.** The first snapshot of 28 apps took 11 s on an Apple Silicon Mac; later checks
-  skip unchanged apps and take about 0.1 s.
+It also covers what updates without asking: **browser and editor extensions**, and
+**installer packages** you're about to run.
+
+- **Read-only.** It never runs the app, an installer or its scripts, and never changes them.
+- **Local.** Snapshots and reports stay in `~/.updiff`. Nothing is uploaded. Only `fetch`
+  downloads anything, and Gatekeeper may ask Apple whether an app is notarized.
+- **Fast.** The first snapshot of 28 apps takes about 40 s on an Apple Silicon Mac (11 s
+  with `--no-gatekeeper`); later checks skip unchanged apps and take about 0.1 s.
 
 ## What it looks like
 
@@ -131,7 +135,27 @@ updiff agent install     # runs `updiff check` whenever your app folders change
 
 The agent waits until an update has finished writing, then posts a notification titled
 "Updiff: Google Chrome 156.0.8078.80" that says "0 high, 2 notable changes". The full
-report is saved in `~/.updiff/reports/`.
+report is saved in `~/.updiff/reports/`. It also checks your browser and editor extensions.
+
+No baseline yet? Compare an installed app with its previous release, downloaded from
+Homebrew's history and checked against the checksum Homebrew recorded:
+
+```bash
+updiff fetch Ghostty     # Ghostty 1.3.0 → 1.3.1: 0 high · 0 notable · 2 info
+```
+
+Before running an installer, see what it would do:
+
+```bash
+updiff pkg ~/Downloads/Installer.pkg
+```
+
+And see what your extensions can reach, or what changed since last time:
+
+```bash
+updiff extensions
+updiff extensions check
+```
 
 ## Commands
 
@@ -143,6 +167,9 @@ report is saved in `~/.updiff/reports/`.
 | `updiff diff <app>` | If the installed app changed since its newest snapshot, compare the two; otherwise compare its two newest snapshots. |
 | `updiff diff <a> <b>` | Compare any two things: `.app` bundles, snapshot `.json` files or stored apps. Good for a downloaded beta against the installed version. |
 | `updiff list [app]` | List stored apps, or one app's snapshots. |
+| `updiff fetch <app> [version]` | Download an earlier release from the app's Homebrew cask history, verify it against the checksum Homebrew pinned, store it as a snapshot and compare it with the installed app. With no version, the release before the installed one. `--list` shows the history. |
+| `updiff pkg <installer.pkg> [older.pkg]` | Show what an installer package would do before you run it: scripts with their text, installer JavaScript, apps, launch daemons and agents (including ones apps register from inside their bundle), privileged helpers, system extensions, everything written outside /Applications, signature and Gatekeeper's verdict. With two packages, what changed. Nothing is installed or run. |
+| `updiff extensions [check]` | List browser and editor extensions with what they can reach. `check` reports what changed since the last check. |
 | `updiff agent install \| uninstall \| status` | Manage the LaunchAgent that runs `check` after updates. |
 
 `<app>` can be a path (`/Applications/Slack.app`), a name from your Applications folders
@@ -162,6 +189,10 @@ report is saved in `~/.updiff/reports/`.
 | `--home <dir>` | all | Data folder. Default `~/.updiff`, or `$UPDIFF_HOME`. |
 | `--keep <n>` | `snapshot`, `check` | Snapshots kept per app (default 10). |
 | `--notify` | `check` | Post a notification for each updated app. |
+| `--extensions` | `check` | Also check browser and editor extensions (the agent does). |
+| `--no-gatekeeper` | scanning | Skip the Gatekeeper/notarization check (faster). |
+| `--cask <name>` | `fetch` | The Homebrew cask, when it isn't the app's name. |
+| `--list` | `fetch` | List the releases in the cask's history. |
 | `--settle <seconds>` | `check` | Wait until no app has changed for this long before scanning. |
 | `--quiet`, `--no-color` | all | Print less; plain text. `NO_COLOR` is respected too. |
 | `--interval <seconds>` | `agent install` | Fallback timer between checks (default 21600, i.e. 6 hours). |
@@ -174,17 +205,26 @@ Exit codes: `0` success, `2` usage error (unknown app, bad option), `1` unexpect
 
 | | High | Notable | Info |
 |---|---|---|---|
-| **Signing** | different developer team; no longer developer-signed; hardened runtime removed | signing certificate changed | hardened runtime added |
+| **Signing** | different developer team; no longer developer-signed; hardened runtime removed; no longer notarized; Gatekeeper rejects it or can't verify its signature | signing certificate changed; distribution changed (Developer ID ↔ App Store) | hardened runtime added; notarization ticket stapled or unstapled |
 | **Entitlements**, for every executable in the bundle | camera, microphone, location, contacts, calendars, photos, Apple Events, USB, Bluetooth, library validation off, debugging, Endpoint Security, network extensions, sandbox exceptions; sandbox removed | any other new entitlement; new values in app groups, keychain groups or associated domains | removals |
 | **Privacy prompts** (`NS…UsageDescription`) | a new prompt | | reworded or removed prompts |
 | **Background** | new LaunchAgent or LaunchDaemon, login item, privileged helper, system extension | changed background item | removals |
-| **Updater** (Sparkle) | update feed moved; update signing key changed | feed added or removed | |
+| **Updater** (Sparkle) | update feed moved; update signing key changed | feed added or removed; feed set in the code changed | |
 | **Network** | App Transport Security allows plain HTTP | new ATS exception domains | |
 | **Code** | | new helper apps, XPC services, app extensions, plug-ins, executables, native Node modules, frameworks | framework versions; removals |
 | **Electron** | | Electron version; new bundled npm packages | package version changes and removals |
 | **Hostnames** | | new domains | new hosts under domains already present; domains no longer mentioned |
 | **URL schemes** | | new `scheme://` handlers | removals |
-| **Identity** | the two sides are different apps | Dock icon shown or hidden | version, minimum macOS, size |
+| **Identity** | the two sides are different apps | Dock icon shown or hidden; moved to or from the Mac App Store | version, minimum macOS, size |
+| **Browser extensions** | access to all websites; sensitive APIs (cookies, history, webRequest, debugger, nativeMessaging, proxy…); a different update server; a new extension with access to all websites | other new permissions; access to specific new sites; a new extension | low-reach permissions (storage, alarms…); optional permissions; removals; versions |
+| **Editor extensions** (VS Code, Cursor, Windsurf, VSCodium) | starts installing other extensions | now starts with every window; new npm packages; new native code; new domains in the code; a new extension | removals; versions |
+
+Gatekeeper's verdict comes from `spctl`, which may contact Apple for apps without a
+stapled notarization ticket. Sparkle feeds are read from `Info.plist` and, for apps that
+set them in code (Ghostty, ChatGPT), from URLs in the binary; `scan` also shows this Mac's
+update settings for the app. Binaries that are FairPlay-encrypted (iPhone and iPad apps)
+are flagged, because their strings can't be read. Mac App Store apps for macOS are not
+encrypted, so their hostnames are read like any other app's.
 
 Code inside a bundle is matched between versions by its path and, if that fails, by its
 bundle id. So a renamed helper isn't reported as removed plus added, and Chrome's
@@ -217,6 +257,8 @@ Framework binaries are only searched with `--deep`. Electron apps keep their own
 ~/.updiff/
 ├── snapshots/<bundle id>/<time>__<version>__<build>.json   one JSON file per snapshot
 ├── reports/<bundle id>/<time>__<from>__to__<to>.md         one report per detected update
+├── extensions/<time>.json                                  installed extensions (last 10)
+├── reports/extensions/<time>__<from>__to__<to>.md          one report per extension change
 └── agent.log                                               output of background checks
 ```
 
@@ -227,12 +269,14 @@ Delete the folder at any time to start over.
 ## Privacy and safety
 
 - updiff reads files and runs Apple's own tools:
-  - `plutil` to read plists
-  - `codesign` to read signatures and entitlements
-  - `osascript` for notifications
-  - `launchctl` for the agent
-- It never runs app code.
-- It never makes network requests, and nothing it records leaves your Mac.
+  - `plutil` and `defaults` to read plists and an app's update settings
+  - `codesign`, `spctl` and `stapler` to read signatures, Gatekeeper's verdict and
+    notarization tickets
+  - `hdiutil` (read-only) and `pkgutil --expand-full` to open disk images and packages
+  - `osascript` for notifications, `launchctl` for the agent
+- It never runs app code, installer scripts or installer JavaScript.
+- Nothing it records leaves your Mac. `fetch` downloads from Homebrew, GitHub and the
+  app's vendor; `spctl` may ask Apple about notarization. Nothing else uses the network.
 - The agent is a LaunchAgent in your user account (`dev.updiff.check`). It runs with your
   permissions, at low priority. `updiff agent install --dry-run` shows exactly what it
   installs; `updiff agent uninstall` removes it.
@@ -243,10 +287,12 @@ Delete the folder at any time to start over.
   the bundle, so updiff can't see them.
 - **Hostnames are pattern-matched.** Hosts assembled at runtime (`"api." + region + ".x.com"`)
   are missed, and a mentioned host is not necessarily contacted.
-- **The first update needs a baseline.** Run `updiff snapshot` before updating. You can
-  also diff a downloaded copy of the old version against the installed one.
-- **Not covered yet:** Mac App Store receipts, Safari web extension manifests, managed
-  browser policies and installer `.pkg` scripts.
+- **Baselines.** `check` compares with the last snapshot. For an app you never snapshotted,
+  `updiff fetch` gets its previous release, if the app is in Homebrew.
+- **Update feeds built at runtime** (AltTab assembles its URL from pieces) can't be found;
+  `scan` says when Sparkle is bundled but no feed was found.
+- **Not covered yet:** Safari web extensions' permissions, managed browser policies, and
+  extensions for JetBrains IDEs.
 
 ## The ledger
 

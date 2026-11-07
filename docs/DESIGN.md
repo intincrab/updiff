@@ -109,3 +109,14 @@ Formats: `text` (default), `md`, `json`. Use `--min-severity` to hide noise.
   CLI (`snapshot`, `diff`, `check`, `agent --dry-run`).
 - Real-world runs: snapshot every installed app, then diff the Chrome 154 bundle
   from the Homebrew download cache against the installed Chrome 156.
+
+## Since 0.1.1
+
+| Module | What it adds |
+|---|---|
+| `src/codesign.ts` | Gatekeeper (`spctl -a -t exec`) verdict, source and message; stapled ticket from `stapler validate`'s text (its exit status is 0 either way). |
+| `src/macho.ts` | `LC_ENCRYPTION_INFO` / `_64` reader. Checked on six Mac App Store apps: none is encrypted; iPhone/iPad apps are. |
+| `src/hosts.ts` | `extractFeedUrls`: Sparkle appcast URLs in code, stopping at NUL separators in binaries. |
+| `src/cask-history.ts`, `src/fetch.ts` | Cask history from Homebrew/homebrew-cask commits; a small reader for cask Ruby (`do … end` blocks, `on_arm`, `:or_newer`, `#{version…}`, `#{arch}`); verified downloads of past releases. |
+| `src/pkg.ts`, `src/pkg-report.ts` | Installer packages through `pkgutil --expand-full`: scripts, Distribution JavaScript, apps, launch items (including SMAppService plists inside app bundles), system-level items, signature, Gatekeeper; a diff of two packages with line diffs of scripts. |
+| `src/extensions.ts` | Chromium manifests per profile, Firefox `extensions.json`, VS Code-family `package.json`; risk rules for permissions, host access, update URLs and editor activation, packs, packages, native code and domains. |
