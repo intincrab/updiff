@@ -6,6 +6,7 @@ import { parseArgs } from 'node:util';
 import { AGENT_LABEL, agentPlist, agentStatus, installAgent, notify, uninstallAgent } from './agent.ts';
 import { quickFingerprint, readIdentity, scanBundle, type ScanOptions } from './bundle.ts';
 import { diffSnapshots, filterBySeverity } from './diff.ts';
+import { diffExtensions, discoverExtensions, renderExtensions, type ExtensionsSnapshot } from './extensions.ts';
 import { caskHistory, fetchRelease, pickRelease, resolveCask, sameVersion } from './fetch.ts';
 import { renderJson, renderMarkdown, renderScan, renderText } from './report.ts';
 import { inspectPkg } from './pkg.ts';
@@ -33,6 +34,9 @@ Usage:
   updiff fetch <app> [version]      Download an earlier release from Homebrew's cask
                                     history, store it as a snapshot and compare it
                                     with the installed app (no baseline needed)
+  updiff extensions [check]         List browser and editor extensions with what they
+                                    can reach; 'check' reports what changed since the
+                                    last check (permissions, sites, bundled code)
   updiff pkg <installer.pkg> [older.pkg]
                                     Show what an installer package would do: its
                                     scripts, launch daemons and install locations.
@@ -55,6 +59,7 @@ Options:
                                     /Applications and ~/Applications, or
                                     $UPDIFF_APPS_DIRS, colon-separated)
   --notify                          check: show a notification for each changed app
+  --extensions                      check: also check browser and editor extensions
   --settle <seconds>                check: wait until apps stop changing for this long
   --keep <n>                        check/snapshot: snapshots to keep per app (default 10)
   --quiet                           Print less
@@ -112,6 +117,7 @@ function parse(argv: string[]) {
       'no-gatekeeper': { type: 'boolean' },
       cask: { type: 'string' },
       list: { type: 'boolean' },
+      extensions: { type: 'boolean' },
       help: { type: 'boolean', short: 'h' },
       version: { type: 'boolean', short: 'v' },
     },
@@ -333,7 +339,55 @@ async function waitUntilSettled(apps: string[], seconds: number, io: IO, quiet: 
   }
 }
 
-async function cmdCheck(ctx: Ctx, args: string[], notifyEnabled: boolean, settle: number): Promise<number> {
+interface ExtensionCheck {
+  count: number;
+  baseline: boolean;
+  report?: DiffReport;
+  file?: string;
+}
+
+/** Compares installed extensions with the last stored set and stores the new one. */
+async function checkExtensions(ctx: Ctx): Promise<ExtensionCheck> {
+  const current: ExtensionsSnapshot = { schema: 1, takenAt: new Date().toISOString(), extensions: await discoverExtensions() };
+  const previous = await ctx.store.latestExtensions();
+  if (!previous) {
+    await ctx.store.saveExtensions(current);
+    return { count: current.extensions.length, baseline: true };
+  }
+  const report = diffExtensions(previous, current);
+  if (report.identical) return { count: current.extensions.length, baseline: false };
+  await ctx.store.saveExtensions(current);
+  const file = await ctx.store.saveReport('extensions', previous.takenAt.slice(0, 10), current.takenAt.slice(0, 10), 'md', renderMarkdown(report));
+  return { count: current.extensions.length, baseline: false, report, file };
+}
+
+function describeExtensionCheck(r: ExtensionCheck): string {
+  if (r.baseline) return `Saved a baseline of ${r.count} extension${r.count === 1 ? '' : 's'}; the next check reports what changes.`;
+  return r.report ? `Extensions: ${r.report.counts.high} high, ${r.report.counts.notable} notable, ${r.report.counts.info} info.` : `No changes in ${r.count} extension${r.count === 1 ? '' : 's'}.`;
+}
+
+async function cmdExtensions(ctx: Ctx, args: string[]): Promise<number> {
+  const [action, ...rest] = args;
+  if (rest.length || (action && action !== 'check' && action !== 'list')) throw new UsageError('extensions takes `list` (default) or `check`.');
+  if (action !== 'check') {
+    const list = await discoverExtensions();
+    ctx.io.out(ctx.format === 'json' ? renderJson(list) : renderExtensions(list, { color: ctx.io.color }));
+    return 0;
+  }
+  const r = await checkExtensions(ctx);
+  if (ctx.format === 'json') {
+    ctx.io.out(renderJson({ count: r.count, baseline: r.baseline, ...(r.report ? { changes: filterBySeverity(r.report, ctx.minSeverity), reportFile: r.file } : {}) }));
+    return 0;
+  }
+  if (r.report) {
+    ctx.io.out(renderText(filterBySeverity(r.report, ctx.minSeverity), { color: ctx.io.color, full: ctx.full }));
+    ctx.io.out(`Report: ${r.file}\n\n`);
+  }
+  ctx.io.out(`${describeExtensionCheck(r)}\n`);
+  return 0;
+}
+
+async function cmdCheck(ctx: Ctx, args: string[], notifyEnabled: boolean, settle: number, withExtensions: boolean): Promise<number> {
   if (args.length) throw new UsageError('check takes no app names; use --apps-dir to choose folders.');
   let apps = await discoverApps(ctx.appsDirs);
   await waitUntilSettled(apps, settle, ctx.io, ctx.quiet);
@@ -348,6 +402,7 @@ async function cmdCheck(ctx: Ctx, args: string[], notifyEnabled: boolean, settle
   }
   const baseline = results.filter((r) => r.status === 'new');
   const failed = results.filter((r) => r.status === 'failed');
+  const ext = withExtensions ? await checkExtensions(ctx) : undefined;
 
   if (ctx.format === 'json') {
     ctx.io.out(
@@ -356,6 +411,7 @@ async function cmdCheck(ctx: Ctx, args: string[], notifyEnabled: boolean, settle
         baseline: baseline.map((r) => r.snapshot!.app.bundleId),
         failed: failed.map((r) => ({ app: r.app, error: r.error })),
         changed: reports.map(({ report, file }) => ({ ...filterBySeverity(report, ctx.minSeverity), reportFile: file })),
+        ...(ext ? { extensions: { count: ext.count, baseline: ext.baseline, ...(ext.report ? { changes: filterBySeverity(ext.report, ctx.minSeverity), reportFile: ext.file } : {}) } } : {}),
       }),
     );
   } else {
@@ -369,12 +425,20 @@ async function cmdCheck(ctx: Ctx, args: string[], notifyEnabled: boolean, settle
       if (failed.length) parts.push(`${failed.length} failed (${failed.map((f) => basename(f.app)).join(', ')})`);
       ctx.io.out(`${parts.join(', ')}.\n`);
     }
+    if (ext?.report) {
+      ctx.io.out('\n' + renderText(filterBySeverity(ext.report, ctx.minSeverity), { color: ctx.io.color, full: ctx.full }));
+      ctx.io.out(`Report: ${ext.file}\n`);
+    }
+    if (ext && (!ctx.quiet || ext.report)) ctx.io.out(`${describeExtensionCheck(ext)}\n`);
   }
   if (notifyEnabled) {
     for (const { report } of reports) {
       const { high, notable } = report.counts;
       const summary = high || notable ? `${high} high, ${notable} notable change${high + notable === 1 ? '' : 's'}` : 'No notable changes';
       await notify(`Updiff: ${report.app.name} ${report.to.version}`, `${summary}. Run: updiff diff "${report.app.bundleId}"`);
+    }
+    if (ext?.report && (ext.report.counts.high || ext.report.counts.notable)) {
+      await notify('Updiff: extensions changed', `${ext.report.counts.high} high, ${ext.report.counts.notable} notable. Report: ${ext.file}`);
     }
   }
   return 0;
@@ -564,7 +628,9 @@ export async function main(argv: string[], io: IO): Promise<number> {
       case 'diff':
         return await cmdDiff(ctx, args);
       case 'check':
-        return await cmdCheck(ctx, args, v.notify === true, intOption(v.settle, 'settle', 0));
+        return await cmdCheck(ctx, args, v.notify === true, intOption(v.settle, 'settle', 0), v.extensions === true);
+      case 'extensions':
+        return await cmdExtensions(ctx, args);
       case 'list':
         return await cmdList(ctx, args);
       case 'pkg':

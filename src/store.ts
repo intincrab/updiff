@@ -1,6 +1,7 @@
 import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
+import type { ExtensionsSnapshot } from './extensions.ts';
 import type { Snapshot } from './types.ts';
 
 export interface StoredSnapshot {
@@ -97,6 +98,29 @@ export class Store {
     const drop = list.slice(0, Math.max(0, list.length - keep));
     await Promise.all(drop.map((d) => rm(d.file, { force: true })));
     return drop.length;
+  }
+
+  get extensionsDir(): string {
+    return join(this.home, 'extensions');
+  }
+
+  async saveExtensions(snapshot: ExtensionsSnapshot): Promise<string> {
+    await mkdir(this.extensionsDir, { recursive: true });
+    const file = join(this.extensionsDir, `${snapshot.takenAt.replace(/[:.]/g, '-')}.json`);
+    await writeFile(file, JSON.stringify(snapshot));
+    const all = (await readdir(this.extensionsDir)).filter((n) => n.endsWith('.json')).sort();
+    await Promise.all(all.slice(0, Math.max(0, all.length - 10)).map((n) => rm(join(this.extensionsDir, n), { force: true })));
+    return file;
+  }
+
+  async latestExtensions(): Promise<ExtensionsSnapshot | undefined> {
+    try {
+      const all = (await readdir(this.extensionsDir)).filter((n) => n.endsWith('.json')).sort();
+      const last = all.at(-1);
+      return last ? (JSON.parse(await readFile(join(this.extensionsDir, last), 'utf8')) as ExtensionsSnapshot) : undefined;
+    } catch {
+      return undefined;
+    }
   }
 
   async saveReport(bundleId: string, fromVersion: string, toVersion: string, ext: string, content: string): Promise<string> {

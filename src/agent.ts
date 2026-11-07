@@ -21,7 +21,7 @@ export interface AgentOptions {
 }
 
 export function agentPlist(o: AgentOptions): string {
-  const args = [o.nodePath, o.cliPath, 'check', '--notify', '--quiet', '--settle', '90', '--home', o.home];
+  const args = [o.nodePath, o.cliPath, 'check', '--extensions', '--notify', '--quiet', '--settle', '90', '--home', o.home];
   for (const d of o.appsDirs) args.push('--apps-dir', d);
   return toPlistXml({
     Label: AGENT_LABEL,
