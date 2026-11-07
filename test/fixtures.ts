@@ -63,6 +63,10 @@ function sign(path: string, entitlements?: PlistDict, runtime = false): void {
 }
 
 export interface FixtureSpec {
+  /** App name (default "Fixture"); helpers and the login item are named after it. */
+  name?: string;
+  /** Bundle identifier (default BUNDLE_ID). */
+  bundleId?: string;
   version: string;
   build: string;
   hardenedRuntime: boolean;
@@ -85,22 +89,24 @@ export const BUNDLE_ID = 'com.example.updiff-fixture';
 
 /** Builds a small Electron-shaped app bundle and returns its path. */
 export async function buildApp(parent: string, spec: FixtureSpec): Promise<string> {
-  const app = join(parent, 'Fixture.app');
+  const name = spec.name ?? 'Fixture';
+  const id = spec.bundleId ?? BUNDLE_ID;
+  const app = join(parent, `${name}.app`);
   const c = join(app, 'Contents');
   mkdirSync(join(c, 'MacOS'), { recursive: true });
   mkdirSync(join(c, 'Resources'), { recursive: true });
 
   writeInfo(join(c, 'Info.plist'), {
-    CFBundleIdentifier: BUNDLE_ID,
-    CFBundleName: 'Fixture',
-    CFBundleExecutable: 'Fixture',
+    CFBundleIdentifier: id,
+    CFBundleName: name,
+    CFBundleExecutable: name,
     CFBundlePackageType: 'APPL',
     CFBundleShortVersionString: spec.version,
     CFBundleVersion: spec.build,
     LSMinimumSystemVersion: '12.0',
     ...spec.info,
   });
-  writeBinary(join(c, 'MacOS', 'Fixture'), spec.mainStrings);
+  writeBinary(join(c, 'MacOS', name), spec.mainStrings);
 
   // Electron Framework, with the usual Versions/A + Current layout.
   const fw = join(c, 'Frameworks', 'Electron Framework.framework');
@@ -121,30 +127,30 @@ export async function buildApp(parent: string, spec: FixtureSpec): Promise<strin
   }
 
   // Helper app.
-  const helper = join(c, 'Frameworks', 'Fixture Helper.app');
+  const helper = join(c, 'Frameworks', `${name} Helper.app`);
   writeInfo(join(helper, 'Contents', 'Info.plist'), {
-    CFBundleIdentifier: `${BUNDLE_ID}.helper`,
-    CFBundleExecutable: 'Fixture Helper',
+    CFBundleIdentifier: `${id}.helper`,
+    CFBundleExecutable: `${name} Helper`,
     CFBundlePackageType: 'APPL',
     CFBundleShortVersionString: spec.version,
   });
-  writeBinary(join(helper, 'Contents', 'MacOS', 'Fixture Helper'), []);
+  writeBinary(join(helper, 'Contents', 'MacOS', `${name} Helper`), []);
 
   let loginItem: string | undefined;
   if (spec.loginItem) {
-    loginItem = join(c, 'Library', 'LoginItems', 'FixtureLauncher.app');
+    loginItem = join(c, 'Library', 'LoginItems', `${name}Launcher.app`);
     writeInfo(join(loginItem, 'Contents', 'Info.plist'), {
-      CFBundleIdentifier: `${BUNDLE_ID}.launcher`,
-      CFBundleExecutable: 'FixtureLauncher',
+      CFBundleIdentifier: `${id}.launcher`,
+      CFBundleExecutable: `${name}Launcher`,
       CFBundlePackageType: 'APPL',
       CFBundleShortVersionString: spec.version,
     });
-    writeBinary(join(loginItem, 'Contents', 'MacOS', 'FixtureLauncher'), []);
+    writeBinary(join(loginItem, 'Contents', 'MacOS', `${name}Launcher`), []);
   }
   if (spec.launchAgent) {
-    writeInfo(join(c, 'Library', 'LaunchAgents', `${BUNDLE_ID}.agent.plist`), {
-      Label: `${BUNDLE_ID}.agent`,
-      BundleProgram: 'Contents/MacOS/Fixture',
+    writeInfo(join(c, 'Library', 'LaunchAgents', `${id}.agent.plist`), {
+      Label: `${id}.agent`,
+      BundleProgram: `Contents/MacOS/${name}`,
       RunAtLoad: true,
       KeepAlive: true,
     }, false);

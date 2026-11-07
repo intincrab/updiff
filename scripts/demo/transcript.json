@@ -1,0 +1,65 @@
+{
+  "recordedAt": "2026-11-07T21:16:56.009Z",
+  "steps": [
+    {
+      "kind": "command",
+      "text": "updiff snapshot"
+    },
+    {
+      "kind": "output",
+      "lines": [
+        "new       Lumen 4.2.0 (0.0 s)",
+        "1 app: 1 new, 0 changed, 0 unchanged, 0 failed. Stored in ~/.updiff/snapshots"
+      ]
+    },
+    {
+      "kind": "comment",
+      "text": "# a week later, Lumen updates itself to 4.3.0…"
+    },
+    {
+      "kind": "command",
+      "text": "updiff check"
+    },
+    {
+      "kind": "output",
+      "lines": [
+        "\u001b[1mLumen  4.2.0 (420) → 4.3.0 (430)\u001b[22m",
+        "\u001b[2mcom.example.lumen\u001b[22m",
+        "\u001b[31m4 high\u001b[39m · \u001b[33m3 notable\u001b[39m · \u001b[36m2 info\u001b[39m",
+        "",
+        "\u001b[31m\u001b[1mHIGH\u001b[22m\u001b[39m",
+        "  \u001b[31m+\u001b[39m Can now ask for access to Camera",
+        "      NSCameraUsageDescription: “Lumen can add video to your notes.”",
+        "\u001b[2m      at Contents/Info.plist\u001b[22m",
+        "  \u001b[31m+\u001b[39m App can now use the camera",
+        "      com.apple.security.device.camera = true",
+        "\u001b[2m      at Contents/MacOS/Lumen\u001b[22m",
+        "  \u001b[31m+\u001b[39m New background agent: com.example.lumen.agent.plist",
+        "      label com.example.lumen.agent · runs Contents/MacOS/Lumen · starts at login · kept alive",
+        "\u001b[2m      at Contents/Library/LaunchAgents/com.example.lumen.agent.plist\u001b[22m",
+        "  \u001b[31m+\u001b[39m New login item: LumenLauncher.app",
+        "      com.example.lumen.launcher · v4.3.0",
+        "\u001b[2m      at Contents/Library/LoginItems/LumenLauncher.app\u001b[22m",
+        "",
+        "\u001b[33m\u001b[1mNOTABLE\u001b[22m\u001b[39m",
+        "  \u001b[33m~\u001b[39m Electron 33.2.0 → 35.1.0",
+        "\u001b[2m      at Contents/Frameworks/Electron Framework.framework\u001b[22m",
+        "  \u001b[33m+\u001b[39m 1 new bundled npm package",
+        "      @datastreamr/sdk@2.4.1",
+        "\u001b[2m      at Contents/Resources/app.asar\u001b[22m",
+        "  \u001b[33m+\u001b[39m New domain datastreamr.io",
+        "      events.datastreamr.io",
+        "\u001b[2m      at Contents/Resources/app.asar:dist/assist.js\u001b[22m",
+        "",
+        "\u001b[36m\u001b[1mINFO\u001b[22m\u001b[39m",
+        "  \u001b[36m~\u001b[39m Size +38.3 KB (+26.4%), files 10 → 14",
+        "  \u001b[36m~\u001b[39m Version 4.2.0 (420) → 4.3.0 (430)",
+        "",
+        "\u001b[2mA hostname found in the code is not proof that the app connects to it. It shows what the code mentions: endpoints, links and sometimes dead code.\u001b[22m",
+        "Report: ~/.updiff/reports/com.example.lumen/2026-11-07T21-16-56-006Z__4.2.0__to__4.3.0.md",
+        "",
+        "Checked 1 app, 1 updated."
+      ]
+    }
+  ]
+}

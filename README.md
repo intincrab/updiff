@@ -6,6 +6,10 @@
 ![Node 20+](https://img.shields.io/badge/node-%E2%89%A520-brightgreen)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
+<p align="center">
+  <img src="docs/demo.svg" width="860" alt="A terminal runs updiff snapshot; the app Lumen then updates to 4.3.0, and updiff check reports 4 high findings (a new camera prompt, the camera entitlement, a background agent that starts at login, a login item) and 3 notable ones (an Electron upgrade, a new analytics package and a new domain).">
+</p>
+
 Release notes say "bug fixes and improvements". The update itself might ask for your
 camera, register something that starts at login, ship a new helper that runs as root,
 bundle a new analytics package, or start talking to a new service. updiff takes a
@@ -253,6 +257,9 @@ npm test                    # unit + integration tests
 npm run typecheck
 npm run build               # compiles to dist/
 npm start -- scan Ghostty   # run from source (Node 22.18+ runs the TypeScript directly)
+
+# re-record the README demo: a real run against a generated demo app, rendered to docs/demo.svg
+node scripts/demo/record.ts && node scripts/demo/render-svg.ts
 ```
 
 The integration tests build two versions of a small Electron-style app with clang,
