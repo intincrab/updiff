@@ -1,0 +1,106 @@
+name: Release
+
+# Push a tag like v0.2.0 (matching package.json) to release:
+#   npm version 0.2.0 && git push --follow-tags
+#
+# 1. Tests, builds and packs updiff on macOS.
+# 2. Creates a GitHub Release with the packed tarball. The Homebrew tap
+#    (intincrab/homebrew-tap) installs from that file and picks up new releases
+#    by itself.
+# 3. Publishes the same tarball to npm with provenance, once npm publishing is set
+#    up: either trusted publishing (repository variable NPM_TRUSTED_PUBLISHING=true)
+#    or an NPM_TOKEN secret. Without either, this step is skipped.
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Test, pack and create the GitHub release
+    runs-on: macos-15
+    timeout-minutes: 30
+    outputs:
+      tarball: ${{ steps.pack.outputs.tarball }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Check the tag matches package.json
+        run: |
+          version="v$(node -p 'require("./package.json").version')"
+          if [ "$version" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match package.json ($version)"
+            exit 1
+          fi
+
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+
+      - id: pack
+        name: Pack
+        run: |
+          tarball="$(npm pack --silent)"
+          echo "tarball=$tarball" >> "$GITHUB_OUTPUT"
+          shasum -a 256 "$tarball" | tee "$tarball.sha256"
+
+      - name: Smoke-test the tarball
+        run: |
+          npm install -g --prefix "$RUNNER_TEMP/smoke" "./${{ steps.pack.outputs.tarball }}"
+          test "$("$RUNNER_TEMP/smoke/bin/updiff" --version)" = "${GITHUB_REF_NAME#v}"
+          "$RUNNER_TEMP/smoke/bin/updiff" scan /System/Applications/Calculator.app --no-color
+
+      - name: Create the GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            "${{ steps.pack.outputs.tarball }}" "${{ steps.pack.outputs.tarball }}.sha256" \
+            --title "updiff $GITHUB_REF_NAME" --generate-notes --verify-tag
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: package
+          path: ${{ steps.pack.outputs.tarball }}
+
+  npm:
+    name: Publish to npm
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+
+      - uses: actions/download-artifact@v8
+        with:
+          name: package
+
+      - name: Publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          TRUSTED: ${{ vars.NPM_TRUSTED_PUBLISHING }}
+          TARBALL: ${{ needs.build.outputs.tarball }}
+        run: |
+          if [ -z "$NODE_AUTH_TOKEN" ] && [ "$TRUSTED" != "true" ]; then
+            echo "::notice::npm publishing isn't set up yet (no NPM_TOKEN secret or NPM_TRUSTED_PUBLISHING variable), so this release is on GitHub and Homebrew only."
+            exit 0
+          fi
+          npm --version
+          npm publish "./$TARBALL" --provenance --access public

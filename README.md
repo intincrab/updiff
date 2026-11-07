@@ -5,6 +5,7 @@
 ![macOS](https://img.shields.io/badge/platform-macOS-lightgrey)
 ![Node 20+](https://img.shields.io/badge/node-%E2%89%A520-brightgreen)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
+[![CI](https://github.com/intincrab/updiff/actions/workflows/ci.yml/badge.svg)](https://github.com/intincrab/updiff/actions/workflows/ci.yml)
 
 <p align="center">
   <img src="docs/demo.svg" width="860" alt="A terminal runs updiff snapshot; the app Lumen then updates to 4.3.0, and updiff check reports 4 high findings (a new camera prompt, the camera entitlement, a background agent that starts at login, a login item) and 3 notable ones (an Electron upgrade, a new analytics package and a new domain).">
@@ -85,15 +86,33 @@ NOTABLE
 `+` added, `-` removed, `~` changed. In a terminal, high findings are red, notable
 findings yellow and info cyan.
 
-## Quick start
+## Install
 
-updiff isn't on npm yet. Install it from source; you need macOS and Node.js 20 or newer.
+With Homebrew:
+
+```bash
+brew install intincrab/tap/updiff
+```
+
+With npm, or without installing at all (macOS, Node.js 20 or newer):
+
+```bash
+npm install -g updiff
+```
+
+```bash
+npx updiff scan Slack
+```
+
+From source:
 
 ```bash
 git clone https://github.com/intincrab/updiff.git
 cd updiff
 npm install && npm run build && npm link
 ```
+
+## Quick start
 
 Take a baseline of every app, then check after updates:
 
@@ -267,6 +286,23 @@ The integration tests build two versions of a small Electron-style app with clan
 changes, then check that each one is reported at the right severity, both through the
 library and through the commands. Without a C compiler, the assertions about hostnames
 inside binaries are skipped.
+
+CI runs all of this on a macOS runner for every push, then installs the packed tarball
+and runs it on Node 20, 22 and 24.
+
+### Releasing
+
+Bump the version in `package.json` and `src/version.ts` (a test checks they match),
+commit, and push a matching tag:
+
+```bash
+git tag v0.2.0 && git push origin v0.2.0
+```
+
+The [release workflow](.github/workflows/release.yml) tests and packs updiff, creates a
+GitHub Release with the tarball, and publishes it to npm with provenance. The
+[Homebrew tap](https://github.com/intincrab/homebrew-tap) picks up the new release within
+a few hours, or straight away if you run its workflow by hand.
 
 ## License
 

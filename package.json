@@ -26,16 +26,32 @@
     "node": ">=20"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json && chmod +x dist/cli.js",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && chmod +x dist/cli.js",
     "typecheck": "tsc -p tsconfig.json",
     "test": "node --test --test-concurrency=1 test/*.test.ts",
     "start": "node src/cli.ts",
-    "ledger": "node ledger/src/cli.ts"
+    "ledger": "node ledger/src/cli.ts",
+    "prepublishOnly": "npm run build"
   },
   "license": "MIT",
   "devDependencies": {
     "@electron/asar": "^3.4.1",
     "@types/node": "^24.19.2",
     "typescript": "^5.9.3"
+  },
+  "keywords": [
+    "macos",
+    "security",
+    "privacy",
+    "entitlements",
+    "codesign",
+    "electron",
+    "diff",
+    "app-updates",
+    "cli"
+  ],
+  "author": "Ajay Chauhan",
+  "publishConfig": {
+    "access": "public"
   }
 }

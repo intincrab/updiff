@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    # The ledger bot commits data every day; that isn't a code change.
+    paths-ignore: ['ledger/data/**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Typecheck and test
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+      - run: npm run typecheck
+      # Unit tests plus integration tests that build, sign and diff real fixture apps
+      # (clang, codesign, hdiutil and pkgbuild are on the runner).
+      - run: npm test
+      - run: npm run build
+      - run: npm pack
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: package
+          path: updiff-*.tgz
+
+  package:
+    name: Installed package on Node ${{ matrix.node }}
+    needs: test
+    runs-on: macos-15
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [20, 22, 24]
+    steps:
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node }}
+
+      - uses: actions/download-artifact@v8
+        with:
+          name: package
+
+      - name: Install the packed tarball
+        run: npm install -g ./updiff-*.tgz
+
+      - name: Run it
+        run: |
+          updiff --version
+          updiff scan /System/Applications/Calculator.app --no-color
+          updiff diff /System/Applications/Calculator.app /System/Applications/TextEdit.app --format json > diff.json
+          node -e 'const r = require("./diff.json"); if (!r.findings.length) process.exit(1); console.log(r.counts)'
