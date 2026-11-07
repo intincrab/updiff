@@ -1,0 +1,86 @@
+name: Ledger
+
+# Scans new releases of the apps in ledger/apps.json, commits the reports to
+# ledger/data and publishes the site to GitHub Pages.
+#
+# It only runs on a public repository: macOS runner minutes on private
+# repositories are billed at ten times the Linux rate, and GitHub Pages needs a
+# paid plan for private repositories. Remove the `if:` lines to run it anyway.
+
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'Comma-separated cask tokens to check (blank = all)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ledger
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: ${{ !github.event.repository.private }}
+    runs-on: macos-15
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Test
+        run: npm test
+
+      - name: Scan new releases
+        env:
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          if [ -n "$ONLY" ]; then
+            npm run ledger -- update --only "$ONLY"
+          else
+            npm run ledger -- update
+          fi
+
+      - name: Commit data
+        run: |
+          git config user.name "updiff-ledger[bot]"
+          git config user.email "updiff-ledger@users.noreply.github.com"
+          git add ledger/data
+          if git diff --cached --quiet; then
+            echo "No new data."
+          else
+            git commit -m "ledger: $(date -u +%Y-%m-%d) scan"
+            git pull --rebase
+            git push
+          fi
+
+      - name: Build site
+        run: npm run ledger -- site --out _site --base-url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" --repo-url "${{ github.server_url }}/${{ github.repository }}"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    if: ${{ !github.event.repository.private }}
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

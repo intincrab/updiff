@@ -29,7 +29,8 @@
     "build": "tsc -p tsconfig.build.json && chmod +x dist/cli.js",
     "typecheck": "tsc -p tsconfig.json",
     "test": "node --test --test-concurrency=1 test/*.test.ts",
-    "start": "node src/cli.ts"
+    "start": "node src/cli.ts",
+    "ledger": "node ledger/src/cli.ts"
   },
   "license": "MIT",
   "devDependencies": {

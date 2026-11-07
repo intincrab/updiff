@@ -223,6 +223,14 @@ Delete the folder at any time to start over.
 - **Not covered yet:** Mac App Store receipts, Safari web extension manifests, managed
   browser policies and installer `.pkg` scripts.
 
+## The ledger
+
+[`ledger/`](ledger) runs updiff every day on new releases of about 30 popular Mac apps
+(Slack, Zoom, Cursor, VS Code, Postman, Chrome, Discord, …), found through their
+Homebrew casks. It publishes what changed in each release as a static site with an Atom
+feed. Reports are plain JSON in [`ledger/data`](ledger/data). See
+[ledger/README.md](ledger/README.md) to run it or turn on the daily GitHub Action.
+
 ## How it works
 
 Every scan, a few steps:

@@ -6,10 +6,13 @@ export interface ExecResult {
   stderr: string;
 }
 
-/** Runs a command without a shell. Never throws on a non-zero exit. */
-export function run(file: string, args: string[], timeoutMs = 60_000): Promise<ExecResult> {
+/**
+ * Runs a command without a shell. Never throws on a non-zero exit.
+ * `input` is written to the command's stdin (for prompts such as a disk image licence).
+ */
+export function run(file: string, args: string[], timeoutMs = 60_000, input?: string): Promise<ExecResult> {
   return new Promise((resolve) => {
-    execFile(
+    const child = execFile(
       file,
       args,
       { maxBuffer: 64 * 1024 * 1024, timeout: timeoutMs, encoding: 'utf8' },
@@ -22,5 +25,6 @@ export function run(file: string, args: string[], timeoutMs = 60_000): Promise<E
         resolve({ code, stdout: stdout ?? '', stderr: stderr ?? '' });
       },
     );
+    if (input !== undefined) child.stdin?.end(input);
   });
 }
