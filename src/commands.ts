@@ -6,6 +6,7 @@ import { parseArgs } from 'node:util';
 import { AGENT_LABEL, agentPlist, agentStatus, installAgent, notify, uninstallAgent } from './agent.ts';
 import { quickFingerprint, readIdentity, scanBundle, type ScanOptions } from './bundle.ts';
 import { diffSnapshots, filterBySeverity } from './diff.ts';
+import { caskHistory, fetchRelease, pickRelease, resolveCask, sameVersion } from './fetch.ts';
 import { renderJson, renderMarkdown, renderScan, renderText } from './report.ts';
 import { Store } from './store.ts';
 import type { DiffReport, Severity, Snapshot } from './types.ts';
@@ -27,6 +28,9 @@ Usage:
   updiff diff <a> <b>               Compare two apps, snapshot files or stored apps
   updiff check                      Snapshot apps that changed and report the differences
   updiff list [app]                 List stored snapshots
+  updiff fetch <app> [version]      Download an earlier release from Homebrew's cask
+                                    history, store it as a snapshot and compare it
+                                    with the installed app (no baseline needed)
   updiff agent install|uninstall|status
                                     Run 'check' automatically after app updates
 
@@ -52,6 +56,8 @@ Options:
   --dry-run                         agent install: print the LaunchAgent, change nothing
   --no-load                         agent install/uninstall: write files, skip launchctl
   --no-gatekeeper                   Skip the Gatekeeper/notarization check (faster)
+  --cask <name>                     fetch: the Homebrew cask, when it isn't the app's name
+  --list                            fetch: list the releases in the cask's history
   --no-color                        Plain text output
   -h, --help                        Show this help
   -v, --version                     Show the version
@@ -98,6 +104,8 @@ function parse(argv: string[]) {
       'no-load': { type: 'boolean' },
       'no-color': { type: 'boolean' },
       'no-gatekeeper': { type: 'boolean' },
+      cask: { type: 'string' },
+      list: { type: 'boolean' },
       help: { type: 'boolean', short: 'h' },
       version: { type: 'boolean', short: 'v' },
     },
@@ -366,6 +374,52 @@ async function cmdCheck(ctx: Ctx, args: string[], notifyEnabled: boolean, settle
   return 0;
 }
 
+async function cmdFetch(ctx: Ctx, args: string[], opts: { cask?: string; list: boolean }): Promise<number> {
+  if (args.length < 1 || args.length > 2) throw new UsageError('fetch needs an app (or cask) and optionally a version.');
+  const [target, wanted] = args as [string, string | undefined];
+  const installed = await findAppByName(target, ctx.appsDirs);
+  const identity = installed ? await readIdentity(installed) : undefined;
+  const candidates = opts.cask ? [opts.cask] : [target, ...(identity ? [identity.name, basename(installed!, '.app')] : [])];
+  const log = (s: string): void => {
+    if (!ctx.quiet) ctx.io.err(`${s}\n`);
+  };
+  const info = await resolveCask(candidates);
+  log(`Reading the history of the Homebrew cask "${info.token}"…`);
+  const { releases } = await caskHistory(info.token, { info });
+  if (!releases.length) throw new UsageError(`Found no releases in the history of the ${info.token} cask.`);
+
+  if (opts.list) {
+    const rows = releases.map((r) => ({
+      version: r.version,
+      date: r.date.slice(0, 10),
+      checksum: r.sha256 ? 'pinned' : 'not pinned',
+      url: r.url ?? '(derived from the current URL)',
+      installed: sameVersion(r.version, identity?.version),
+    }));
+    if (ctx.format === 'json') ctx.io.out(renderJson(rows));
+    else {
+      const w = Math.max(...rows.map((r) => r.version.length), 7);
+      for (const r of rows) ctx.io.out(`${r.version.padEnd(w)}  ${r.date}  ${r.checksum.padEnd(10)}  ${r.installed ? 'installed' : ''}\n`);
+    }
+    return 0;
+  }
+
+  const release = pickRelease(releases, wanted, identity?.version);
+  const fetched = await fetchRelease(info, release, { scan: ctx.scan, log });
+  const file = await ctx.store.save(fetched.snapshot);
+  log(`Stored ${fetched.snapshot.app.name} ${fetched.snapshot.app.version} as a snapshot (${file}).`);
+  if (!installed) {
+    log(`${info.name} isn't installed here, so there's nothing to compare it with yet.`);
+    return 0;
+  }
+  if (identity && identity.bundleId !== fetched.snapshot.app.bundleId) {
+    ctx.io.err(`Warning: the cask's app (${fetched.snapshot.app.bundleId}) isn't the installed app (${identity.bundleId}); check --cask.\n`);
+  }
+  log(`Comparing with the installed ${identity?.name ?? basename(installed)} ${identity?.version ?? ''}…\n`);
+  await emit(ctx, diffSnapshots(fetched.snapshot, await scanBundle(installed, ctx.scan)));
+  return 0;
+}
+
 async function cmdList(ctx: Ctx, args: string[]): Promise<number> {
   if (args.length > 1) throw new UsageError('list takes at most one app.');
   if (args.length === 1) {
@@ -489,6 +543,8 @@ export async function main(argv: string[], io: IO): Promise<number> {
         return await cmdCheck(ctx, args, v.notify === true, intOption(v.settle, 'settle', 0));
       case 'list':
         return await cmdList(ctx, args);
+      case 'fetch':
+        return await cmdFetch(ctx, args, { cask: v.cask, list: v.list === true });
       case 'agent':
         return await cmdAgent(ctx, args, { interval: Math.max(600, intOption(v.interval, 'interval', 21600)), dryRun: v['dry-run'] === true, load: !v['no-load'] });
       default:
@@ -499,7 +555,7 @@ export async function main(argv: string[], io: IO): Promise<number> {
       io.err(`${err.message}\n`);
       return 2;
     }
-    io.err(`updiff: ${(err as Error).stack ?? err}\n`);
+    io.err(`updiff: ${process.env.UPDIFF_DEBUG ? ((err as Error).stack ?? err) : ((err as Error).message ?? err)}\n`);
     return 1;
   }
 }

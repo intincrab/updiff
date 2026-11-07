@@ -12,6 +12,8 @@ export interface CaskInfo {
   appNames: string[];
   /** Installer packages the cask runs, e.g. ["zoomusInstallerFull.pkg"]. */
   pkgNames: string[];
+  /** Path of the cask file in Homebrew/homebrew-cask, e.g. "Casks/s/slack.rb". */
+  sourcePath?: string;
 }
 
 export function caskApiBase(): string {
@@ -53,6 +55,7 @@ export function parseCask(json: unknown): CaskInfo {
     sha256: sha,
     appNames: firstStrings(artifacts, 'app'),
     pkgNames: firstStrings(artifacts, 'pkg'),
+    sourcePath: typeof j.ruby_source_path === 'string' ? j.ruby_source_path : undefined,
   };
 }
 
