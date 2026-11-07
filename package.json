@@ -1,0 +1,40 @@
+{
+  "name": "updiff",
+  "version": "0.1.0",
+  "description": "See what a macOS app update actually changed: entitlements, privacy prompts, background items, helpers, bundled packages and hostnames.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intincrab/updiff.git"
+  },
+  "homepage": "https://github.com/intincrab/updiff#readme",
+  "bugs": {
+    "url": "https://github.com/intincrab/updiff/issues"
+  },
+  "type": "module",
+  "bin": {
+    "updiff": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "os": [
+    "darwin"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && chmod +x dist/cli.js",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --test --test-concurrency=1 test/*.test.ts",
+    "start": "node src/cli.ts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron/asar": "^3.4.1",
+    "@types/node": "^24.19.2",
+    "typescript": "^5.9.3"
+  }
+}
