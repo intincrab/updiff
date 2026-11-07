@@ -48,11 +48,12 @@ before(async () => {
   const v3 = await buildApp(join(root, 'v3'), { ...V1, version: '3.0.0', build: '300' });
 
   execFileSync('/usr/bin/ditto', ['-c', '-k', '--keepParent', v1, join(files, 'Fixture-1.0.0.zip')]);
-  for (const [dir, name] of [
-    [join(root, 'v1'), 'Fixture-1.0.0.dmg'],
-    [join(root, 'v2'), 'Fixture-2.0.0.dmg'],
+  // v2 is a bzip2 image (UDBZ, like Slack's and Chrome's): its first bytes read "BZh".
+  for (const [dir, name, format] of [
+    [join(root, 'v1'), 'Fixture-1.0.0.dmg', 'UDZO'],
+    [join(root, 'v2'), 'Fixture-2.0.0.dmg', 'UDBZ'],
   ] as const) {
-    execFileSync('/usr/bin/hdiutil', ['create', '-quiet', '-ov', '-volname', 'Fixture', '-srcfolder', dir, '-format', 'UDZO', join(files, name)]);
+    execFileSync('/usr/bin/hdiutil', ['create', '-quiet', '-ov', '-volname', 'Fixture', '-srcfolder', dir, '-format', format, join(files, name)]);
   }
   execFileSync('/usr/bin/pkgbuild', ['--quiet', '--component', v3, '--install-location', '/Applications', join(files, 'Fixture-3.0.0.pkg')]);
 
@@ -63,7 +64,14 @@ before(async () => {
       res.end(JSON.stringify(cask));
       return;
     }
-    const m = /^\/files\/([\w.-]+)$/.exec(url);
+    // Like Warp's Homebrew URL: only Homebrew clients get the file.
+    const brewOnly = url.startsWith('/brew-only/');
+    if (brewOnly && !String(req.headers['user-agent'] ?? '').startsWith('Homebrew/')) {
+      res.statusCode = 404;
+      res.end('not found');
+      return;
+    }
+    const m = /^\/(?:files|brew-only)\/([\w.-]+)$/.exec(url);
     if (m && existsSync(join(files, m[1]!))) {
       res.end(readFileSync(join(files, m[1]!)));
       return;
@@ -105,7 +113,8 @@ describe('following an app through releases', () => {
     assert.equal(o.status, 'unchanged');
   });
 
-  test('a new release (from a disk image) produces a report', async () => {
+  test('a new release (from a bzip2 disk image) produces a report', async () => {
+    assert.equal(readFileSync(join(files, 'Fixture-2.0.0.dmg')).subarray(0, 3).toString('latin1'), 'BZh');
     cask = caskFor('2.0.0', 'Fixture-2.0.0.dmg');
     const o = await updateApp(app, opts);
     assert.equal(o.status, 'updated', o.error);
@@ -167,6 +176,13 @@ describe('following an app through releases', () => {
     assert.match(feed, /<link href="https:\/\/ledger\.example\.org\/updates\/fixture\/[^"]+__to__3\.0\.0\.html"\/>/);
     assert.ok(!feed.includes('<script>'));
   });
+});
+
+test('retries a refused download with a Homebrew-compatible User-Agent', async () => {
+  const store = new LedgerStore(join(root, 'data-c'));
+  cask = { ...caskFor('1.0.0', 'Fixture-1.0.0.zip'), url: `${base}/brew-only/Fixture-1.0.0.zip` };
+  const o = await updateApp({ cask: 'fixture' }, { store, workRoot: root });
+  assert.equal(o.status, 'baseline', o.error);
 });
 
 describe('backfilling an older release', () => {

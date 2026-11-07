@@ -65,6 +65,11 @@ test('recognises installer formats from their first bytes', () => {
   ustar.write('ustar', 257, 'latin1');
   assert.equal(detectContainer(ustar), 'tar');
   assert.equal(detectContainer(Buffer.alloc(512)), 'dmg');
+  // A bzip2-compressed disk image starts like a bzip2 file; its koly trailer decides.
+  const koly = Buffer.alloc(512);
+  koly.write('koly', 0, 'latin1');
+  assert.equal(detectContainer(Buffer.from('BZh91AY', 'latin1'), koly), 'dmg');
+  assert.equal(detectContainer(Buffer.from('BZh91AY', 'latin1'), Buffer.alloc(512)), 'tar');
 });
 
 test('escapes HTML and only links to http(s)', () => {
