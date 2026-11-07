@@ -149,7 +149,10 @@ export interface Finding {
     | 'background'
     | 'electron'
     | 'package'
-    | 'host';
+    | 'host'
+    | 'script'
+    | 'install'
+    | 'permission';
   change: 'added' | 'removed' | 'changed';
   title: string;
   detail?: string;

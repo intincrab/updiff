@@ -44,7 +44,7 @@ export function renderText(report: DiffReport, options: { color?: boolean; full?
     lines.push('', p.sev(sev, p.bold(SEVERITY_LABEL[sev].toUpperCase())));
     for (const f of group) {
       lines.push(`  ${p.sev(sev, CHANGE_MARK[f.change])} ${f.title}`);
-      if (f.detail) lines.push(`      ${clip(f.detail, max)}`);
+      if (f.detail) for (const d of clip(f.detail, max).split('\n')) lines.push(`      ${d}`);
       if (f.where?.length) lines.push(p.dim(`      at ${f.where.join(', ')}`));
     }
   }
@@ -75,7 +75,8 @@ export function renderMarkdown(report: DiffReport): string {
     lines.push(`## ${SEVERITY_LABEL[sev]}`, '');
     for (const f of group) {
       lines.push(`- ${CHANGE_MARK[f.change] === '+' ? 'Added' : CHANGE_MARK[f.change] === '-' ? 'Removed' : 'Changed'}: **${mdEscape(f.title)}**`);
-      if (f.detail) lines.push(`  ${mdEscape(f.detail)}`);
+      if (f.detail?.includes('\n')) lines.push('', '  ```diff', ...f.detail.split('\n').map((d) => `  ${d}`), '  ```', '');
+      else if (f.detail) lines.push(`  ${mdEscape(f.detail)}`);
       if (f.where?.length) lines.push(`  <sub>${f.where.map((w) => `\`${w}\``).join(', ')}</sub>`);
     }
     lines.push('');

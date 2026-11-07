@@ -8,6 +8,8 @@ import { quickFingerprint, readIdentity, scanBundle, type ScanOptions } from './
 import { diffSnapshots, filterBySeverity } from './diff.ts';
 import { caskHistory, fetchRelease, pickRelease, resolveCask, sameVersion } from './fetch.ts';
 import { renderJson, renderMarkdown, renderScan, renderText } from './report.ts';
+import { inspectPkg } from './pkg.ts';
+import { diffPkgs, renderPkg, renderPkgMarkdown } from './pkg-report.ts';
 import { Store } from './store.ts';
 import type { DiffReport, Severity, Snapshot } from './types.ts';
 import { mapLimit } from './util.ts';
@@ -31,6 +33,10 @@ Usage:
   updiff fetch <app> [version]      Download an earlier release from Homebrew's cask
                                     history, store it as a snapshot and compare it
                                     with the installed app (no baseline needed)
+  updiff pkg <installer.pkg> [older.pkg]
+                                    Show what an installer package would do: its
+                                    scripts, launch daemons and install locations.
+                                    With two packages, what changed. Nothing is run.
   updiff agent install|uninstall|status
                                     Run 'check' automatically after app updates
 
@@ -420,6 +426,24 @@ async function cmdFetch(ctx: Ctx, args: string[], opts: { cask?: string; list: b
   return 0;
 }
 
+async function cmdPkg(ctx: Ctx, args: string[]): Promise<number> {
+  if (args.length < 1 || args.length > 2) throw new UsageError('pkg needs an installer package, or two to compare.');
+  for (const a of args) if (!existsSync(a)) throw new UsageError(`Can't find "${a}".`);
+  const reports = await Promise.all(args.map((a) => inspectPkg(resolve(a))));
+  if (reports.length === 2) {
+    // Arguments are new then old, matching "what does this update change".
+    await emit(ctx, diffPkgs(reports[1]!, reports[0]!));
+    return 0;
+  }
+  const r = reports[0]!;
+  const text = ctx.format === 'json' ? renderJson(r) : ctx.format === 'md' ? renderPkgMarkdown(r) : renderPkg(r, { color: ctx.io.color && !ctx.out, full: ctx.full });
+  if (ctx.out) {
+    await writeFile(ctx.out, text);
+    ctx.io.err(`Wrote ${ctx.out}\n`);
+  } else ctx.io.out(text);
+  return 0;
+}
+
 async function cmdList(ctx: Ctx, args: string[]): Promise<number> {
   if (args.length > 1) throw new UsageError('list takes at most one app.');
   if (args.length === 1) {
@@ -543,6 +567,8 @@ export async function main(argv: string[], io: IO): Promise<number> {
         return await cmdCheck(ctx, args, v.notify === true, intOption(v.settle, 'settle', 0));
       case 'list':
         return await cmdList(ctx, args);
+      case 'pkg':
+        return await cmdPkg(ctx, args);
       case 'fetch':
         return await cmdFetch(ctx, args, { cask: v.cask, list: v.list === true });
       case 'agent':

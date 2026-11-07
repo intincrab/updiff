@@ -535,9 +535,9 @@ function diffHosts(a: Snapshot, b: Snapshot, out: Finding[]): void {
   }
 }
 
-const SEVERITY_ORDER: Record<Severity, number> = { high: 0, notable: 1, info: 2 };
-const CATEGORY_ORDER: Finding['category'][] = [
-  'signing', 'privacy', 'entitlement', 'background', 'updater', 'network', 'code', 'urlScheme', 'electron', 'package', 'host', 'identity',
+export const SEVERITY_ORDER: Record<Severity, number> = { high: 0, notable: 1, info: 2 };
+export const CATEGORY_ORDER: Finding['category'][] = [
+  'signing', 'privacy', 'permission', 'entitlement', 'background', 'script', 'install', 'updater', 'network', 'code', 'urlScheme', 'electron', 'package', 'host', 'identity',
 ];
 
 export function diffSnapshots(a: Snapshot, b: Snapshot): DiffReport {
