@@ -1,42 +1,12 @@
 {
-  "startedAt": "2026-11-07T17:48:45.280Z",
-  "finishedAt": "2026-11-07T17:49:34.001Z",
+  "startedAt": "2026-11-07T17:54:52.560Z",
+  "finishedAt": "2026-11-07T17:54:52.745Z",
   "outcomes": [
     {
-      "cask": "brave-browser",
-      "status": "baseline",
-      "version": "1.99.55.0",
-      "ms": 13173
-    },
-    {
-      "cask": "firefox",
-      "status": "baseline",
-      "version": "159.0.1",
-      "ms": 6513
-    },
-    {
-      "cask": "google-chrome",
-      "status": "baseline",
-      "version": "157.0.8103.39",
-      "ms": 11893
-    },
-    {
-      "cask": "slack",
-      "status": "baseline",
-      "version": "4.53.280",
-      "ms": 3219
-    },
-    {
-      "cask": "spotify",
-      "status": "baseline",
-      "version": "1.3.8.620",
-      "ms": 6358
-    },
-    {
-      "cask": "warp",
-      "status": "baseline",
-      "version": "0.2026.11.04.08.17.stable_01",
-      "ms": 7561
+      "cask": "rectangle",
+      "status": "unchanged",
+      "version": "2.0.4",
+      "ms": 183
     }
   ]
 }
