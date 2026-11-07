@@ -1,7 +1,7 @@
 import { registrableDomain } from './hosts.ts';
 import type { PlistDict, PlistValue } from './plist.ts';
 import type { BackgroundItem, CodeItem, CodeKind, DiffReport, Finding, HostRecord, Severity, Snapshot } from './types.ts';
-import { stableJson } from './util.ts';
+import { formatBytes, stableJson } from './util.ts';
 
 /** Entitlements that change what the app can reach or how safely it runs. */
 const SENSITIVE_ENTITLEMENTS: Record<string, string> = {
@@ -493,7 +493,7 @@ export function diffSnapshots(a: Snapshot, b: Snapshot): DiffReport {
   if (a.app.sizeBytes !== b.app.sizeBytes) {
     const delta = b.app.sizeBytes - a.app.sizeBytes;
     const pct = a.app.sizeBytes ? ((delta / a.app.sizeBytes) * 100).toFixed(1) : '∞';
-    findings.push({ severity: 'info', category: 'identity', change: 'changed', title: `Size ${delta >= 0 ? '+' : ''}${(delta / 1048576).toFixed(1)} MB (${delta >= 0 ? '+' : ''}${pct}%), files ${a.app.fileCount} → ${b.app.fileCount}` });
+    findings.push({ severity: 'info', category: 'identity', change: 'changed', title: `Size ${delta >= 0 ? '+' : ''}${formatBytes(delta)} (${delta >= 0 ? '+' : ''}${pct}%), files ${a.app.fileCount} → ${b.app.fileCount}` });
   }
 
   findings.sort(

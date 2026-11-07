@@ -42,7 +42,8 @@ Options:
   --force                           Store a snapshot even if the app has not changed
   --home <dir>                      Data folder (default ~/.updiff, or $UPDIFF_HOME)
   --apps-dir <dir>                  Folder to look for apps (repeatable; default
-                                    /Applications and ~/Applications)
+                                    /Applications and ~/Applications, or
+                                    $UPDIFF_APPS_DIRS, colon-separated)
   --notify                          check: show a notification for each changed app
   --settle <seconds>                check: wait until apps stop changing for this long
   --keep <n>                        check/snapshot: snapshots to keep per app (default 10)
@@ -101,8 +102,10 @@ function parse(argv: string[]) {
   });
 }
 
+/** `$UPDIFF_APPS_DIRS` (colon-separated) overrides the default app folders. */
 function defaultAppsDirs(): string[] {
-  return ['/Applications', join(homedir(), 'Applications')];
+  const fromEnv = process.env.UPDIFF_APPS_DIRS?.split(':').filter(Boolean);
+  return fromEnv?.length ? fromEnv : ['/Applications', join(homedir(), 'Applications')];
 }
 
 /** Apps at the top of each folder and one folder down (for suites like "Adobe X/"). */
@@ -251,7 +254,7 @@ async function cmdSnapshot(ctx: Ctx, args: string[]): Promise<number> {
     ctx.io.out(renderJson(results.map((r) => ({ app: r.app, status: r.status, error: r.error, bundleId: (r.snapshot ?? r.previous)?.app.bundleId, version: (r.snapshot ?? r.previous)?.app.version }))));
   } else {
     const count = (s: SnapshotOutcome['status']): number => results.filter((r) => r.status === s).length;
-    ctx.io.out(`${apps.length} apps: ${count('new')} new, ${count('changed')} changed, ${count('unchanged')} unchanged, ${failed} failed. Stored in ${ctx.store.snapshotsDir}\n`);
+    ctx.io.out(`${apps.length} app${apps.length === 1 ? '' : 's'}: ${count('new')} new, ${count('changed')} changed, ${count('unchanged')} unchanged, ${failed} failed. Stored in ${ctx.store.snapshotsDir}\n`);
   }
   return failed && failed === apps.length ? 1 : 0;
 }
@@ -344,7 +347,7 @@ async function cmdCheck(ctx: Ctx, args: string[], notifyEnabled: boolean, settle
       ctx.io.out(`Report: ${file}\n\n`);
     }
     if (!ctx.quiet || reports.length || failed.length) {
-      const parts = [`Checked ${apps.length} apps`, `${reports.length} updated`];
+      const parts = [`Checked ${apps.length} app${apps.length === 1 ? '' : 's'}`, `${reports.length} updated`];
       if (baseline.length) parts.push(`${baseline.length} new baseline${baseline.length === 1 ? '' : 's'}`);
       if (failed.length) parts.push(`${failed.length} failed (${failed.map((f) => basename(f.app)).join(', ')})`);
       ctx.io.out(`${parts.join(', ')}.\n`);

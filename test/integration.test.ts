@@ -205,7 +205,7 @@ describe('the command line', () => {
 
     let r = await cli(['snapshot', ...base]);
     assert.equal(r.code, 0, r.err);
-    assert.match(r.out, /1 apps: 1 new, 0 changed, 0 unchanged, 0 failed/);
+    assert.match(r.out, /1 app: 1 new, 0 changed, 0 unchanged, 0 failed/);
 
     r = await cli(['snapshot', ...base]);
     assert.match(r.out, /1 unchanged/);
@@ -235,7 +235,7 @@ describe('the command line', () => {
 
     // A second check finds nothing new.
     r = await cli(['check', ...base]);
-    assert.match(r.out, /Checked 1 apps, 0 updated\./);
+    assert.match(r.out, /Checked 1 app, 0 updated\./);
 
     r = await cli(['diff', BUNDLE_ID, '--min-severity', 'high', ...base]);
     assert.equal(r.code, 0, r.err);
