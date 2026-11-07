@@ -1,30 +1,32 @@
 {
   "history": [
     {
-      "version": "157.0.8103.39",
-      "appVersion": "157.0.8103.39",
-      "build": "8103.39",
+      "version": "154.0.8037.58",
+      "appVersion": "154.0.8037.58",
+      "build": "8037.58",
       "url": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
-      "sha256": "26932c4d3f16f6a57e96e9a45a1c4cb9caa806616eaffe7d7366647542dc0dae",
-      "bytes": 282620344,
-      "scannedAt": "2026-11-07T17:49:16.856Z",
-      "fingerprint": "589cf7c58a141fedfa512b02a24350ca"
+      "sha256": "0aea98069829154bfcb6a50220feb063ab57c064da9ab75693f1fdb468a6def4",
+      "bytes": 282964019,
+      "scannedAt": "2026-11-07T18:06:09.417Z",
+      "fingerprint": "fc4e472311a0fdf648edc2e2a0e6a298",
+      "note": "Scanned from the copy Homebrew had cached when 154 was current; that URL now serves a newer release."
     }
   ],
   "cask": "google-chrome",
   "name": "Google Chrome",
   "homepage": "https://www.google.com/chrome/",
   "desc": "Web browser",
-  "lastCheckedAt": "2026-11-07T17:49:05.067Z",
   "latest": {
-    "version": "157.0.8103.39",
-    "appVersion": "157.0.8103.39",
-    "build": "8103.39",
+    "version": "154.0.8037.58",
+    "appVersion": "154.0.8037.58",
+    "build": "8037.58",
     "url": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
-    "sha256": "26932c4d3f16f6a57e96e9a45a1c4cb9caa806616eaffe7d7366647542dc0dae",
-    "bytes": 282620344,
-    "scannedAt": "2026-11-07T17:49:16.856Z",
-    "fingerprint": "589cf7c58a141fedfa512b02a24350ca"
+    "sha256": "0aea98069829154bfcb6a50220feb063ab57c064da9ab75693f1fdb468a6def4",
+    "bytes": 282964019,
+    "scannedAt": "2026-11-07T18:06:09.417Z",
+    "fingerprint": "fc4e472311a0fdf648edc2e2a0e6a298",
+    "note": "Scanned from the copy Homebrew had cached when 154 was current; that URL now serves a newer release."
   },
-  "bundleId": "com.google.Chrome"
+  "bundleId": "com.google.Chrome",
+  "lastCheckedAt": "2026-11-07T18:06:09.417Z"
 }
