@@ -1,13 +1,30 @@
 {
-  "history": [],
+  "history": [
+    {
+      "version": "159.0.1",
+      "appVersion": "159.0.1",
+      "build": "15926.11.2",
+      "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/159.0.1/mac/en-US/Firefox%20159.0.1.dmg",
+      "sha256": "0c214da4439c1eb4cea28a3c141ff112d511aa32c67f9d12e91116569c8d8dda",
+      "bytes": 164974072,
+      "scannedAt": "2026-11-07T17:49:04.965Z",
+      "fingerprint": "a8a994b84b07772dda6d88b88b010e43"
+    }
+  ],
   "cask": "firefox",
   "name": "Mozilla Firefox",
   "homepage": "https://www.mozilla.org/firefox/",
   "desc": "Web browser",
-  "lastCheckedAt": "2026-11-07T17:44:41.758Z",
-  "lastError": {
-    "at": "2026-11-07T17:44:42.909Z",
+  "lastCheckedAt": "2026-11-07T17:48:58.532Z",
+  "latest": {
     "version": "159.0.1",
-    "message": "Could not unpack the tar: tar: Error opening archive: Unrecognized archive format"
-  }
+    "appVersion": "159.0.1",
+    "build": "15926.11.2",
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/159.0.1/mac/en-US/Firefox%20159.0.1.dmg",
+    "sha256": "0c214da4439c1eb4cea28a3c141ff112d511aa32c67f9d12e91116569c8d8dda",
+    "bytes": 164974072,
+    "scannedAt": "2026-11-07T17:49:04.965Z",
+    "fingerprint": "a8a994b84b07772dda6d88b88b010e43"
+  },
+  "bundleId": "org.mozilla.firefox"
 }

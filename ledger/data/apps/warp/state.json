@@ -1,13 +1,30 @@
 {
-  "history": [],
+  "history": [
+    {
+      "version": "0.2026.11.04.08.17.stable_01",
+      "appVersion": "0.2026.11.04.08.17.01",
+      "build": "0.2026.11.04.08.17.01",
+      "url": "https://app.warp.dev/download/brew?version=v0.2026.11.04.08.17.stable_01&package=dmg",
+      "sha256": "d0f78afec7756466ca006e91008b1369b8b3ebd3c7e65805776f4bc33f41aece",
+      "bytes": 340970607,
+      "scannedAt": "2026-11-07T17:49:33.987Z",
+      "fingerprint": "28c7f11ec0e214fd6a347fcb43a6e44d"
+    }
+  ],
   "cask": "warp",
   "name": "Warp",
   "homepage": "https://www.warp.dev/terminal",
   "desc": "Rust-based terminal",
-  "lastCheckedAt": "2026-11-07T17:45:39.960Z",
-  "lastError": {
-    "at": "2026-11-07T17:45:40.085Z",
+  "lastCheckedAt": "2026-11-07T17:49:26.538Z",
+  "latest": {
     "version": "0.2026.11.04.08.17.stable_01",
-    "message": "Download failed: HTTP 404 for https://app.warp.dev/download/brew?version=v0.2026.11.04.08.17.stable_01&package=dmg"
-  }
+    "appVersion": "0.2026.11.04.08.17.01",
+    "build": "0.2026.11.04.08.17.01",
+    "url": "https://app.warp.dev/download/brew?version=v0.2026.11.04.08.17.stable_01&package=dmg",
+    "sha256": "d0f78afec7756466ca006e91008b1369b8b3ebd3c7e65805776f4bc33f41aece",
+    "bytes": 340970607,
+    "scannedAt": "2026-11-07T17:49:33.987Z",
+    "fingerprint": "28c7f11ec0e214fd6a347fcb43a6e44d"
+  },
+  "bundleId": "dev.warp.Warp-Stable"
 }

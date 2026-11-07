@@ -1,13 +1,30 @@
 {
-  "history": [],
+  "history": [
+    {
+      "version": "4.53.280",
+      "appVersion": "4.53.280",
+      "build": "453000280",
+      "url": "https://downloads.slack-edge.com/desktop-releases/mac/arm64/4.53.280/Slack-4.53.280-macOS.dmg",
+      "sha256": "c8a329a74536383fb804655740ef7179652e87449de258f1a8ca5dff5d66dbf4",
+      "bytes": 116686568,
+      "scannedAt": "2026-11-07T17:49:20.077Z",
+      "fingerprint": "778b7284e581e850a2d1136242b10d3f"
+    }
+  ],
   "cask": "slack",
   "name": "Slack",
   "homepage": "https://slack.com/",
   "desc": "Team communication and collaboration software",
-  "lastCheckedAt": "2026-11-07T17:45:16.483Z",
-  "lastError": {
-    "at": "2026-11-07T17:45:18.174Z",
+  "lastCheckedAt": "2026-11-07T17:49:16.978Z",
+  "latest": {
     "version": "4.53.280",
-    "message": "Could not unpack the tar: tar: Error opening archive: Unrecognized archive format"
-  }
+    "appVersion": "4.53.280",
+    "build": "453000280",
+    "url": "https://downloads.slack-edge.com/desktop-releases/mac/arm64/4.53.280/Slack-4.53.280-macOS.dmg",
+    "sha256": "c8a329a74536383fb804655740ef7179652e87449de258f1a8ca5dff5d66dbf4",
+    "bytes": 116686568,
+    "scannedAt": "2026-11-07T17:49:20.077Z",
+    "fingerprint": "778b7284e581e850a2d1136242b10d3f"
+  },
+  "bundleId": "com.tinyspeck.slackmacgap"
 }

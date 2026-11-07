@@ -1,13 +1,30 @@
 {
-  "history": [],
+  "history": [
+    {
+      "version": "1.99.55.0",
+      "appVersion": "157.1.99.55",
+      "build": "199.55",
+      "url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/199.55/Brave-Browser-arm64.dmg",
+      "sha256": "05dd300d93f6cc7b56c9b5b95cfbad5facbd5a6ae8c1f7d0d6be0d162f870b1d",
+      "bytes": 232349697,
+      "scannedAt": "2026-11-07T17:48:58.448Z",
+      "fingerprint": "c09bc5b64fe55f06c3bb9ab2b1038c15"
+    }
+  ],
   "cask": "brave-browser",
   "name": "Brave",
   "homepage": "https://brave.com/",
   "desc": "Web browser focusing on privacy",
-  "lastCheckedAt": "2026-11-07T17:43:48.440Z",
-  "lastError": {
-    "at": "2026-11-07T17:43:50.016Z",
+  "lastCheckedAt": "2026-11-07T17:48:45.454Z",
+  "latest": {
     "version": "1.99.55.0",
-    "message": "Could not unpack the tar: tar: Error opening archive: Unrecognized archive format"
-  }
+    "appVersion": "157.1.99.55",
+    "build": "199.55",
+    "url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/199.55/Brave-Browser-arm64.dmg",
+    "sha256": "05dd300d93f6cc7b56c9b5b95cfbad5facbd5a6ae8c1f7d0d6be0d162f870b1d",
+    "bytes": 232349697,
+    "scannedAt": "2026-11-07T17:48:58.448Z",
+    "fingerprint": "c09bc5b64fe55f06c3bb9ab2b1038c15"
+  },
+  "bundleId": "com.brave.Browser"
 }

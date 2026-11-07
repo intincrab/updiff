@@ -1,13 +1,30 @@
 {
-  "history": [],
+  "history": [
+    {
+      "version": "1.3.8.620",
+      "appVersion": "1.3.8.620",
+      "build": "1.3.8.620",
+      "url": "https://download.scdn.co/SpotifyARM64.dmg",
+      "sha256": "d3da89ccb2348446e9296221ead8356b09b6ac32a52341de549422f0e9102db2",
+      "bytes": 175879363,
+      "scannedAt": "2026-11-07T17:49:26.435Z",
+      "fingerprint": "cf0ef613cfbb8699e46ec3181b081e32"
+    }
+  ],
   "cask": "spotify",
   "name": "Spotify",
   "homepage": "https://www.spotify.com/",
   "desc": "Music streaming service",
-  "lastCheckedAt": "2026-11-07T17:45:18.191Z",
-  "lastError": {
-    "at": "2026-11-07T17:45:21.803Z",
+  "lastCheckedAt": "2026-11-07T17:49:20.136Z",
+  "latest": {
     "version": "1.3.8.620",
-    "message": "Could not unpack the tar: tar: Error opening archive: Unrecognized archive format"
-  }
+    "appVersion": "1.3.8.620",
+    "build": "1.3.8.620",
+    "url": "https://download.scdn.co/SpotifyARM64.dmg",
+    "sha256": "d3da89ccb2348446e9296221ead8356b09b6ac32a52341de549422f0e9102db2",
+    "bytes": 175879363,
+    "scannedAt": "2026-11-07T17:49:26.435Z",
+    "fingerprint": "cf0ef613cfbb8699e46ec3181b081e32"
+  },
+  "bundleId": "com.spotify.client"
 }

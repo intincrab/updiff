@@ -1,192 +1,42 @@
 {
-  "startedAt": "2026-11-07T17:43:33.244Z",
-  "finishedAt": "2026-11-07T17:46:00.936Z",
+  "startedAt": "2026-11-07T17:48:45.280Z",
+  "finishedAt": "2026-11-07T17:49:34.001Z",
   "outcomes": [
     {
-      "cask": "1password",
-      "status": "baseline",
-      "version": "8.12.44",
-      "ms": 6114
-    },
-    {
-      "cask": "alt-tab",
-      "status": "unchanged",
-      "version": "11.10.1",
-      "ms": 105
-    },
-    {
-      "cask": "arc",
-      "status": "baseline",
-      "version": "1.172.1,90370",
-      "ms": 8883
-    },
-    {
       "cask": "brave-browser",
-      "status": "failed",
+      "status": "baseline",
       "version": "1.99.55.0",
-      "error": "Could not unpack the tar: tar: Error opening archive: Unrecognized archive format",
-      "ms": 1670
-    },
-    {
-      "cask": "bruno",
-      "status": "baseline",
-      "version": "4.3.0",
-      "ms": 2796
-    },
-    {
-      "cask": "chatgpt",
-      "status": "baseline",
-      "version": "26.1103.41825",
-      "ms": 18848
-    },
-    {
-      "cask": "claude",
-      "status": "baseline",
-      "version": "4.23118.0,8175c354eda704cea00fdeddfa69cea329dd321a",
-      "ms": 6291
-    },
-    {
-      "cask": "cursor",
-      "status": "baseline",
-      "version": "3.29.9,306d153d51d714882ab7b1bc49649cab624e8a31",
-      "ms": 18501
-    },
-    {
-      "cask": "discord",
-      "status": "baseline",
-      "version": "0.0.421",
-      "ms": 2187
-    },
-    {
-      "cask": "figma",
-      "status": "baseline",
-      "version": "126.11.8",
-      "ms": 3093
+      "ms": 13173
     },
     {
       "cask": "firefox",
-      "status": "failed",
+      "status": "baseline",
       "version": "159.0.1",
-      "error": "Could not unpack the tar: tar: Error opening archive: Unrecognized archive format",
-      "ms": 1176
-    },
-    {
-      "cask": "ghostty",
-      "status": "unchanged",
-      "version": "1.4.0",
-      "ms": 68
+      "ms": 6513
     },
     {
       "cask": "google-chrome",
-      "status": "failed",
+      "status": "baseline",
       "version": "157.0.8103.39",
-      "error": "Could not unpack the tar: tar: Error opening archive: Unrecognized archive format",
-      "ms": 3241
-    },
-    {
-      "cask": "insomnia",
-      "status": "baseline",
-      "version": "13.4.0",
-      "ms": 6718
-    },
-    {
-      "cask": "iterm2",
-      "status": "baseline",
-      "version": "3.7.7",
-      "ms": 2731
-    },
-    {
-      "cask": "linear",
-      "status": "baseline",
-      "version": "1.32.8",
-      "ms": 3600
-    },
-    {
-      "cask": "notion",
-      "status": "baseline",
-      "version": "7.42.3",
-      "ms": 1711
-    },
-    {
-      "cask": "obsidian",
-      "status": "unchanged",
-      "version": "1.15.0",
-      "ms": 61
-    },
-    {
-      "cask": "postman",
-      "status": "baseline",
-      "version": "12.34.0",
-      "ms": 9206
-    },
-    {
-      "cask": "raycast",
-      "status": "baseline",
-      "version": "2.11.1.0",
-      "ms": 3554
-    },
-    {
-      "cask": "rectangle",
-      "status": "unchanged",
-      "version": "2.0.4",
-      "ms": 57
-    },
-    {
-      "cask": "signal",
-      "status": "baseline",
-      "version": "8.34.0",
-      "ms": 2547
+      "ms": 11893
     },
     {
       "cask": "slack",
-      "status": "failed",
+      "status": "baseline",
       "version": "4.53.280",
-      "error": "Could not unpack the tar: tar: Error opening archive: Unrecognized archive format",
-      "ms": 1770
+      "ms": 3219
     },
     {
       "cask": "spotify",
-      "status": "failed",
+      "status": "baseline",
       "version": "1.3.8.620",
-      "error": "Could not unpack the tar: tar: Error opening archive: Unrecognized archive format",
-      "ms": 3629
-    },
-    {
-      "cask": "telegram",
-      "status": "baseline",
-      "version": "13.2.0,283467",
-      "ms": 8202
-    },
-    {
-      "cask": "visual-studio-code",
-      "status": "baseline",
-      "version": "1.145.2",
-      "ms": 9833
+      "ms": 6358
     },
     {
       "cask": "warp",
-      "status": "failed",
+      "status": "baseline",
       "version": "0.2026.11.04.08.17.stable_01",
-      "error": "Download failed: HTTP 404 for https://app.warp.dev/download/brew?version=v0.2026.11.04.08.17.stable_01&package=dmg",
-      "ms": 246
-    },
-    {
-      "cask": "whatsapp",
-      "status": "baseline",
-      "version": "26.44.21",
-      "ms": 7559
-    },
-    {
-      "cask": "zed",
-      "status": "baseline",
-      "version": "1.27.0",
-      "ms": 1974
-    },
-    {
-      "cask": "zoom",
-      "status": "baseline",
-      "version": "7.2.5.90525",
-      "ms": 11317
+      "ms": 7561
     }
   ]
 }
