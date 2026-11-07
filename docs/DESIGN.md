@@ -110,7 +110,7 @@ Formats: `text` (default), `md`, `json`. Use `--min-severity` to hide noise.
 - Real-world runs: snapshot every installed app, then diff the Chrome 154 bundle
   from the Homebrew download cache against the installed Chrome 156.
 
-## Since 0.1.1
+## Added in 0.2.0
 
 | Module | What it adds |
 |---|---|

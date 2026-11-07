@@ -72,9 +72,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          # Notes come from this version's section of CHANGELOG.md.
+          version="${GITHUB_REF_NAME#v}"
+          awk -v v="$version" '/^## / { found = ($2 == v) ; next } found' CHANGELOG.md > "$RUNNER_TEMP/notes.md"
+          if [ -s "$RUNNER_TEMP/notes.md" ]; then notes=(--notes-file "$RUNNER_TEMP/notes.md"); else notes=(--generate-notes); fi
           gh release create "$GITHUB_REF_NAME" \
             "${{ steps.pack.outputs.tarball }}" "${{ steps.pack.outputs.tarball }}.sha256" \
-            --title "updiff $GITHUB_REF_NAME" --generate-notes --verify-tag
+            --title "updiff $GITHUB_REF_NAME" "${notes[@]}" --verify-tag
 
       - uses: actions/upload-artifact@v7
         with:
