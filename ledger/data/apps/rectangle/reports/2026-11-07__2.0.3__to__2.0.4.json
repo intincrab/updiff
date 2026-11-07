@@ -1,0 +1,83 @@
+{
+  "cask": "rectangle",
+  "name": "Rectangle",
+  "detectedAt": "2026-11-07T17:31:41.587Z",
+  "from": {
+    "version": "2.0.3",
+    "appVersion": "2.0.3",
+    "build": "110",
+    "url": "https://github.com/rxhanson/Rectangle/releases/download/v2.0.3/Rectangle2.0.3.dmg",
+    "sha256": "a48883b56fbe3fbbd699a05bc8ddbfce65c0c73c66f71eaebbe9f1fdc5a3dcb5",
+    "bytes": 4730793,
+    "scannedAt": "2026-11-07T17:28:32.302Z",
+    "fingerprint": "8818cb0cc63a28d410001283b7b873eb"
+  },
+  "to": {
+    "version": "2.0.4",
+    "appVersion": "2.0.4",
+    "build": "111",
+    "url": "https://github.com/rxhanson/Rectangle/releases/download/v2.0.4/Rectangle2.0.4.dmg",
+    "sha256": "9f820a2e56bd2c27cdda4fb4556de3cbcfcbac052d9eeb2179d49e2dae277abc",
+    "bytes": 4960820,
+    "scannedAt": "2026-11-07T17:31:41.587Z",
+    "fingerprint": "cc382955278002c799e4d9168a28d242"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Rectangle",
+      "bundleId": "com.knollsoft.Rectangle"
+    },
+    "from": {
+      "version": "2.0.3",
+      "build": "110",
+      "takenAt": "2026-11-07T17:28:32.266Z",
+      "path": "Rectangle 2.0.3 (Homebrew cask rectangle)"
+    },
+    "to": {
+      "version": "2.0.4",
+      "build": "111",
+      "takenAt": "2026-11-07T17:31:41.556Z",
+      "path": "Rectangle 2.0.4 (Homebrew cask rectangle)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "signing",
+        "change": "changed",
+        "title": "Plug-in bundle MASShortcut_MASShortcut.bundle signature changed",
+        "detail": "unsigned → signed",
+        "where": [
+          "Contents/Resources/MASShortcut_MASShortcut.bundle"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "entitlement",
+        "change": "removed",
+        "title": "Entitlement com.apple.application-identifier removed",
+        "where": [
+          "Contents/Frameworks/Sparkle.framework/Versions/B/Autoupdate"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +0.7 MB (+6.8%), files 147 → 152"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 2.0.3 (110) → 2.0.4 (111)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 4
+    },
+    "identical": false
+  }
+}

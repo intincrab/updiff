@@ -1,0 +1,58 @@
+{
+  "startedAt": "2026-11-07T17:30:10.941Z",
+  "finishedAt": "2026-11-07T17:31:41.588Z",
+  "outcomes": [
+    {
+      "cask": "alt-tab",
+      "status": "updated",
+      "version": "11.10.1",
+      "from": "11.10.0",
+      "report": "reports/2026-11-07__11.10.0__to__11.10.1.json",
+      "counts": {
+        "high": 0,
+        "notable": 0,
+        "info": 2
+      },
+      "ms": 2615
+    },
+    {
+      "cask": "ghostty",
+      "status": "updated",
+      "version": "1.4.0",
+      "from": "1.3.1",
+      "report": "reports/2026-11-07__1.3.1__to__1.4.0.json",
+      "counts": {
+        "high": 0,
+        "notable": 1,
+        "info": 4
+      },
+      "ms": 12335
+    },
+    {
+      "cask": "obsidian",
+      "status": "updated",
+      "version": "1.15.0",
+      "from": "1.14.5",
+      "report": "reports/2026-11-07__1.14.5__to__1.15.0.json",
+      "counts": {
+        "high": 0,
+        "notable": 1,
+        "info": 4
+      },
+      "ms": 72743
+    },
+    {
+      "cask": "rectangle",
+      "status": "updated",
+      "version": "2.0.4",
+      "from": "2.0.3",
+      "report": "reports/2026-11-07__2.0.3__to__2.0.4.json",
+      "counts": {
+        "high": 0,
+        "notable": 0,
+        "info": 4
+      },
+      "ms": 2953
+    }
+  ]
+}

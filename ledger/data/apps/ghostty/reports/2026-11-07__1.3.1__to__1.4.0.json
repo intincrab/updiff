@@ -1,0 +1,92 @@
+{
+  "cask": "ghostty",
+  "name": "Ghostty",
+  "detectedAt": "2026-11-07T17:30:25.889Z",
+  "from": {
+    "version": "1.3.1",
+    "appVersion": "1.3.1",
+    "build": "15212",
+    "url": "https://release.files.ghostty.org/1.3.1/Ghostty.dmg",
+    "sha256": "18cff2b0a6cee90eead9c7d3064e808a252a40baf214aa752c1ecb793b8f5f69",
+    "bytes": 33808867,
+    "scannedAt": "2026-11-07T17:28:50.966Z",
+    "fingerprint": "76deafe337034267b805bb40fb09bb5f"
+  },
+  "to": {
+    "version": "1.4.0",
+    "appVersion": "1.4.0",
+    "build": "18457",
+    "url": "https://release.files.ghostty.org/1.4.0/Ghostty.dmg",
+    "sha256": "3a02075dbd24318d778426af41dee5507d53ecc4578ede96912ec9ce6d18d3e8",
+    "bytes": 34084491,
+    "scannedAt": "2026-11-07T17:30:25.889Z",
+    "fingerprint": "5b9422b28edb1ec92acac5040c705037"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Ghostty",
+      "bundleId": "com.mitchellh.ghostty"
+    },
+    "from": {
+      "version": "1.3.1",
+      "build": "15212",
+      "takenAt": "2026-11-07T17:28:50.897Z",
+      "path": "Ghostty 1.3.1 (Homebrew cask ghostty)"
+    },
+    "to": {
+      "version": "1.4.0",
+      "build": "18457",
+      "takenAt": "2026-11-07T17:30:25.823Z",
+      "path": "Ghostty 1.4.0 (Homebrew cask ghostty)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain hypr.land",
+        "detail": "wiki.hypr.land",
+        "where": [
+          "Contents/MacOS/ghostty",
+          "Contents/Resources/ghostty/doc/ghostty.1.html",
+          "Contents/Resources/ghostty/doc/ghostty.5.html"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "Sparkle.framework 2.9.0 → 2.9.6",
+        "where": [
+          "Contents/Frameworks/Sparkle.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "1 domain no longer mentioned",
+        "detail": "hyprland.org"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +4.1 MB (+6.7%), files 597 → 959"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 1.3.1 (15212) → 1.4.0 (18457)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 4
+    },
+    "identical": false
+  }
+}

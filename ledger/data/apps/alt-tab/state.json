@@ -1,0 +1,42 @@
+{
+  "history": [
+    {
+      "version": "11.10.1",
+      "appVersion": "11.10.1",
+      "build": "11.10.1",
+      "url": "https://github.com/lwouis/alt-tab-macos/releases/download/v11.10.1/AltTab-11.10.1.zip",
+      "sha256": "aa353197537ccfd378dd4a7ff43030561ce7c62267dd0b31b385691b0e7f594c",
+      "bytes": 4831056,
+      "scannedAt": "2026-11-07T17:30:13.555Z",
+      "fingerprint": "c377548f031d71787917d662f8eba248",
+      "report": "reports/2026-11-07__11.10.0__to__11.10.1.json"
+    },
+    {
+      "version": "11.10.0",
+      "appVersion": "11.10.0",
+      "build": "11.10.0",
+      "url": "https://github.com/lwouis/alt-tab-macos/releases/download/v11.10.0/AltTab-11.10.0.zip",
+      "sha256": "579a68222ab181bf56c64d1154aa47c9d623a921e5b13da9398b24e209892e23",
+      "bytes": 4828530,
+      "scannedAt": "2026-11-07T17:28:39.230Z",
+      "fingerprint": "28f94c6049dbcaad785c9c91d879567a"
+    }
+  ],
+  "cask": "alt-tab",
+  "name": "AltTab",
+  "homepage": "https://alt-tab.app/",
+  "desc": "Enable Windows-like alt-tab",
+  "latest": {
+    "version": "11.10.1",
+    "appVersion": "11.10.1",
+    "build": "11.10.1",
+    "url": "https://github.com/lwouis/alt-tab-macos/releases/download/v11.10.1/AltTab-11.10.1.zip",
+    "sha256": "aa353197537ccfd378dd4a7ff43030561ce7c62267dd0b31b385691b0e7f594c",
+    "bytes": 4831056,
+    "scannedAt": "2026-11-07T17:30:13.555Z",
+    "fingerprint": "c377548f031d71787917d662f8eba248",
+    "report": "reports/2026-11-07__11.10.0__to__11.10.1.json"
+  },
+  "bundleId": "com.lwouis.alt-tab-macos",
+  "lastCheckedAt": "2026-11-07T17:30:11.296Z"
+}

@@ -1,0 +1,42 @@
+{
+  "history": [
+    {
+      "version": "1.15.0",
+      "appVersion": "1.15.0",
+      "build": "1.15.0",
+      "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.15.0/Obsidian-1.15.0.dmg",
+      "sha256": "d3f837e6fd3efaf65fa0bec987b18296982995d4ddae3171a7f7f67e0e2b7aa8",
+      "bytes": 233228137,
+      "scannedAt": "2026-11-07T17:31:38.630Z",
+      "fingerprint": "143b3ca8b64a4ad4395feae9bbdef244",
+      "report": "reports/2026-11-07__1.14.5__to__1.15.0.json"
+    },
+    {
+      "version": "1.14.5",
+      "appVersion": "1.14.5",
+      "build": "1.14.5",
+      "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.5/Obsidian-1.14.5.dmg",
+      "sha256": "be79e6410d80fa705218aa4e8cb24ce8418cf16e13be4036227a5659b1f6aab2",
+      "bytes": 234801441,
+      "scannedAt": "2026-11-07T17:30:05.825Z",
+      "fingerprint": "fec14f7804c5b897bfc768fb18b7e0fc"
+    }
+  ],
+  "cask": "obsidian",
+  "name": "Obsidian",
+  "homepage": "https://obsidian.md/",
+  "desc": "Knowledge base that works on top of a local folder of plain text Markdown files",
+  "latest": {
+    "version": "1.15.0",
+    "appVersion": "1.15.0",
+    "build": "1.15.0",
+    "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.15.0/Obsidian-1.15.0.dmg",
+    "sha256": "d3f837e6fd3efaf65fa0bec987b18296982995d4ddae3171a7f7f67e0e2b7aa8",
+    "bytes": 233228137,
+    "scannedAt": "2026-11-07T17:31:38.630Z",
+    "fingerprint": "143b3ca8b64a4ad4395feae9bbdef244",
+    "report": "reports/2026-11-07__1.14.5__to__1.15.0.json"
+  },
+  "bundleId": "md.obsidian",
+  "lastCheckedAt": "2026-11-07T17:30:26.238Z"
+}
