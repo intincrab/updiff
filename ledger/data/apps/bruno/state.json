@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "version": "4.3.0",
+      "appVersion": "4.3.0",
+      "build": "4.3.0",
+      "url": "https://github.com/usebruno/bruno/releases/download/v4.3.0/bruno_4.3.0_arm64_mac.dmg",
+      "sha256": "bb4c4d8de817a6f529880627606137fd16346ddece547c6a0862e84bd1cc69bf",
+      "bytes": 167922780,
+      "scannedAt": "2026-11-07T17:43:52.804Z",
+      "fingerprint": "b70c1b26517936cd6e892fb36976d61f"
+    }
+  ],
+  "cask": "bruno",
+  "name": "Bruno",
+  "homepage": "https://www.usebruno.com/",
+  "desc": "Open source IDE for exploring and testing APIs",
+  "lastCheckedAt": "2026-11-07T17:43:50.072Z",
+  "latest": {
+    "version": "4.3.0",
+    "appVersion": "4.3.0",
+    "build": "4.3.0",
+    "url": "https://github.com/usebruno/bruno/releases/download/v4.3.0/bruno_4.3.0_arm64_mac.dmg",
+    "sha256": "bb4c4d8de817a6f529880627606137fd16346ddece547c6a0862e84bd1cc69bf",
+    "bytes": 167922780,
+    "scannedAt": "2026-11-07T17:43:52.804Z",
+    "fingerprint": "b70c1b26517936cd6e892fb36976d61f"
+  },
+  "bundleId": "com.usebruno.app"
+}

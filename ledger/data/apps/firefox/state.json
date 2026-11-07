@@ -1,0 +1,13 @@
+{
+  "history": [],
+  "cask": "firefox",
+  "name": "Mozilla Firefox",
+  "homepage": "https://www.mozilla.org/firefox/",
+  "desc": "Web browser",
+  "lastCheckedAt": "2026-11-07T17:44:41.758Z",
+  "lastError": {
+    "at": "2026-11-07T17:44:42.909Z",
+    "version": "159.0.1",
+    "message": "Could not unpack the tar: tar: Error opening archive: Unrecognized archive format"
+  }
+}

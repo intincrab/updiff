@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "version": "8.34.0",
+      "appVersion": "8.34.0",
+      "build": "1",
+      "url": "https://updates.signal.org/desktop/signal-desktop-mac-arm64-8.34.0.zip",
+      "sha256": "434c018ca95f8bee716a2dbeef0a17dba072c1242ad420ae312399f7934ed2f5",
+      "bytes": 146309147,
+      "scannedAt": "2026-11-07T17:45:16.398Z",
+      "fingerprint": "507546720272529c613110575b6f2e29"
+    }
+  ],
+  "cask": "signal",
+  "name": "Signal",
+  "homepage": "https://signal.org/",
+  "desc": "Instant messaging application focusing on security",
+  "lastCheckedAt": "2026-11-07T17:45:13.908Z",
+  "latest": {
+    "version": "8.34.0",
+    "appVersion": "8.34.0",
+    "build": "1",
+    "url": "https://updates.signal.org/desktop/signal-desktop-mac-arm64-8.34.0.zip",
+    "sha256": "434c018ca95f8bee716a2dbeef0a17dba072c1242ad420ae312399f7934ed2f5",
+    "bytes": 146309147,
+    "scannedAt": "2026-11-07T17:45:16.398Z",
+    "fingerprint": "507546720272529c613110575b6f2e29"
+  },
+  "bundleId": "org.whispersystems.signal-desktop"
+}

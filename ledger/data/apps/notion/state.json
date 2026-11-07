@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "version": "7.42.3",
+      "appVersion": "7.42.3",
+      "build": "7.42.3",
+      "url": "https://desktop-release.notion-static.com/Notion-7.42.3-arm64.dmg",
+      "sha256": "47708496978b16cbf5fb9da7dab1b4496f3e7fddecc15adf785223399373d3a3",
+      "bytes": 136229832,
+      "scannedAt": "2026-11-07T17:45:00.974Z",
+      "fingerprint": "a13f3f76f72c7d81b8f76c8ffc948c5e"
+    }
+  ],
+  "cask": "notion",
+  "name": "Notion",
+  "homepage": "https://www.notion.com/",
+  "desc": "App to write, plan, collaborate, and get organised",
+  "lastCheckedAt": "2026-11-07T17:44:59.323Z",
+  "latest": {
+    "version": "7.42.3",
+    "appVersion": "7.42.3",
+    "build": "7.42.3",
+    "url": "https://desktop-release.notion-static.com/Notion-7.42.3-arm64.dmg",
+    "sha256": "47708496978b16cbf5fb9da7dab1b4496f3e7fddecc15adf785223399373d3a3",
+    "bytes": 136229832,
+    "scannedAt": "2026-11-07T17:45:00.974Z",
+    "fingerprint": "a13f3f76f72c7d81b8f76c8ffc948c5e"
+  },
+  "bundleId": "notion.id"
+}

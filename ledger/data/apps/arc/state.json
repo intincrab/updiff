@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "version": "1.172.1,90370",
+      "appVersion": "1.172.1",
+      "build": "90370",
+      "url": "https://releases.arc.net/release/Arc-1.172.1-90370.zip",
+      "sha256": "842aea310f2db2adf7c00399a905684177fe0f640109f993357acc4592dbd07e",
+      "bytes": 462139839,
+      "scannedAt": "2026-11-07T17:43:48.169Z",
+      "fingerprint": "a38f93dbf1f016b4c23b74a97ae58307"
+    }
+  ],
+  "cask": "arc",
+  "name": "Arc",
+  "homepage": "https://arc.net/",
+  "desc": "Chromium based browser",
+  "lastCheckedAt": "2026-11-07T17:43:39.530Z",
+  "latest": {
+    "version": "1.172.1,90370",
+    "appVersion": "1.172.1",
+    "build": "90370",
+    "url": "https://releases.arc.net/release/Arc-1.172.1-90370.zip",
+    "sha256": "842aea310f2db2adf7c00399a905684177fe0f640109f993357acc4592dbd07e",
+    "bytes": 462139839,
+    "scannedAt": "2026-11-07T17:43:48.169Z",
+    "fingerprint": "a38f93dbf1f016b4c23b74a97ae58307"
+  },
+  "bundleId": "company.thebrowser.Browser"
+}

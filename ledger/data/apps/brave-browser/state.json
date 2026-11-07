@@ -1,0 +1,13 @@
+{
+  "history": [],
+  "cask": "brave-browser",
+  "name": "Brave",
+  "homepage": "https://brave.com/",
+  "desc": "Web browser focusing on privacy",
+  "lastCheckedAt": "2026-11-07T17:43:48.440Z",
+  "lastError": {
+    "at": "2026-11-07T17:43:50.016Z",
+    "version": "1.99.55.0",
+    "message": "Could not unpack the tar: tar: Error opening archive: Unrecognized archive format"
+  }
+}

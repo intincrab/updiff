@@ -1,0 +1,13 @@
+{
+  "history": [],
+  "cask": "warp",
+  "name": "Warp",
+  "homepage": "https://www.warp.dev/terminal",
+  "desc": "Rust-based terminal",
+  "lastCheckedAt": "2026-11-07T17:45:39.960Z",
+  "lastError": {
+    "at": "2026-11-07T17:45:40.085Z",
+    "version": "0.2026.11.04.08.17.stable_01",
+    "message": "Download failed: HTTP 404 for https://app.warp.dev/download/brew?version=v0.2026.11.04.08.17.stable_01&package=dmg"
+  }
+}

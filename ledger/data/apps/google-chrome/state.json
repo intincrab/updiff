@@ -1,0 +1,13 @@
+{
+  "history": [],
+  "cask": "google-chrome",
+  "name": "Google Chrome",
+  "homepage": "https://www.google.com/chrome/",
+  "desc": "Web browser",
+  "lastCheckedAt": "2026-11-07T17:44:42.994Z",
+  "lastError": {
+    "at": "2026-11-07T17:44:46.218Z",
+    "version": "157.0.8103.39",
+    "message": "Could not unpack the tar: tar: Error opening archive: Unrecognized archive format"
+  }
+}

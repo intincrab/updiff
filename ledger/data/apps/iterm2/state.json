@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "version": "3.7.7",
+      "appVersion": "3.7.7",
+      "build": "3.7.7",
+      "url": "https://iterm2.com/downloads/stable/iTerm2-3_7_7.zip",
+      "sha256": "549eb2b21464d7f4606165e51c36a6b1a252ac9a79958228a240152412759da2",
+      "bytes": 64888234,
+      "scannedAt": "2026-11-07T17:44:55.645Z",
+      "fingerprint": "b145cdf9dd14831c5327372020be8afd"
+    }
+  ],
+  "cask": "iterm2",
+  "name": "iTerm2",
+  "homepage": "https://iterm2.com/",
+  "desc": "Terminal emulator as alternative to Apple's Terminal app",
+  "lastCheckedAt": "2026-11-07T17:44:53.032Z",
+  "latest": {
+    "version": "3.7.7",
+    "appVersion": "3.7.7",
+    "build": "3.7.7",
+    "url": "https://iterm2.com/downloads/stable/iTerm2-3_7_7.zip",
+    "sha256": "549eb2b21464d7f4606165e51c36a6b1a252ac9a79958228a240152412759da2",
+    "bytes": 64888234,
+    "scannedAt": "2026-11-07T17:44:55.645Z",
+    "fingerprint": "b145cdf9dd14831c5327372020be8afd"
+  },
+  "bundleId": "com.googlecode.iterm2"
+}

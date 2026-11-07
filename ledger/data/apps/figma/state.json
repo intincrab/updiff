@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "version": "126.11.8",
+      "appVersion": "126.11.8",
+      "build": "126.11.8",
+      "url": "https://desktop.figma.com/mac-arm/Figma-126.11.8.zip",
+      "sha256": "5f87068e71d8d7ec4f25d49f5ea820a964b62a438882cf43f5391bf036d27b7e",
+      "bytes": 138336534,
+      "scannedAt": "2026-11-07T17:44:41.728Z",
+      "fingerprint": "7c8fe779552ff6b69ba3ebd7f7bdfdf8"
+    }
+  ],
+  "cask": "figma",
+  "name": "Figma",
+  "homepage": "https://www.figma.com/",
+  "desc": "Collaborative team software",
+  "lastCheckedAt": "2026-11-07T17:44:38.702Z",
+  "latest": {
+    "version": "126.11.8",
+    "appVersion": "126.11.8",
+    "build": "126.11.8",
+    "url": "https://desktop.figma.com/mac-arm/Figma-126.11.8.zip",
+    "sha256": "5f87068e71d8d7ec4f25d49f5ea820a964b62a438882cf43f5391bf036d27b7e",
+    "bytes": 138336534,
+    "scannedAt": "2026-11-07T17:44:41.728Z",
+    "fingerprint": "7c8fe779552ff6b69ba3ebd7f7bdfdf8"
+  },
+  "bundleId": "com.figma.Desktop"
+}

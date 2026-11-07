@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "version": "1.27.0",
+      "appVersion": "1.27.0",
+      "build": "20261104.154313",
+      "url": "https://github.com/zed-industries/zed/releases/download/v1.27.0/Zed-aarch64.dmg",
+      "sha256": "8dcfdfaa94917cece0ff52ab6e3f7117c6647b78f32d266684cf0c13462d76a8",
+      "bytes": 88169290,
+      "scannedAt": "2026-11-07T17:45:49.613Z",
+      "fingerprint": "aafd1a984b135f0454c049eefacb91ec"
+    }
+  ],
+  "cask": "zed",
+  "name": "Zed",
+  "homepage": "https://zed.dev/",
+  "desc": "Multiplayer code editor",
+  "lastCheckedAt": "2026-11-07T17:45:47.742Z",
+  "latest": {
+    "version": "1.27.0",
+    "appVersion": "1.27.0",
+    "build": "20261104.154313",
+    "url": "https://github.com/zed-industries/zed/releases/download/v1.27.0/Zed-aarch64.dmg",
+    "sha256": "8dcfdfaa94917cece0ff52ab6e3f7117c6647b78f32d266684cf0c13462d76a8",
+    "bytes": 88169290,
+    "scannedAt": "2026-11-07T17:45:49.613Z",
+    "fingerprint": "aafd1a984b135f0454c049eefacb91ec"
+  },
+  "bundleId": "dev.zed.Zed"
+}

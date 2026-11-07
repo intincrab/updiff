@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "version": "12.34.0",
+      "appVersion": "12.34.0",
+      "build": "12.34.0",
+      "url": "https://dl.pstmn.io/download/version/12.34.0/osx_arm64",
+      "sha256": "bff311c819c450eea1f70314d68601450f4fcb6abd4cfd935f1c6641440b2f70",
+      "bytes": 206992793,
+      "scannedAt": "2026-11-07T17:45:10.239Z",
+      "fingerprint": "df4b8fa9c5f62d2cadc70ac669f65299"
+    }
+  ],
+  "cask": "postman",
+  "name": "Postman",
+  "homepage": "https://www.postman.com/",
+  "desc": "Collaboration platform for API development",
+  "lastCheckedAt": "2026-11-07T17:45:01.093Z",
+  "latest": {
+    "version": "12.34.0",
+    "appVersion": "12.34.0",
+    "build": "12.34.0",
+    "url": "https://dl.pstmn.io/download/version/12.34.0/osx_arm64",
+    "sha256": "bff311c819c450eea1f70314d68601450f4fcb6abd4cfd935f1c6641440b2f70",
+    "bytes": 206992793,
+    "scannedAt": "2026-11-07T17:45:10.239Z",
+    "fingerprint": "df4b8fa9c5f62d2cadc70ac669f65299"
+  },
+  "bundleId": "com.postmanlabs.mac"
+}

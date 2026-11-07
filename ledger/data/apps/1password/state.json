@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "version": "8.12.44",
+      "appVersion": "8.12.44",
+      "build": "8.12.44",
+      "url": "https://downloads.1password.com/mac/1Password-8.12.44-aarch64.zip",
+      "sha256": "9b24b1464bf43780f04e1afaf8b0742f2163ca94db8b0620059e7a05a2498fa1",
+      "bytes": 223397033,
+      "scannedAt": "2026-11-07T17:43:39.342Z",
+      "fingerprint": "c0749ea484b5bfd02c120b2d5c34ccb6"
+    }
+  ],
+  "cask": "1password",
+  "name": "1Password",
+  "homepage": "https://1password.com/",
+  "desc": "Password manager that keeps all passwords secure behind one password",
+  "lastCheckedAt": "2026-11-07T17:43:33.344Z",
+  "latest": {
+    "version": "8.12.44",
+    "appVersion": "8.12.44",
+    "build": "8.12.44",
+    "url": "https://downloads.1password.com/mac/1Password-8.12.44-aarch64.zip",
+    "sha256": "9b24b1464bf43780f04e1afaf8b0742f2163ca94db8b0620059e7a05a2498fa1",
+    "bytes": 223397033,
+    "scannedAt": "2026-11-07T17:43:39.342Z",
+    "fingerprint": "c0749ea484b5bfd02c120b2d5c34ccb6"
+  },
+  "bundleId": "com.1password.1password"
+}

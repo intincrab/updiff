@@ -1,0 +1,13 @@
+{
+  "history": [],
+  "cask": "slack",
+  "name": "Slack",
+  "homepage": "https://slack.com/",
+  "desc": "Team communication and collaboration software",
+  "lastCheckedAt": "2026-11-07T17:45:16.483Z",
+  "lastError": {
+    "at": "2026-11-07T17:45:18.174Z",
+    "version": "4.53.280",
+    "message": "Could not unpack the tar: tar: Error opening archive: Unrecognized archive format"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "version": "0.0.421",
+      "appVersion": "0.0.421",
+      "build": "0.0.421",
+      "url": "https://dl.discordapp.net/apps/osx/0.0.421/Discord.dmg",
+      "sha256": "5862c7663124e27284ef513eddf039ee8ae8b6cb6df222afb2779e633f5b5c6a",
+      "bytes": 234045149,
+      "scannedAt": "2026-11-07T17:44:38.632Z",
+      "fingerprint": "8a50b97bdba7bfdea937f94e604fe038"
+    }
+  ],
+  "cask": "discord",
+  "name": "Discord",
+  "homepage": "https://discord.com/",
+  "desc": "Voice and text chat software",
+  "lastCheckedAt": "2026-11-07T17:44:36.551Z",
+  "latest": {
+    "version": "0.0.421",
+    "appVersion": "0.0.421",
+    "build": "0.0.421",
+    "url": "https://dl.discordapp.net/apps/osx/0.0.421/Discord.dmg",
+    "sha256": "5862c7663124e27284ef513eddf039ee8ae8b6cb6df222afb2779e633f5b5c6a",
+    "bytes": 234045149,
+    "scannedAt": "2026-11-07T17:44:38.632Z",
+    "fingerprint": "8a50b97bdba7bfdea937f94e604fe038"
+  },
+  "bundleId": "com.hnc.Discord"
+}

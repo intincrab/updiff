@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "version": "1.32.8",
+      "appVersion": "1.32.8",
+      "build": "1.32.8",
+      "url": "https://releases.linear.app/Linear-1.32.8-universal.dmg",
+      "sha256": "08d42b917bc44068231d47a9e14ae9fdac2ca95fa6b451e810fcda0f756ed4a3",
+      "bytes": 234444861,
+      "scannedAt": "2026-11-07T17:44:59.259Z",
+      "fingerprint": "1bb744c7a33fb60d16017f600e566db7"
+    }
+  ],
+  "cask": "linear",
+  "name": "Linear",
+  "homepage": "https://linear.app/",
+  "desc": "App to manage software development and track bugs",
+  "lastCheckedAt": "2026-11-07T17:44:55.739Z",
+  "latest": {
+    "version": "1.32.8",
+    "appVersion": "1.32.8",
+    "build": "1.32.8",
+    "url": "https://releases.linear.app/Linear-1.32.8-universal.dmg",
+    "sha256": "08d42b917bc44068231d47a9e14ae9fdac2ca95fa6b451e810fcda0f756ed4a3",
+    "bytes": 234444861,
+    "scannedAt": "2026-11-07T17:44:59.259Z",
+    "fingerprint": "1bb744c7a33fb60d16017f600e566db7"
+  },
+  "bundleId": "com.linear"
+}
