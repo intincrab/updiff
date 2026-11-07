@@ -1,12 +1,19 @@
 {
-  "startedAt": "2026-11-07T17:54:52.560Z",
-  "finishedAt": "2026-11-07T17:54:52.745Z",
+  "startedAt": "2026-11-07T18:07:28.085Z",
+  "finishedAt": "2026-11-07T18:07:39.844Z",
   "outcomes": [
     {
-      "cask": "rectangle",
-      "status": "unchanged",
-      "version": "2.0.4",
-      "ms": 183
+      "cask": "google-chrome",
+      "status": "updated",
+      "version": "157.0.8103.39",
+      "from": "154.0.8037.58",
+      "report": "reports/2026-11-07__154.0.8037.58__to__157.0.8103.39.json",
+      "counts": {
+        "high": 0,
+        "notable": 3,
+        "info": 7
+      },
+      "ms": 11756
     }
   ]
 }

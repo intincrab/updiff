@@ -1,0 +1,141 @@
+{
+  "cask": "google-chrome",
+  "name": "Google Chrome",
+  "detectedAt": "2026-11-07T18:07:39.797Z",
+  "from": {
+    "version": "154.0.8037.58",
+    "appVersion": "154.0.8037.58",
+    "build": "8037.58",
+    "url": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
+    "sha256": "0aea98069829154bfcb6a50220feb063ab57c064da9ab75693f1fdb468a6def4",
+    "bytes": 282964019,
+    "scannedAt": "2026-11-07T18:06:09.417Z",
+    "fingerprint": "fc4e472311a0fdf648edc2e2a0e6a298",
+    "note": "Scanned from the copy Homebrew had cached when 154 was current; that URL now serves a newer release."
+  },
+  "to": {
+    "version": "157.0.8103.39",
+    "appVersion": "157.0.8103.39",
+    "build": "8103.39",
+    "url": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
+    "sha256": "26932c4d3f16f6a57e96e9a45a1c4cb9caa806616eaffe7d7366647542dc0dae",
+    "bytes": 282620344,
+    "scannedAt": "2026-11-07T18:07:39.797Z",
+    "fingerprint": "589cf7c58a141fedfa512b02a24350ca"
+  },
+  "deep": true,
+  "report": {
+    "app": {
+      "name": "Google Chrome",
+      "bundleId": "com.google.Chrome"
+    },
+    "from": {
+      "version": "154.0.8037.58",
+      "build": "8037.58",
+      "takenAt": "2026-11-07T18:06:09.327Z",
+      "path": "Google Chrome 154.0.8037.58 (Homebrew cask google-chrome)"
+    },
+    "to": {
+      "version": "157.0.8103.39",
+      "build": "8103.39",
+      "takenAt": "2026-11-07T18:07:39.673Z",
+      "path": "Google Chrome 157.0.8103.39 (Homebrew cask google-chrome)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain alert-hub.org",
+        "detail": "www.alert-hub.org",
+        "where": [
+          "Contents/Frameworks/Google Chrome Framework.framework/Versions/157.0.8103.39/Google Chrome Framework"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain chromestorage.goog",
+        "detail": "chromestorage.goog",
+        "where": [
+          "Contents/Frameworks/Google Chrome Framework.framework/Versions/157.0.8103.39/Google Chrome Framework"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain perplexity.ai",
+        "detail": "frontend-cdn.perplexity.ai, suggest.perplexity.ai, www.perplexity.ai",
+        "where": [
+          "Contents/Frameworks/Google Chrome Framework.framework/Versions/157.0.8103.39/Google Chrome Framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "Google Chrome Framework.framework 154.0.8037.58 → 157.0.8103.39",
+        "where": [
+          "Contents/Frameworks/Google Chrome Framework.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "1 domain no longer mentioned",
+        "detail": "youtube-nocookie.com"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under chromium.org",
+        "detail": "g-issues.chromium.org",
+        "where": [
+          "Contents/Frameworks/Google Chrome Framework.framework/Versions/157.0.8103.39/Google Chrome Framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under google.com",
+        "detail": "groups.google.com, vertexaisearch.cloud.google.com",
+        "where": [
+          "Contents/Frameworks/Google Chrome Framework.framework/Versions/157.0.8103.39/Google Chrome Framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under googleapis.com",
+        "detail": "cryptauthfidoenrollment.pa.googleapis.com, federatedcompute-pa.googleapis.com",
+        "where": [
+          "Contents/Frameworks/Google Chrome Framework.framework/Versions/157.0.8103.39/Google Chrome Framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +17.9 MB (+2.5%), files 382 → 383"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 154.0.8037.58 (8037.58) → 157.0.8103.39 (8103.39)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 3,
+      "info": 7
+    },
+    "identical": false
+  }
+}
