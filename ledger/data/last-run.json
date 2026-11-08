@@ -1,19 +1,186 @@
 {
-  "startedAt": "2026-11-07T18:07:28.085Z",
-  "finishedAt": "2026-11-07T18:07:39.844Z",
+  "startedAt": "2026-11-08T13:40:03.882Z",
+  "finishedAt": "2026-11-08T13:40:06.240Z",
   "outcomes": [
     {
+      "cask": "1password",
+      "status": "unchanged",
+      "version": "8.12.44",
+      "ms": 162
+    },
+    {
+      "cask": "alt-tab",
+      "status": "unchanged",
+      "version": "11.10.1",
+      "ms": 89
+    },
+    {
+      "cask": "arc",
+      "status": "unchanged",
+      "version": "1.172.1,90370",
+      "ms": 78
+    },
+    {
+      "cask": "brave-browser",
+      "status": "unchanged",
+      "version": "1.99.55.0",
+      "ms": 80
+    },
+    {
+      "cask": "bruno",
+      "status": "unchanged",
+      "version": "4.3.0",
+      "ms": 78
+    },
+    {
+      "cask": "chatgpt",
+      "status": "unchanged",
+      "version": "26.1103.41825",
+      "ms": 73
+    },
+    {
+      "cask": "claude",
+      "status": "unchanged",
+      "version": "4.23118.0,8175c354eda704cea00fdeddfa69cea329dd321a",
+      "ms": 73
+    },
+    {
+      "cask": "cursor",
+      "status": "unchanged",
+      "version": "3.29.9,306d153d51d714882ab7b1bc49649cab624e8a31",
+      "ms": 86
+    },
+    {
+      "cask": "discord",
+      "status": "unchanged",
+      "version": "0.0.421",
+      "ms": 76
+    },
+    {
+      "cask": "figma",
+      "status": "unchanged",
+      "version": "126.11.8",
+      "ms": 73
+    },
+    {
+      "cask": "firefox",
+      "status": "unchanged",
+      "version": "159.0.1",
+      "ms": 79
+    },
+    {
+      "cask": "ghostty",
+      "status": "unchanged",
+      "version": "1.4.0",
+      "ms": 74
+    },
+    {
       "cask": "google-chrome",
-      "status": "updated",
+      "status": "unchanged",
       "version": "157.0.8103.39",
-      "from": "154.0.8037.58",
-      "report": "reports/2026-11-07__154.0.8037.58__to__157.0.8103.39.json",
-      "counts": {
-        "high": 0,
-        "notable": 3,
-        "info": 7
-      },
-      "ms": 11756
+      "ms": 72
+    },
+    {
+      "cask": "insomnia",
+      "status": "unchanged",
+      "version": "13.4.0",
+      "ms": 76
+    },
+    {
+      "cask": "iterm2",
+      "status": "unchanged",
+      "version": "3.7.7",
+      "ms": 73
+    },
+    {
+      "cask": "linear",
+      "status": "unchanged",
+      "version": "1.32.8",
+      "ms": 76
+    },
+    {
+      "cask": "notion",
+      "status": "unchanged",
+      "version": "7.42.3",
+      "ms": 75
+    },
+    {
+      "cask": "obsidian",
+      "status": "unchanged",
+      "version": "1.15.0",
+      "ms": 71
+    },
+    {
+      "cask": "postman",
+      "status": "unchanged",
+      "version": "12.34.0",
+      "ms": 79
+    },
+    {
+      "cask": "raycast",
+      "status": "unchanged",
+      "version": "2.11.1.0",
+      "ms": 84
+    },
+    {
+      "cask": "rectangle",
+      "status": "unchanged",
+      "version": "2.0.4",
+      "ms": 81
+    },
+    {
+      "cask": "signal",
+      "status": "unchanged",
+      "version": "8.34.0",
+      "ms": 78
+    },
+    {
+      "cask": "slack",
+      "status": "unchanged",
+      "version": "4.53.280",
+      "ms": 77
+    },
+    {
+      "cask": "spotify",
+      "status": "unchanged",
+      "version": "1.3.8.620",
+      "ms": 74
+    },
+    {
+      "cask": "telegram",
+      "status": "unchanged",
+      "version": "13.2.0,283467",
+      "ms": 78
+    },
+    {
+      "cask": "visual-studio-code",
+      "status": "unchanged",
+      "version": "1.145.2",
+      "ms": 79
+    },
+    {
+      "cask": "warp",
+      "status": "unchanged",
+      "version": "0.2026.11.04.08.17.stable_01",
+      "ms": 74
+    },
+    {
+      "cask": "whatsapp",
+      "status": "unchanged",
+      "version": "26.44.21",
+      "ms": 78
+    },
+    {
+      "cask": "zed",
+      "status": "unchanged",
+      "version": "1.27.0",
+      "ms": 107
+    },
+    {
+      "cask": "zoom",
+      "status": "unchanged",
+      "version": "7.2.5.90525",
+      "ms": 4
     }
   ]
 }
