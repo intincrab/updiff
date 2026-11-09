@@ -1,0 +1,77 @@
+{
+  "cask": "chatgpt",
+  "name": "ChatGPT",
+  "detectedAt": "2026-11-09T16:40:59.223Z",
+  "from": {
+    "version": "26.1103.41825",
+    "appVersion": "26.1103.41825",
+    "build": "25679",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1103.41825.zip",
+    "sha256": "0b30ce5cac787893bf574b549b1d32cf363f21302935538acd369c668df2fd1f",
+    "bytes": 815395836,
+    "scannedAt": "2026-11-07T17:44:11.579Z",
+    "fingerprint": "e8570e30a2690ead6bf0c8c9df3dad39"
+  },
+  "to": {
+    "version": "26.1103.60933",
+    "appVersion": "26.1103.60933",
+    "build": "25894",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1103.60933.zip",
+    "sha256": "1d671e7784e0e379f7293ebcfeac826c2a297524ea806cd55e994068d019e388",
+    "bytes": 815401502,
+    "scannedAt": "2026-11-09T16:40:59.223Z",
+    "fingerprint": "2c028f76ae1339f4c568b391129f026a"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "ChatGPT",
+      "bundleId": "com.openai.codex"
+    },
+    "from": {
+      "version": "26.1103.41825",
+      "build": "25679",
+      "takenAt": "2026-11-07T17:44:11.249Z",
+      "path": "ChatGPT 26.1103.41825 (Homebrew cask chatgpt)"
+    },
+    "to": {
+      "version": "26.1103.60933",
+      "build": "25894",
+      "takenAt": "2026-11-09T16:40:58.729Z",
+      "path": "ChatGPT 26.1103.60933 (Homebrew cask chatgpt)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "updater",
+        "change": "added",
+        "title": "Update feed set in the code",
+        "detail": "https://oaisidekickupdates.blob.core.windows.net/mac/cua/alpha/appcast.xml, https://persistent.oaistatic.com/codex-app-prod/appcast.xml, https://updates.oaistatic.com/codex/app/appcast",
+        "where": [
+          "ChatGPT 26.1103.60933 (Homebrew cask chatgpt)"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +7.7 KB (+0.0%), files 4079 → 4079"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 26.1103.41825 (25679) → 26.1103.60933 (25894)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 2
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}

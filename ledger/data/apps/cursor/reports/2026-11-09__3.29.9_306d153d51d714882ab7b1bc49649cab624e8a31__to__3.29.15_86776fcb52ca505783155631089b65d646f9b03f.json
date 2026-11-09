@@ -1,0 +1,87 @@
+{
+  "cask": "cursor",
+  "name": "Cursor",
+  "detectedAt": "2026-11-09T16:41:23.971Z",
+  "from": {
+    "version": "3.29.9,306d153d51d714882ab7b1bc49649cab624e8a31",
+    "appVersion": "3.29.9",
+    "build": "3.29.9",
+    "url": "https://downloads.cursor.com/production/306d153d51d714882ab7b1bc49649cab624e8a31/darwin/arm64/Cursor-darwin-arm64.zip",
+    "sha256": "7a9213d49f7c506419446fe7f73fd645af41ad03157474e46af400534a44fc23",
+    "bytes": 310208808,
+    "scannedAt": "2026-11-07T17:44:36.231Z",
+    "fingerprint": "68eaa360d626d6b17ca35aa3c395c614"
+  },
+  "to": {
+    "version": "3.29.15,86776fcb52ca505783155631089b65d646f9b03f",
+    "appVersion": "3.29.15",
+    "build": "3.29.15",
+    "url": "https://downloads.cursor.com/production/86776fcb52ca505783155631089b65d646f9b03f/darwin/arm64/Cursor-darwin-arm64.zip",
+    "sha256": "8fa25e50a63b04e8d8a8645834e7471d0d102b229b8c16bf9e06dd623e694986",
+    "bytes": 310394198,
+    "scannedAt": "2026-11-09T16:41:23.971Z",
+    "fingerprint": "0ae5b3b729748d8368a75d9371a211d5"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Cursor",
+      "bundleId": "com.todesktop.230313mzl4w4u92"
+    },
+    "from": {
+      "version": "3.29.9",
+      "build": "3.29.9",
+      "takenAt": "2026-11-07T17:44:35.422Z",
+      "path": "Cursor 3.29.9,306d153d51d714882ab7b1bc49649cab624e8a31 (Homebrew cask cursor)"
+    },
+    "to": {
+      "version": "3.29.15",
+      "build": "3.29.15",
+      "takenAt": "2026-11-09T16:41:22.982Z",
+      "path": "Cursor 3.29.15,86776fcb52ca505783155631089b65d646f9b03f (Homebrew cask cursor)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "package",
+        "change": "added",
+        "title": "1 new bundled npm package",
+        "detail": "smol-toml@1.9.0",
+        "where": [
+          "Contents/Resources/app"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under example.com",
+        "detail": "feedback.example.com, s3.example.com",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +761.4 KB (+0.1%), files 14388 → 14400"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 3.29.9 (3.29.9) → 3.29.15 (3.29.15)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 3
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}
