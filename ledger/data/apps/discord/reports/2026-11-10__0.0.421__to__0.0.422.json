@@ -1,0 +1,76 @@
+{
+  "cask": "discord",
+  "name": "Discord",
+  "detectedAt": "2026-11-10T15:04:40.264Z",
+  "from": {
+    "version": "0.0.421",
+    "appVersion": "0.0.421",
+    "build": "0.0.421",
+    "url": "https://dl.discordapp.net/apps/osx/0.0.421/Discord.dmg",
+    "sha256": "5862c7663124e27284ef513eddf039ee8ae8b6cb6df222afb2779e633f5b5c6a",
+    "bytes": 234045149,
+    "scannedAt": "2026-11-07T17:44:38.632Z",
+    "fingerprint": "8a50b97bdba7bfdea937f94e604fe038"
+  },
+  "to": {
+    "version": "0.0.422",
+    "appVersion": "0.0.422",
+    "build": "0.0.422",
+    "url": "https://stable.dl2.discordapp.net/distro/app/stable/osx/universal/0.0.422/Discord.dmg",
+    "sha256": "6fedd6856cbc48656704dfc718d52114e12ffae9ae904d429ae6e1ded2081fa2",
+    "bytes": 234424393,
+    "scannedAt": "2026-11-10T15:04:40.264Z",
+    "fingerprint": "5a876904f127a22b41d0495ced30efd2"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Discord",
+      "bundleId": "com.hnc.Discord"
+    },
+    "from": {
+      "version": "0.0.421",
+      "build": "0.0.421",
+      "takenAt": "2026-11-07T17:44:38.573Z",
+      "path": "Discord 0.0.421 (Homebrew cask discord)"
+    },
+    "to": {
+      "version": "0.0.422",
+      "build": "0.0.422",
+      "takenAt": "2026-11-10T15:04:40.197Z",
+      "path": "Discord 0.0.422 (Homebrew cask discord)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "electron",
+        "change": "changed",
+        "title": "Electron 44.10.0 → 44.10.2",
+        "where": [
+          "Contents/Frameworks/Electron Framework.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +899.8 KB (+0.2%), files 286 → 286"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 0.0.421 (0.0.421) → 0.0.422 (0.0.422)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 2
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}
