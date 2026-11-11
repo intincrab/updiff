@@ -1,0 +1,188 @@
+{
+  "cask": "visual-studio-code",
+  "name": "Microsoft Visual Studio Code",
+  "detectedAt": "2026-11-11T14:37:44.165Z",
+  "from": {
+    "version": "1.145.2",
+    "appVersion": "1.145.2",
+    "build": "1.145.2",
+    "url": "https://update.code.visualstudio.com/1.145.2/darwin-arm64/stable",
+    "sha256": "518387556ced4e3ad898d062fef295fb8a363b7e84d999aa74862eb8fe738a21",
+    "bytes": 356419021,
+    "scannedAt": "2026-11-07T17:45:39.628Z",
+    "fingerprint": "802957dd9ffcd683c6dcdf4d5f2b6632"
+  },
+  "to": {
+    "version": "1.146.0",
+    "appVersion": "1.146.0",
+    "build": "1.146.0",
+    "url": "https://update.code.visualstudio.com/1.146.0/darwin-arm64/stable",
+    "sha256": "6e8d27ee0c5a8f2aa3c43e373407eecd11c270c3fe7f46100ef682aac14bb648",
+    "bytes": 388189389,
+    "scannedAt": "2026-11-11T14:37:44.165Z",
+    "fingerprint": "2ea2690d637b12aea6a84a35071876dc"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Code",
+      "bundleId": "com.microsoft.VSCode"
+    },
+    "from": {
+      "version": "1.145.2",
+      "build": "1.145.2",
+      "takenAt": "2026-11-07T17:45:39.310Z",
+      "path": "Microsoft Visual Studio Code 1.145.2 (Homebrew cask visual-studio-code)"
+    },
+    "to": {
+      "version": "1.146.0",
+      "build": "1.146.0",
+      "takenAt": "2026-11-11T14:37:43.900Z",
+      "path": "Microsoft Visual Studio Code 1.146.0 (Homebrew cask visual-studio-code)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "electron",
+        "change": "changed",
+        "title": "Electron 43.8.3 → 43.8.6",
+        "where": [
+          "Contents/Frameworks/Electron Framework.framework"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "package",
+        "change": "added",
+        "title": "5 new bundled npm packages",
+        "detail": "decompress-response@6.0.0, is-docker@3.0.0, is-wsl@3.1.0, mime-types@2.1.35, mkdirp@1.0.4",
+        "where": [
+          "Contents/Resources/app"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain cloud.microsoft",
+        "detail": "workiq.svc.cloud.microsoft",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@github/copilot-sdk-darwin-arm64/prebuilds/darwin-arm64/runtime.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain koffi.dev",
+        "detail": "koffi.dev",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain napi.rs",
+        "detail": "napi.rs",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt",
+          "Contents/Resources/app/extensions/copilot/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain provided.localinitial",
+        "detail": "no.url.provided.localinitial",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@github/copilot-sdk-darwin-arm64/prebuilds/darwin-arm64/runtime.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain questioncarousel.no",
+        "detail": "chat.questioncarousel.no (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/nls.keys.json",
+          "Contents/Resources/app/out/nls.metadata.json"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain remysharp.com",
+        "detail": "remysharp.com",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain robwu.nl",
+        "detail": "robwu.nl",
+        "where": [
+          "Contents/Resources/app/node_modules.asar:proxy-from-env/package.json"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed native Node module: foreground_love.node",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/windows-foreground-love/build/Release/foreground_love.node"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "package",
+        "change": "changed",
+        "title": "3 bundled npm packages changed version",
+        "detail": "type 2.1.0|2.7.2 → 1.2.0, vscode-jsonrpc 4.0.0 → 10.0.0, zod 3.25.76|4.3.6|4.4.3 → 3.25.76|4.4.3|4.6.7"
+      },
+      {
+        "severity": "info",
+        "category": "package",
+        "change": "removed",
+        "title": "3 bundled npm packages removed",
+        "detail": "delayed-stream, picomatch, proxy-from-env"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "4 domains no longer mentioned",
+        "detail": "bsky.app, icu-project.org, jit.su, leaking.via"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +42.0 MB (+4.4%), files 3439 → 3435"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 1.145.2 (1.145.2) → 1.146.0 (1.146.0)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 9,
+      "info": 6
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}

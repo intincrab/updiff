@@ -1,0 +1,124 @@
+{
+  "cask": "notion",
+  "name": "Notion",
+  "detectedAt": "2026-11-11T14:37:31.597Z",
+  "from": {
+    "version": "7.42.3",
+    "appVersion": "7.42.3",
+    "build": "7.42.3",
+    "url": "https://desktop-release.notion-static.com/Notion-7.42.3-arm64.dmg",
+    "sha256": "47708496978b16cbf5fb9da7dab1b4496f3e7fddecc15adf785223399373d3a3",
+    "bytes": 136229832,
+    "scannedAt": "2026-11-07T17:45:00.974Z",
+    "fingerprint": "a13f3f76f72c7d81b8f76c8ffc948c5e"
+  },
+  "to": {
+    "version": "7.43.0",
+    "appVersion": "7.43.0",
+    "build": "7.43.0",
+    "url": "https://desktop-release.notion-static.com/Notion-7.43.0-arm64.dmg",
+    "sha256": "e627f85d879367b2cf634efcda9f14a6e142ec24dc1ec4ec80f8a2eb53f94886",
+    "bytes": 121308080,
+    "scannedAt": "2026-11-11T14:37:31.597Z",
+    "fingerprint": "ed6a1aaa73a89f6754ad33cfedf98dcc"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Notion",
+      "bundleId": "notion.id"
+    },
+    "from": {
+      "version": "7.42.3",
+      "build": "7.42.3",
+      "takenAt": "2026-11-07T17:45:00.920Z",
+      "path": "Notion 7.42.3 (Homebrew cask notion)"
+    },
+    "to": {
+      "version": "7.43.0",
+      "build": "7.43.0",
+      "takenAt": "2026-11-11T14:37:31.532Z",
+      "path": "Notion 7.43.0 (Homebrew cask notion)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "electron",
+        "change": "changed",
+        "title": "Electron 44.9.1 → 45.1.0",
+        "where": [
+          "Contents/Frameworks/Electron Framework.framework"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain chatgpt.com",
+        "detail": "chatgpt.com",
+        "where": [
+          "Contents/Resources/app.asar:.webpack/renderer/sqlite_browser/preload.js",
+          "Contents/Resources/app.asar:.webpack/renderer/popup/preload.js",
+          "Contents/Resources/app.asar:.webpack/renderer/internal_settings/preload.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain freedesktop.org",
+        "detail": "www.freedesktop.org",
+        "where": [
+          "Contents/Resources/app.asar:.webpack/main/index.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "package",
+        "change": "removed",
+        "title": "1 bundled npm package removed",
+        "detail": "node-addon-api"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "3 domains no longer mentioned",
+        "detail": "evilnotion.com, example.com, openjsf.org"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under oaiusercontent.com",
+        "detail": "notion-mcp.web-sandbox.oaiusercontent.com",
+        "where": [
+          "Contents/Resources/app.asar:.webpack/renderer/sqlite_browser/preload.js",
+          "Contents/Resources/app.asar:.webpack/renderer/popup/preload.js",
+          "Contents/Resources/app.asar:.webpack/renderer/internal_settings/preload.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -57.5 MB (-18.0%), files 278 → 156"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 7.42.3 (7.42.3) → 7.43.0 (7.43.0)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 3,
+      "info": 5
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}

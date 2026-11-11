@@ -1,0 +1,76 @@
+{
+  "cask": "arc",
+  "name": "Arc",
+  "detectedAt": "2026-11-11T14:35:48.814Z",
+  "from": {
+    "version": "1.172.1,90370",
+    "appVersion": "1.172.1",
+    "build": "90370",
+    "url": "https://releases.arc.net/release/Arc-1.172.1-90370.zip",
+    "sha256": "842aea310f2db2adf7c00399a905684177fe0f640109f993357acc4592dbd07e",
+    "bytes": 462139839,
+    "scannedAt": "2026-11-07T17:43:48.169Z",
+    "fingerprint": "a38f93dbf1f016b4c23b74a97ae58307"
+  },
+  "to": {
+    "version": "1.172.2,90755",
+    "appVersion": "1.172.2",
+    "build": "90755",
+    "url": "https://releases.arc.net/release/Arc-1.172.2-90755.zip",
+    "sha256": "c334b629c086af1968d0ae27a3b5a9c58d87b27f27526cc38f705115724bba15",
+    "bytes": 462164571,
+    "scannedAt": "2026-11-11T14:35:48.814Z",
+    "fingerprint": "b3e673efd11e3245378adb68c7a6884c"
+  },
+  "deep": true,
+  "report": {
+    "app": {
+      "name": "Arc",
+      "bundleId": "company.thebrowser.Browser"
+    },
+    "from": {
+      "version": "1.172.1",
+      "build": "90370",
+      "takenAt": "2026-11-07T17:43:48.045Z",
+      "path": "Arc 1.172.1,90370 (Homebrew cask arc)"
+    },
+    "to": {
+      "version": "1.172.2",
+      "build": "90755",
+      "takenAt": "2026-11-11T14:35:48.604Z",
+      "path": "Arc 1.172.2,90755 (Homebrew cask arc)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "ArcCore.framework 157.0.8103.39 → 157.0.8103.51",
+        "where": [
+          "Contents/Frameworks/ArcCore.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +16.1 KB (+0.0%), files 1110 → 1110"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 1.172.1 (90370) → 1.172.2 (90755)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 3
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}

@@ -1,0 +1,2185 @@
+{
+  "cask": "claude",
+  "name": "Claude",
+  "detectedAt": "2026-11-11T14:37:11.003Z",
+  "from": {
+    "version": "4.23118.1,e071e72f72fe1f56124e3c8a0096f4d75510060a",
+    "appVersion": "4.23118.1",
+    "build": "4.23118.1",
+    "url": "https://downloads.claude.ai/releases/darwin/universal/4.23118.1/Claude-e071e72f72fe1f56124e3c8a0096f4d75510060a.zip",
+    "sha256": "a1b69ab28237a34b9894c7fe370492107e3e3b6a6cccb98a258bde27ce98a575",
+    "bytes": 391574431,
+    "scannedAt": "2026-11-10T15:04:28.626Z",
+    "fingerprint": "8fb73ba1cceff1fd51e9f26278fac406",
+    "report": "reports/2026-11-10__4.23118.0_8175c354eda704cea00fdeddfa69cea329dd321a__to__4.23118.1_e071e72f72fe1f56124e3c8a0096f4d75510060a.json"
+  },
+  "to": {
+    "version": "5.1231.2,26912242b6649f3e503e012d9b7b9367d09c68e4",
+    "appVersion": "5.1231.2",
+    "build": "5.1231.2",
+    "url": "https://downloads.claude.ai/releases/darwin/universal/5.1231.2/Claude-26912242b6649f3e503e012d9b7b9367d09c68e4.zip",
+    "sha256": "e74cfec98d2560812a5fe91bb07fe4a277cefea71d4039f6bf3b1de33846240a",
+    "bytes": 387863824,
+    "scannedAt": "2026-11-11T14:37:11.003Z",
+    "fingerprint": "70f6e4fd92912394264c5e78fb241668"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Claude",
+      "bundleId": "com.anthropic.claudefordesktop"
+    },
+    "from": {
+      "version": "4.23118.1",
+      "build": "4.23118.1",
+      "takenAt": "2026-11-10T15:04:28.540Z",
+      "path": "Claude 4.23118.1,e071e72f72fe1f56124e3c8a0096f4d75510060a (Homebrew cask claude)"
+    },
+    "to": {
+      "version": "5.1231.2",
+      "build": "5.1231.2",
+      "takenAt": "2026-11-11T14:37:10.941Z",
+      "path": "Claude 5.1231.2,26912242b6649f3e503e012d9b7b9367d09c68e4 (Homebrew cask claude)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "electron",
+        "change": "changed",
+        "title": "Electron 44.9.3 → 45.2.1",
+        "where": [
+          "Contents/Frameworks/Electron Framework.framework"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain accuweather.com",
+        "detail": "mcp.accuweather.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain adobeaemcloud.com",
+        "detail": "mcp.adobeaemcloud.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain adspirer.com",
+        "detail": "mcp.adspirer.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain adwhispr.com",
+        "detail": "adwhispr.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain affinity.co",
+        "detail": "mcp.affinity.co (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain aftership.com",
+        "detail": "mcp.aftership.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ahrefs.com",
+        "detail": "api.ahrefs.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain airtable.com",
+        "detail": "mcp.airtable.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain alltrails.com",
+        "detail": "www.alltrails.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain alphaxiv.org",
+        "detail": "api.alphaxiv.org (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain alpic.ai",
+        "detail": "mcp.alpic.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain americanexpress.com",
+        "detail": "apigw.americanexpress.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain amplitude.com",
+        "detail": "mcp.amplitude.com, mcp.eu.amplitude.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain appfolio.com",
+        "detail": "mcp.appfolio.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ashbyhq.com",
+        "detail": "mcp.ashbyhq.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain astravue.com",
+        "detail": "api.astravue.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain audible.com",
+        "detail": "mcp.audible.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain autofill.me",
+        "detail": "autofill.me (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain b12.io",
+        "detail": "mcp.b12.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain b5dev.ca",
+        "detail": "b5dev.ca (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain b5dev.com",
+        "detail": "b5dev.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain b5dev.eu",
+        "detail": "b5dev.eu (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain b5local.com",
+        "detail": "b5local.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain b5rev.com",
+        "detail": "b5rev.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain b5staging.com",
+        "detail": "b5staging.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain b5test.ca",
+        "detail": "b5test.ca (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain b5test.com",
+        "detail": "b5test.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain b5test.eu",
+        "detail": "b5test.eu (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain base44.com",
+        "detail": "app.base44.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain bigdata.com",
+        "detail": "mcp.bigdata.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain biorender.com",
+        "detail": "mcp.services.biorender.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain blackthorn.io",
+        "detail": "forge.blackthorn.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain blazesql.com",
+        "detail": "claude.blazesql.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain booking.com",
+        "detail": "demandapi-mcp.booking.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain brand24.com",
+        "detail": "mcp.brand24.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain brek.com",
+        "detail": "mcp.brek.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain brevo.com",
+        "detail": "mcp.brevo.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain calendly.com",
+        "detail": "mcp.calendly.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain cargurus.com",
+        "detail": "mcp-apps.api.cargurus.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain circleback.ai",
+        "detail": "circleback.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain civitatis.com",
+        "detail": "civitatis-claude-app.civitatis.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain clay.com",
+        "detail": "api.clay.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain clickhouse.cloud",
+        "detail": "mcp.clickhouse.cloud (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain clio.com",
+        "detail": "mcp.api.clio.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain clutch.co",
+        "detail": "bot.clutch.co (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain coefficient.io",
+        "detail": "superagent.app.coefficient.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain coingecko.com",
+        "detail": "mcp.coingecko.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain configure.dev",
+        "detail": "mcp-claude.configure.dev (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain constantcontact.com",
+        "detail": "mcp.apps.constantcontact.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain context7.com",
+        "detail": "mcp.context7.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain coteach.ai",
+        "detail": "coteach.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain cottages.com",
+        "detail": "mcp.cottages.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain coursera.com",
+        "detail": "api.coursera.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain creditkarma.com",
+        "detail": "anthropic.mcp.creditkarma.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain deepl.com",
+        "detail": "mcp.deepl.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain descript.com",
+        "detail": "api.descript.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain diffit.me",
+        "detail": "api.diffit.me (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain directbooker.ai",
+        "detail": "www.directbooker.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain director.ai",
+        "detail": "www.director.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain docusign.com",
+        "detail": "mcp.docusign.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain economist.com",
+        "detail": "mcp-app.economist.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain elicit.com",
+        "detail": "elicit.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain enrichlabs.ai",
+        "detail": "agent.enrichlabs.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain etherscan.io",
+        "detail": "mcp-keyless.etherscan.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain excalidraw.com",
+        "detail": "mcp.excalidraw.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain expedia.com",
+        "detail": "www.expedia.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain explorium.ai",
+        "detail": "vibeprospecting.explorium.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain fathom.ai",
+        "detail": "api.fathom.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain firecrawl.dev",
+        "detail": "mcp.firecrawl.dev (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain fireflies.ai",
+        "detail": "api.fireflies.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain fourthwall.com",
+        "detail": "mcp.fourthwall.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain getyourguide.com",
+        "detail": "widget.getyourguide.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain giscloud.com",
+        "detail": "mcp.giscloud.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gleanmark.com",
+        "detail": "gleanmark.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain glovoapp.com",
+        "detail": "api.glovoapp.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain goodnotes.com",
+        "detail": "claude-mcp-api.ml.goodnotes.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gusto.com",
+        "detail": "mcp.api.gusto.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain hanoverpark.com",
+        "detail": "app.hanoverpark.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain harvey.ai",
+        "detail": "api.harvey.ai, au.api.harvey.ai, eu.api.harvey.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain helium10.com",
+        "detail": "mcp.helium10.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain heygen.com",
+        "detail": "mcp.heygen.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain hginsights.com",
+        "detail": "phoenix.hginsights.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ibkr.com",
+        "detail": "api.ibkr.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain idealista.com",
+        "detail": "mcp-app.idealista.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ifttt.com",
+        "detail": "ifttt.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain indeed.com",
+        "detail": "mcp.indeed.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain insighttimer-api.net",
+        "detail": "claude-connector-api.insighttimer-api.net (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain instacart.com",
+        "detail": "fig-mcp.instacart.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ipauthor.com",
+        "detail": "mcp.ipauthor.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain jam.dev",
+        "detail": "mcp.jam.dev (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain jcgt.org",
+        "detail": "jcgt.org",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/modelWorker-DWQIolgM.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain kahoot.it",
+        "detail": "mcp.kahoot.it (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain kensho.com",
+        "detail": "kfinance.kensho.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain kolide.ca",
+        "detail": "app.kolide.ca, auth.kolide.ca (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain kolide.com",
+        "detail": "app.kolide.com, auth.kolide.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain kolide.eu",
+        "detail": "app.kolide.eu, auth.kolide.eu (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BV3uOqbK.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain komoot.net",
+        "detail": "claude.main.komoot.net (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain krisp.ai",
+        "detail": "mcp.krisp.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain kuliko.ai",
+        "detail": "mcp.kuliko.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain latticehq.com",
+        "detail": "api.latticehq.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain letsfg.co",
+        "detail": "letsfg.co (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain linksquares.com",
+        "detail": "ai-chat-service.linksquares.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain localfalcon.com",
+        "detail": "mcp.localfalcon.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain loops.so",
+        "detail": "mcp.loops.so (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain lovable.dev",
+        "detail": "mcp.lovable.dev (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain lusha.com",
+        "detail": "mcp.lusha.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain macrobond.com",
+        "detail": "platform.macrobond.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mailchimp.com",
+        "detail": "ai-inc.mailchimp.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain make.com",
+        "detail": "mcp.make.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain malwarebytes.com",
+        "detail": "scamguard.malwarebytes.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mantic.com",
+        "detail": "api.mantic.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mcafee.com",
+        "detail": "claudecompanion.gateway.api.mcafee.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mentimeter.com",
+        "detail": "ai.mentimeter.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mermaid.ai",
+        "detail": "chatgpt.mermaid.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain metricool.com",
+        "detail": "ai.metricool.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mixpanel.com",
+        "detail": "mcp.mixpanel.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mobbin.com",
+        "detail": "api.mobbin.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain morningstar.com",
+        "detail": "mcp.analytics.credit.morningstar.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain motionapp.com",
+        "detail": "projects.motionapp.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mulesoft.com",
+        "detail": "omni.mulesoft.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain netlify.com",
+        "detail": "mcp.netlify.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain nooks.in",
+        "detail": "mcp.nooks.in (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain novasol.com",
+        "detail": "mcp.novasol.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain otter.ai",
+        "detail": "mcp.otter.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain pandadoc.com",
+        "detail": "mcp.pandadoc.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain paybooc.co.kr",
+        "detail": "open.paybooc.co.kr (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain pdf.net",
+        "detail": "mcp.pdf.net (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain picsart.com",
+        "detail": "api.picsart.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain pipedrive.ai",
+        "detail": "mcp.pipedrive.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain pophive.org",
+        "detail": "mcp.pophive.org (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain posthog.com",
+        "detail": "mcp.posthog.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain postman.com",
+        "detail": "mcp.postman.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain productised.ai",
+        "detail": "mcp.productised.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain prophecy.ai",
+        "detail": "app.prophecy.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain propsol.io",
+        "detail": "xactrestore-xactremodelserver-usw2-prod.propsol.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain quo.com",
+        "detail": "mcp.quo.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ramp.com",
+        "detail": "mcp.ramp.com, ramp-mcp-remote.ramp.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain read.ai",
+        "detail": "api.read.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain reclaim.ai",
+        "detail": "mcp.reclaim.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain replit-mcp.com",
+        "detail": "replit-mcp.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain rhizomeai.com",
+        "detail": "rhizomeai.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain rome2rio.com",
+        "detail": "chatgpt-app.rome2rio.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sanity.io",
+        "detail": "mcp.sanity.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain scholargateway.ai",
+        "detail": "connector.scholargateway.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain scite.ai",
+        "detail": "api.scite.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain seamless.ai",
+        "detail": "mcp.seamless.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain semrush.com",
+        "detail": "mcp.semrush.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain send.co",
+        "detail": "www.send.co (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain shipt.com",
+        "detail": "member-api.shipt.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain shop.com",
+        "detail": "mcp.shop.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain similarweb.com",
+        "detail": "mcp.similarweb.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sisense.com",
+        "detail": "mcp.sisense.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sketchup.com",
+        "detail": "api.sketchup.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain slicktrip.com",
+        "detail": "mcp.slicktrip.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain spacefast.com",
+        "detail": "mcp.spacefast.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain spiegel.de",
+        "detail": "nsdap-mcp.prod.ki.spiegel.de (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain spotify.net",
+        "detail": "mcp-gateway-external-pilot.spotify.net (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain springer.com",
+        "detail": "adisinsight-mcp.springer.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sprinto.com",
+        "detail": "mcp.au.sprinto.com, mcp.eu.sprinto.com, mcp.in.sprinto.com, mcp.sprinto.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain squareup.com",
+        "detail": "connect.squareup.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain stubhub.net",
+        "detail": "open-ai-app.stubhub.net (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain superhuman.com",
+        "detail": "docs.superhuman.com, mcp.mail.superhuman.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain supermetrics.com",
+        "detail": "mcp.supermetrics.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain surveymonkey.com",
+        "detail": "mcp.surveymonkey.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain tactiq.io",
+        "detail": "mcp.tactiq.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain tamg.cloud",
+        "detail": "production.ai-mcp-extensibility-prd.tamg.cloud (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain teamtailor.com",
+        "detail": "mcp.teamtailor.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain texttoquant.com",
+        "detail": "www.texttoquant.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain theysaid.io",
+        "detail": "ai.theysaid.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain thomsonreuters.com",
+        "detail": "cocoagent-service.cocounsel.thomsonreuters.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain thumbtack.com",
+        "detail": "mcp.thumbtack.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ticktick.com",
+        "detail": "mcp.ticktick.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain tinyfish.ai",
+        "detail": "agent.tinyfish.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain tomorrow.io",
+        "detail": "api.tomorrow.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain tomtom.com",
+        "detail": "mcp.tomtom.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain triplewhale.com",
+        "detail": "mcp.triplewhale.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain tropicapp.io",
+        "detail": "app.tropicapp.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain turkishtechlab.com",
+        "detail": "mcp-app.turkishtechlab.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain twilio.com",
+        "detail": "mcp.twilio.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain uber.com",
+        "detail": "mcp.uber.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ubereats.com",
+        "detail": "mcp.ubereats.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain veltra.com",
+        "detail": "ai.veltra.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain viator.com",
+        "detail": "exp-app-mcp.prod.ep.viator.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain vidiq.com",
+        "detail": "mcp.vidiq.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain webflow.com",
+        "detail": "mcp.webflow.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain whimsical.com",
+        "detail": "mcp.whimsical.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain xero.com",
+        "detail": "mcp.xero.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain zapier.com",
+        "detail": "mcp.zapier.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain zillow.com",
+        "detail": "mcp.zillow.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ziprecruiter.com",
+        "detail": "api.ziprecruiter.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain zomato.com",
+        "detail": "mcp-server.zomato.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under 1password.com",
+        "detail": "my.1password.com",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-B_lsRJol.js",
+          "Contents/Resources/app.asar:.vite/build/index.chunk-CK0apt2J.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under adobe.io",
+        "detail": "mcp.coworker.experience.adobe.io",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under apollo.io",
+        "detail": "mcp.apollo.io",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under cloudflare.com",
+        "detail": "bindings.mcp.cloudflare.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under datadoghq.eu",
+        "detail": "mcp.datadoghq.eu",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under fastmail.com",
+        "detail": "api.fastmail.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under googleapis.com",
+        "detail": "update.googleapis.com",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-kbZ3uMxl.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under googleusercontent.com",
+        "detail": "clients2.googleusercontent.com",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-kbZ3uMxl.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under granola.ai",
+        "detail": "mcp.granola.ai",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under linkedin.com",
+        "detail": "mcp.linkedin.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under miro.com",
+        "detail": "mcp.miro.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under pagerduty.com",
+        "detail": "mcp.pagerduty.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under shopify.com",
+        "detail": "setup.shopify.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under stripe.com",
+        "detail": "mcp.stripe.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under supabase.com",
+        "detail": "mcp.supabase.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under trello.com",
+        "detail": "mcp.trello.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under datadoghq.com",
+        "detail": "mcp.ap1.datadoghq.com, mcp.ap2.datadoghq.com, mcp.datadoghq.com, mcp.uk1.datadoghq.com, mcp.us3.datadoghq.com, mcp.us5.datadoghq.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under github.com",
+        "detail": "codeload.github.com, uploads.github.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/ca4e76d8e-Dg0EZ2s_.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under githubusercontent.com",
+        "detail": "github-cloud.githubusercontent.com, media.githubusercontent.com, release-assets.githubusercontent.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/ca4e76d8e-Dg0EZ2s_.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under intuit.com",
+        "detail": "ai-inc.quickbooks.intuit.com, ai-inc.turbotax.intuit.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6d7d9bc6-38ENF8-U.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -23.9 MB (-2.5%), files 310 → 310"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 4.23118.1 (4.23118.1) → 5.1231.2 (5.1231.2)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 192,
+      "info": 22
+    },
+    "identical": false
+  }
+}

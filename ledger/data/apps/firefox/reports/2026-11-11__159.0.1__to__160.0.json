@@ -1,0 +1,104 @@
+{
+  "cask": "firefox",
+  "name": "Mozilla Firefox",
+  "detectedAt": "2026-11-11T14:37:27.945Z",
+  "from": {
+    "version": "159.0.1",
+    "appVersion": "159.0.1",
+    "build": "15926.11.2",
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/159.0.1/mac/en-US/Firefox%20159.0.1.dmg",
+    "sha256": "0c214da4439c1eb4cea28a3c141ff112d511aa32c67f9d12e91116569c8d8dda",
+    "bytes": 164974072,
+    "scannedAt": "2026-11-07T17:49:04.965Z",
+    "fingerprint": "a8a994b84b07772dda6d88b88b010e43"
+  },
+  "to": {
+    "version": "160.0",
+    "appVersion": "160.0",
+    "build": "16026.11.4",
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/160.0/mac/en-US/Firefox%20160.0.dmg",
+    "sha256": "b270ccc60eb899bd0277bd078d7bd8690f5c4fc3e44b4fa9ee78ed2a3e89f0ca",
+    "bytes": 165955382,
+    "scannedAt": "2026-11-11T14:37:27.945Z",
+    "fingerprint": "b2147f85ccf4d50a07617fab0e38dde1"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Firefox",
+      "bundleId": "org.mozilla.firefox"
+    },
+    "from": {
+      "version": "159.0.1",
+      "build": "15926.11.2",
+      "takenAt": "2026-11-07T17:49:04.911Z",
+      "path": "Mozilla Firefox 159.0.1 (Homebrew cask firefox)"
+    },
+    "to": {
+      "version": "160.0",
+      "build": "16026.11.4",
+      "takenAt": "2026-11-11T14:37:27.844Z",
+      "path": "Mozilla Firefox 160.0 (Homebrew cask firefox)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain edgesuite.net",
+        "detail": "errors.edgesuite.net",
+        "where": [
+          "Contents/MacOS/XUL"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain iso.org",
+        "detail": "iso.org",
+        "where": [
+          "Contents/MacOS/XUL"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "1 domain no longer mentioned",
+        "detail": "amazon.com"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under wikipedia.org",
+        "detail": "sc.wikipedia.org",
+        "where": [
+          "Contents/MacOS/XUL"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +5.6 MB (+1.1%), files 110 → 110"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 159.0.1 (15926.11.2) → 160.0 (16026.11.4)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 2,
+      "info": 4
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}

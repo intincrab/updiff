@@ -1,0 +1,86 @@
+{
+  "cask": "brave-browser",
+  "name": "Brave",
+  "detectedAt": "2026-11-11T14:36:24.695Z",
+  "from": {
+    "version": "1.99.55.0",
+    "appVersion": "157.1.99.55",
+    "build": "199.55",
+    "url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/199.55/Brave-Browser-arm64.dmg",
+    "sha256": "05dd300d93f6cc7b56c9b5b95cfbad5facbd5a6ae8c1f7d0d6be0d162f870b1d",
+    "bytes": 232349697,
+    "scannedAt": "2026-11-07T17:48:58.448Z",
+    "fingerprint": "c09bc5b64fe55f06c3bb9ab2b1038c15"
+  },
+  "to": {
+    "version": "1.99.56.0",
+    "appVersion": "157.1.99.56",
+    "build": "199.56",
+    "url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/199.56/Brave-Browser-arm64.dmg",
+    "sha256": "60c4c0be80edfa91168805f807a45980f6273896e2712e2179b67d9d61ebdb93",
+    "bytes": 232336953,
+    "scannedAt": "2026-11-11T14:36:24.695Z",
+    "fingerprint": "634e4194961c0c3b4b2b04d8bd7911ef"
+  },
+  "deep": true,
+  "report": {
+    "app": {
+      "name": "Brave Browser",
+      "bundleId": "com.brave.Browser"
+    },
+    "from": {
+      "version": "157.1.99.55",
+      "build": "199.55",
+      "takenAt": "2026-11-07T17:48:58.312Z",
+      "path": "Brave 1.99.55.0 (Homebrew cask brave-browser)"
+    },
+    "to": {
+      "version": "157.1.99.56",
+      "build": "199.56",
+      "takenAt": "2026-11-11T14:36:24.278Z",
+      "path": "Brave 1.99.56.0 (Homebrew cask brave-browser)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "updater",
+        "change": "added",
+        "title": "Update feed set in the code",
+        "detail": "https://updates.bravesoftware.com/sparkle/%@/%s/appcast.xml",
+        "where": [
+          "Brave 1.99.56.0 (Homebrew cask brave-browser)"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "Brave Browser Framework.framework 157.1.99.55 → 157.1.99.56",
+        "where": [
+          "Contents/Frameworks/Brave Browser Framework.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -480 B (-0.0%), files 980 → 980"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 157.1.99.55 (199.55) → 157.1.99.56 (199.56)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 3
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}
