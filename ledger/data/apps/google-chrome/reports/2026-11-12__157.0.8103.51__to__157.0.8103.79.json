@@ -1,0 +1,74 @@
+{
+  "cask": "google-chrome",
+  "name": "Google Chrome",
+  "detectedAt": "2026-11-12T15:29:18.435Z",
+  "from": {
+    "version": "157.0.8103.51",
+    "appVersion": "157.0.8103.51",
+    "build": "8103.51",
+    "url": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
+    "sha256": "e72772e792b34c7f4de0f8fefc7c92bb59f1057abdf7e5db3db199cce1daad3f",
+    "bytes": 282643684,
+    "scannedAt": "2026-11-10T15:05:22.394Z",
+    "fingerprint": "0889dfeb7c533316c773cca091999001",
+    "report": "reports/2026-11-10__157.0.8103.39__to__157.0.8103.51.json"
+  },
+  "to": {
+    "version": "157.0.8103.79",
+    "appVersion": "157.0.8103.79",
+    "build": "8103.79",
+    "url": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
+    "sha256": "890cbc357d91cc8b0de87033edee89534da385a97ec2b21e3c80b2125f45e4fd",
+    "bytes": 283004776,
+    "scannedAt": "2026-11-12T15:29:18.435Z",
+    "fingerprint": "2e2919ad38950b7af977155310170194"
+  },
+  "deep": true,
+  "report": {
+    "app": {
+      "name": "Google Chrome",
+      "bundleId": "com.google.Chrome"
+    },
+    "from": {
+      "version": "157.0.8103.51",
+      "build": "8103.51",
+      "takenAt": "2026-11-10T15:05:22.095Z",
+      "path": "Google Chrome 157.0.8103.51 (Homebrew cask google-chrome)"
+    },
+    "to": {
+      "version": "157.0.8103.79",
+      "build": "8103.79",
+      "takenAt": "2026-11-12T15:29:18.104Z",
+      "path": "Google Chrome 157.0.8103.79 (Homebrew cask google-chrome)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "Google Chrome Framework.framework 157.0.8103.51 → 157.0.8103.79",
+        "where": [
+          "Contents/Frameworks/Google Chrome Framework.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +498.5 KB (+0.1%), files 383 → 383"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 157.0.8103.51 (8103.51) → 157.0.8103.79 (8103.79)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 3
+    },
+    "identical": false
+  }
+}

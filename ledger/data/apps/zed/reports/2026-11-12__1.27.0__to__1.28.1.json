@@ -1,0 +1,84 @@
+{
+  "cask": "zed",
+  "name": "Zed",
+  "detectedAt": "2026-11-12T15:29:51.258Z",
+  "from": {
+    "version": "1.27.0",
+    "appVersion": "1.27.0",
+    "build": "20261104.154313",
+    "url": "https://github.com/zed-industries/zed/releases/download/v1.27.0/Zed-aarch64.dmg",
+    "sha256": "8dcfdfaa94917cece0ff52ab6e3f7117c6647b78f32d266684cf0c13462d76a8",
+    "bytes": 88169290,
+    "scannedAt": "2026-11-07T17:45:49.613Z",
+    "fingerprint": "aafd1a984b135f0454c049eefacb91ec"
+  },
+  "to": {
+    "version": "1.28.1",
+    "appVersion": "1.28.1",
+    "build": "20261111.170014",
+    "url": "https://github.com/zed-industries/zed/releases/download/v1.28.1/Zed-aarch64.dmg",
+    "sha256": "0ca1a4f1e89e3825f49af26fa31afcf0cc3e50da1f4ba9889f0735f5f0beffe4",
+    "bytes": 88653699,
+    "scannedAt": "2026-11-12T15:29:51.258Z",
+    "fingerprint": "c2b9a2a26f80052e9ed19b924e537cec"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Zed",
+      "bundleId": "dev.zed.Zed"
+    },
+    "from": {
+      "version": "1.27.0",
+      "build": "20261104.154313",
+      "takenAt": "2026-11-07T17:45:49.461Z",
+      "path": "Zed 1.27.0 (Homebrew cask zed)"
+    },
+    "to": {
+      "version": "1.28.1",
+      "build": "20261111.170014",
+      "takenAt": "2026-11-12T15:29:51.151Z",
+      "path": "Zed 1.28.1 (Homebrew cask zed)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain googlesource.comhttps",
+        "detail": "chromium.googlesource.comhttps",
+        "where": [
+          "Contents/MacOS/zed"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "1 domain no longer mentioned",
+        "detail": "com.mdplain"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +1016.6 KB (+0.6%), files 8 → 8"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 1.27.0 (20261104.154313) → 1.28.1 (20261111.170014)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 3
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}

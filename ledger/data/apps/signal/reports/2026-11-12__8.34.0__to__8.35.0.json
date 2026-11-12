@@ -1,0 +1,93 @@
+{
+  "cask": "signal",
+  "name": "Signal",
+  "detectedAt": "2026-11-12T15:29:22.702Z",
+  "from": {
+    "version": "8.34.0",
+    "appVersion": "8.34.0",
+    "build": "1",
+    "url": "https://updates.signal.org/desktop/signal-desktop-mac-arm64-8.34.0.zip",
+    "sha256": "434c018ca95f8bee716a2dbeef0a17dba072c1242ad420ae312399f7934ed2f5",
+    "bytes": 146309147,
+    "scannedAt": "2026-11-07T17:45:16.398Z",
+    "fingerprint": "507546720272529c613110575b6f2e29"
+  },
+  "to": {
+    "version": "8.35.0",
+    "appVersion": "8.35.0",
+    "build": "1",
+    "url": "https://updates.signal.org/desktop/signal-desktop-mac-arm64-8.35.0.zip",
+    "sha256": "c977cd0e36f389b0ee8d8e384cb1d67c63029002d58dd68c6df1fa6a53ce79d7",
+    "bytes": 146526884,
+    "scannedAt": "2026-11-12T15:29:22.702Z",
+    "fingerprint": "0f582045e08d858dfb768e0ef23d40be"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Signal",
+      "bundleId": "org.whispersystems.signal-desktop"
+    },
+    "from": {
+      "version": "8.34.0",
+      "build": "1",
+      "takenAt": "2026-11-07T17:45:16.256Z",
+      "path": "Signal 8.34.0 (Homebrew cask signal)"
+    },
+    "to": {
+      "version": "8.35.0",
+      "build": "1",
+      "takenAt": "2026-11-12T15:29:22.657Z",
+      "path": "Signal 8.35.0 (Homebrew cask signal)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "electron",
+        "change": "changed",
+        "title": "Electron 45.0.0 → 45.2.1",
+        "where": [
+          "Contents/Frameworks/Electron Framework.framework"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain webmproject.org",
+        "detail": "www.webmproject.org",
+        "where": [
+          "Contents/Resources/app.asar:bundles/preload/main.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "package",
+        "change": "changed",
+        "title": "1 bundled npm package changed version",
+        "detail": "@signalapp/ringrtc 2.73.0 → 2.74.0"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +937.3 KB (+0.3%), files 275 → 275"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 8.34.0 (1) → 8.35.0 (1)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 2,
+      "info": 3
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}
