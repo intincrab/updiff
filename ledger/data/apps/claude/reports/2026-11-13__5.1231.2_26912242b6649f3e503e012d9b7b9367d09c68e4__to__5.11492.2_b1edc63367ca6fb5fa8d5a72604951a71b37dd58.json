@@ -1,0 +1,75 @@
+{
+  "cask": "claude",
+  "name": "Claude",
+  "detectedAt": "2026-11-13T14:46:52.157Z",
+  "from": {
+    "version": "5.1231.2,26912242b6649f3e503e012d9b7b9367d09c68e4",
+    "appVersion": "5.1231.2",
+    "build": "5.1231.2",
+    "url": "https://downloads.claude.ai/releases/darwin/universal/5.1231.2/Claude-26912242b6649f3e503e012d9b7b9367d09c68e4.zip",
+    "sha256": "e74cfec98d2560812a5fe91bb07fe4a277cefea71d4039f6bf3b1de33846240a",
+    "bytes": 387863824,
+    "scannedAt": "2026-11-11T14:37:11.003Z",
+    "fingerprint": "70f6e4fd92912394264c5e78fb241668",
+    "report": "reports/2026-11-11__4.23118.1_e071e72f72fe1f56124e3c8a0096f4d75510060a__to__5.1231.2_26912242b6649f3e503e012d9b7b9367d09c68e4.json"
+  },
+  "to": {
+    "version": "5.11492.2,b1edc63367ca6fb5fa8d5a72604951a71b37dd58",
+    "appVersion": "5.11492.2",
+    "build": "5.11492.2",
+    "url": "https://downloads.claude.ai/releases/darwin/universal/5.11492.2/Claude-b1edc63367ca6fb5fa8d5a72604951a71b37dd58.zip",
+    "sha256": "d917b2c62f94e0b1466282f5c51cf47000265b1f507872442f5c282d7e367e3a",
+    "bytes": 389695169,
+    "scannedAt": "2026-11-13T14:46:52.157Z",
+    "fingerprint": "79aa87b2b6b5d9ecfb5efe0a273a9ba3"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Claude",
+      "bundleId": "com.anthropic.claudefordesktop"
+    },
+    "from": {
+      "version": "5.1231.2",
+      "build": "5.1231.2",
+      "takenAt": "2026-11-11T14:37:10.941Z",
+      "path": "Claude 5.1231.2,26912242b6649f3e503e012d9b7b9367d09c68e4 (Homebrew cask claude)"
+    },
+    "to": {
+      "version": "5.11492.2",
+      "build": "5.11492.2",
+      "takenAt": "2026-11-13T14:46:52.100Z",
+      "path": "Claude 5.11492.2,b1edc63367ca6fb5fa8d5a72604951a71b37dd58 (Homebrew cask claude)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain fsf.org",
+        "detail": "fsf.org",
+        "where": [
+          "Contents/Resources/app.asar:resources/frame/types/slides/artifact-type/third-party-licenses.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +5.1 MB (+0.6%), files 310 → 310"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 5.1231.2 (5.1231.2) → 5.11492.2 (5.11492.2)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 2
+    },
+    "identical": false
+  }
+}

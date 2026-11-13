@@ -1,0 +1,142 @@
+{
+  "cask": "raycast",
+  "name": "Raycast",
+  "detectedAt": "2026-11-13T14:47:26.654Z",
+  "from": {
+    "version": "2.11.1.0",
+    "appVersion": "2.11.1.0",
+    "build": "0",
+    "url": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.11.1.0",
+    "sha256": "777e3fbe08dee41d88639ccb49c70893c61f85f92db6ddc9ae869a8fa653575a",
+    "bytes": 158219168,
+    "scannedAt": "2026-11-07T17:45:13.793Z",
+    "fingerprint": "eafd3740df3c451e40229cc646abe796"
+  },
+  "to": {
+    "version": "2.12.0.0",
+    "appVersion": "2.12.0.0",
+    "build": "0",
+    "url": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.12.0.0",
+    "sha256": "439e4b1b4c4373788894e08d573bf1197f3ce5f14b3a74a7da4cde748c277bab",
+    "bytes": 155141847,
+    "scannedAt": "2026-11-13T14:47:26.654Z",
+    "fingerprint": "5f5ef3d4a2832a9137412890b9e9c41b"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Raycast",
+      "bundleId": "com.raycast.macos"
+    },
+    "from": {
+      "version": "2.11.1.0",
+      "build": "0",
+      "takenAt": "2026-11-07T17:45:13.720Z",
+      "path": "Raycast 2.11.1.0 (Homebrew cask raycast)"
+    },
+    "to": {
+      "version": "2.12.0.0",
+      "build": "0",
+      "takenAt": "2026-11-13T14:47:26.596Z",
+      "path": "Raycast 2.12.0.0 (Homebrew cask raycast)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain wrapped.ai",
+        "detail": "wrapped.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/ai-chat-window-DRBiF_oV.js",
+          "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/startup-B-jeCCZQ.js",
+          "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/startup-CYs7wELg.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "MediaRemoteAdapter.framework 2.11.1.0 → 2.12.0.0",
+        "where": [
+          "Contents/Frameworks/MediaRemoteAdapter.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed framework: SoulverCore.framework",
+        "where": [
+          "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/backend/SoulverCore.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed native Node module: Calculator.node",
+        "where": [
+          "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/backend/Calculator.node"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed native Node module: macos_export_certificate_and_key.node",
+        "where": [
+          "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/backend/build/macos_export_certificate_and_key.node"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "Sentry.framework 9.30.0 → 9.30.2",
+        "where": [
+          "Contents/Frameworks/Sentry.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "Sentry.framework 9.30.0 → 9.30.2",
+        "where": [
+          "Contents/XPCServices/Raycast Accessibility.xpc/Contents/Frameworks/Sentry.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "Sentry.framework 9.30.0 → 9.30.2",
+        "where": [
+          "Contents/XPCServices/Raycast Pasteboard.xpc/Contents/Frameworks/Sentry.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -21.3 MB (-8.0%), files 1220 → 1103"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 2.11.1.0 (0) → 2.12.0.0 (0)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 9
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}

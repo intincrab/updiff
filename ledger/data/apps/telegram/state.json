@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "13.2.0,283494",
+      "appVersion": "13.2.0",
+      "build": "283494",
+      "url": "https://osx.telegram.org/updates/Telegram-13.2.0.283494.app.zip",
+      "sha256": "614418f797eb875fafecfcbcc21cc23a61cfab98c70012cefe6b94a338478c91",
+      "bytes": 169551059,
+      "scannedAt": "2026-11-13T14:47:34.598Z",
+      "fingerprint": "bada9f172dfeef2fe52daea09d2070f7",
+      "report": "reports/2026-11-13__13.2.0_283467__to__13.2.0_283494.json"
+    },
+    {
       "version": "13.2.0,283467",
       "appVersion": "13.2.0",
       "build": "283467",
@@ -15,16 +26,17 @@
   "name": "Telegram for macOS",
   "homepage": "https://macos.telegram.org/",
   "desc": "Messaging app with a focus on speed and security",
-  "lastCheckedAt": "2026-11-12T15:29:48.279Z",
+  "lastCheckedAt": "2026-11-13T14:47:26.753Z",
   "latest": {
-    "version": "13.2.0,283467",
+    "version": "13.2.0,283494",
     "appVersion": "13.2.0",
-    "build": "283467",
-    "url": "https://osx.telegram.org/updates/Telegram-13.2.0.283467.app.zip",
-    "sha256": "1228baa8a7ef16e2266a45fcfcbdee2d0636ed853cf9d485d4c1ab68e10c84e8",
-    "bytes": 169526898,
-    "scannedAt": "2026-11-07T17:45:30.001Z",
-    "fingerprint": "4dba13a672c74fa60720e0e7f9a679a0"
+    "build": "283494",
+    "url": "https://osx.telegram.org/updates/Telegram-13.2.0.283494.app.zip",
+    "sha256": "614418f797eb875fafecfcbcc21cc23a61cfab98c70012cefe6b94a338478c91",
+    "bytes": 169551059,
+    "scannedAt": "2026-11-13T14:47:34.598Z",
+    "fingerprint": "bada9f172dfeef2fe52daea09d2070f7",
+    "report": "reports/2026-11-13__13.2.0_283467__to__13.2.0_283494.json"
   },
   "bundleId": "ru.keepcoder.Telegram"
 }

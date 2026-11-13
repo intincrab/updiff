@@ -1,0 +1,84 @@
+{
+  "cask": "obsidian",
+  "name": "Obsidian",
+  "detectedAt": "2026-11-13T14:47:10.198Z",
+  "from": {
+    "version": "1.15.0",
+    "appVersion": "1.15.0",
+    "build": "1.15.0",
+    "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.15.0/Obsidian-1.15.0.dmg",
+    "sha256": "d3f837e6fd3efaf65fa0bec987b18296982995d4ddae3171a7f7f67e0e2b7aa8",
+    "bytes": 233228137,
+    "scannedAt": "2026-11-07T17:31:38.630Z",
+    "fingerprint": "143b3ca8b64a4ad4395feae9bbdef244",
+    "report": "reports/2026-11-07__1.14.5__to__1.15.0.json"
+  },
+  "to": {
+    "version": "1.15.1",
+    "appVersion": "1.15.1",
+    "build": "1.15.1",
+    "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.15.1/Obsidian-1.15.1.dmg",
+    "sha256": "e05c7e3e2262b14c965bb246dcb74a30fc9098bd669e42957c4d9f788d04fdf4",
+    "bytes": 233346990,
+    "scannedAt": "2026-11-13T14:47:10.198Z",
+    "fingerprint": "d3cd07de29741096e4144f22d858670a"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Obsidian",
+      "bundleId": "md.obsidian"
+    },
+    "from": {
+      "version": "1.15.0",
+      "build": "1.15.0",
+      "takenAt": "2026-11-07T17:31:38.592Z",
+      "path": "Obsidian 1.15.0 (Homebrew cask obsidian)"
+    },
+    "to": {
+      "version": "1.15.1",
+      "build": "1.15.1",
+      "takenAt": "2026-11-13T14:47:10.112Z",
+      "path": "Obsidian 1.15.1 (Homebrew cask obsidian)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "electron",
+        "change": "changed",
+        "title": "Electron 43.8.4 → 43.8.9",
+        "where": [
+          "Contents/Frameworks/Electron Framework.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "1 domain no longer mentioned",
+        "detail": "git.io"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +415.7 KB (+0.1%), files 285 → 285"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 1.15.0 (1.15.0) → 1.15.1 (1.15.1)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 3
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}

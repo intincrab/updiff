@@ -1,0 +1,67 @@
+{
+  "cask": "telegram",
+  "name": "Telegram for macOS",
+  "detectedAt": "2026-11-13T14:47:34.598Z",
+  "from": {
+    "version": "13.2.0,283467",
+    "appVersion": "13.2.0",
+    "build": "283467",
+    "url": "https://osx.telegram.org/updates/Telegram-13.2.0.283467.app.zip",
+    "sha256": "1228baa8a7ef16e2266a45fcfcbdee2d0636ed853cf9d485d4c1ab68e10c84e8",
+    "bytes": 169526898,
+    "scannedAt": "2026-11-07T17:45:30.001Z",
+    "fingerprint": "4dba13a672c74fa60720e0e7f9a679a0"
+  },
+  "to": {
+    "version": "13.2.0,283494",
+    "appVersion": "13.2.0",
+    "build": "283494",
+    "url": "https://osx.telegram.org/updates/Telegram-13.2.0.283494.app.zip",
+    "sha256": "614418f797eb875fafecfcbcc21cc23a61cfab98c70012cefe6b94a338478c91",
+    "bytes": 169551059,
+    "scannedAt": "2026-11-13T14:47:34.598Z",
+    "fingerprint": "bada9f172dfeef2fe52daea09d2070f7"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Telegram",
+      "bundleId": "ru.keepcoder.Telegram"
+    },
+    "from": {
+      "version": "13.2.0",
+      "build": "283467",
+      "takenAt": "2026-11-07T17:45:29.929Z",
+      "path": "Telegram for macOS 13.2.0,283467 (Homebrew cask telegram)"
+    },
+    "to": {
+      "version": "13.2.0",
+      "build": "283494",
+      "takenAt": "2026-11-13T14:47:34.539Z",
+      "path": "Telegram for macOS 13.2.0,283494 (Homebrew cask telegram)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +39.6 KB (+0.0%), files 730 → 730"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 13.2.0 (283467) → 13.2.0 (283494)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 2
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "cask": "postman",
+  "name": "Postman",
+  "detectedAt": "2026-11-13T14:47:21.659Z",
+  "from": {
+    "version": "12.34.0",
+    "appVersion": "12.34.0",
+    "build": "12.34.0",
+    "url": "https://dl.pstmn.io/download/version/12.34.0/osx_arm64",
+    "sha256": "bff311c819c450eea1f70314d68601450f4fcb6abd4cfd935f1c6641440b2f70",
+    "bytes": 206992793,
+    "scannedAt": "2026-11-07T17:45:10.239Z",
+    "fingerprint": "df4b8fa9c5f62d2cadc70ac669f65299"
+  },
+  "to": {
+    "version": "12.36.4",
+    "appVersion": "12.36.4",
+    "build": "12.36.4",
+    "url": "https://dl.pstmn.io/download/version/12.36.4/osx_arm64",
+    "sha256": "5617a4d1f8a86db2e19b37cb5e7c612999ae921de6ef63157c6d5aa7c397029f",
+    "bytes": 210093501,
+    "scannedAt": "2026-11-13T14:47:21.659Z",
+    "fingerprint": "96b30d31e34fae3ad44a170e43481b91"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Postman",
+      "bundleId": "com.postmanlabs.mac"
+    },
+    "from": {
+      "version": "12.34.0",
+      "build": "12.34.0",
+      "takenAt": "2026-11-07T17:45:09.854Z",
+      "path": "Postman 12.34.0 (Homebrew cask postman)"
+    },
+    "to": {
+      "version": "12.36.4",
+      "build": "12.36.4",
+      "takenAt": "2026-11-13T14:47:21.278Z",
+      "path": "Postman 12.36.4 (Homebrew cask postman)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New executable: rg",
+        "detail": "team H7H8Q7M5CK · entitlements: com.apple.security.cs.allow-jit",
+        "where": [
+          "Contents/Resources/app.asar.unpacked/node_modules/native_modules/rg"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New native Node module: keytar.node",
+        "where": [
+          "Contents/Resources/app.asar.unpacked/node_modules/native_modules/build/Release/keytar.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New native Node module: node.napi.node",
+        "where": [
+          "Contents/Resources/app.asar.unpacked/node_modules/native_modules/prebuilds/darwin-arm64/node.napi.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New native Node module: node.napi1.node",
+        "where": [
+          "Contents/Resources/app.asar.unpacked/node_modules/native_modules/prebuilds/darwin-arm64/node.napi1.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New native Node module: pty.node",
+        "where": [
+          "Contents/Resources/app.asar.unpacked/node_modules/native_modules/build/Release/pty.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New native Node module: watcher.node",
+        "where": [
+          "Contents/Resources/app.asar.unpacked/node_modules/native_modules/watcher.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "electron",
+        "change": "changed",
+        "title": "Electron 37.10.3 → 38.8.6",
+        "where": [
+          "Contents/Frameworks/Electron Framework.framework"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain curl.se",
+        "detail": "curl.se",
+        "where": [
+          "Contents/Resources/app.asar.unpacked/node_modules/native_modules/prebuilds/darwin-arm64/node.napi.node",
+          "Contents/Resources/app.asar.unpacked/node_modules/native_modules/prebuilds/darwin-arm64/node.napi1.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mydomain.com",
+        "detail": "mydomain.com",
+        "where": [
+          "Contents/Resources/app.asar.unpacked/node_modules/native_modules/prebuilds/darwin-arm64/node.napi.node",
+          "Contents/Resources/app.asar.unpacked/node_modules/native_modules/prebuilds/darwin-arm64/node.napi1.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain otherdomain.io",
+        "detail": "otherdomain.io",
+        "where": [
+          "Contents/Resources/app.asar.unpacked/node_modules/native_modules/prebuilds/darwin-arm64/node.napi.node",
+          "Contents/Resources/app.asar.unpacked/node_modules/native_modules/prebuilds/darwin-arm64/node.napi1.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sourceforge.net",
+        "detail": "zsh.sourceforge.net",
+        "where": [
+          "Contents/Resources/app.asar.unpacked/node_modules/native_modules/rg"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "package",
+        "change": "changed",
+        "title": "4 bundled npm packages changed version",
+        "detail": "@postman/dataset-engine-bin 0.0.1-beta.61 → 0.0.1-beta.64, @postman/dataset-engine-sdk 0.1.0-beta.37 → 0.1.0-beta.40, @postman/ds-engine-bin-darwin-arm64 0.0.1-beta.61 → 0.0.1-beta.64, @postman/performance-test 0.0.80-beta.5 → 0.0.80-beta.22"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under azure.net",
+        "detail": "test.vault.azure.net",
+        "where": [
+          "Contents/Resources/app.asar:AgentWorker.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under postman.com",
+        "detail": "support.postman.com",
+        "where": [
+          "Contents/Resources/data/postman-cli/postman.bundled.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under example.com",
+        "detail": "other-vault.example.com, vault-server.example.com",
+        "where": [
+          "Contents/Resources/app.asar:AgentWorker.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Minimum macOS 11.0 → 12.0",
+        "where": [
+          "Contents/Info.plist"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +6.1 MB (+1.3%), files 3400 → 3516"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 12.34.0 (12.34.0) → 12.36.4 (12.36.4)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 11,
+      "info": 7
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}

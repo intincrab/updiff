@@ -1,0 +1,74 @@
+{
+  "cask": "notion",
+  "name": "Notion",
+  "detectedAt": "2026-11-13T14:47:00.763Z",
+  "from": {
+    "version": "7.43.0",
+    "appVersion": "7.43.0",
+    "build": "7.43.0",
+    "url": "https://desktop-release.notion-static.com/Notion-7.43.0-arm64.dmg",
+    "sha256": "e627f85d879367b2cf634efcda9f14a6e142ec24dc1ec4ec80f8a2eb53f94886",
+    "bytes": 121308080,
+    "scannedAt": "2026-11-11T14:37:31.597Z",
+    "fingerprint": "ed6a1aaa73a89f6754ad33cfedf98dcc",
+    "report": "reports/2026-11-11__7.42.3__to__7.43.0.json"
+  },
+  "to": {
+    "version": "7.43.2",
+    "appVersion": "7.43.2",
+    "build": "7.43.2",
+    "url": "https://desktop-release.notion-static.com/Notion-7.43.2-arm64.dmg",
+    "sha256": "5891bcae3c7a16b76845627484eebe3e4701d1c95f3f9e458b7f85fea2306f96",
+    "bytes": 121428645,
+    "scannedAt": "2026-11-13T14:47:00.763Z",
+    "fingerprint": "5d0b1f89f6cce24d1c8dbbdaa18b410f"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Notion",
+      "bundleId": "notion.id"
+    },
+    "from": {
+      "version": "7.43.0",
+      "build": "7.43.0",
+      "takenAt": "2026-11-11T14:37:31.532Z",
+      "path": "Notion 7.43.0 (Homebrew cask notion)"
+    },
+    "to": {
+      "version": "7.43.2",
+      "build": "7.43.2",
+      "takenAt": "2026-11-13T14:47:00.688Z",
+      "path": "Notion 7.43.2 (Homebrew cask notion)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "electron",
+        "change": "changed",
+        "title": "Electron 45.1.0 → 45.3.1",
+        "where": [
+          "Contents/Frameworks/Electron Framework.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +259.1 KB (+0.1%), files 156 → 156"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 7.43.0 (7.43.0) → 7.43.2 (7.43.2)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 2
+    },
+    "identical": false
+  }
+}

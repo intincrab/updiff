@@ -1,0 +1,131 @@
+{
+  "cask": "arc",
+  "name": "Arc",
+  "detectedAt": "2026-11-13T14:45:39.471Z",
+  "from": {
+    "version": "1.172.2,90755",
+    "appVersion": "1.172.2",
+    "build": "90755",
+    "url": "https://releases.arc.net/release/Arc-1.172.2-90755.zip",
+    "sha256": "c334b629c086af1968d0ae27a3b5a9c58d87b27f27526cc38f705115724bba15",
+    "bytes": 462164571,
+    "scannedAt": "2026-11-11T14:35:48.814Z",
+    "fingerprint": "b3e673efd11e3245378adb68c7a6884c",
+    "report": "reports/2026-11-11__1.172.1_90370__to__1.172.2_90755.json"
+  },
+  "to": {
+    "version": "1.173.1,90936",
+    "appVersion": "1.173.1",
+    "build": "90936",
+    "url": "https://releases.arc.net/release/Arc-1.173.1-90936.zip",
+    "sha256": "18e583df548b7bf3fa051660503357f62ae4ca5a1e8103b8306b509757b56a6c",
+    "bytes": 461504603,
+    "scannedAt": "2026-11-13T14:45:39.471Z",
+    "fingerprint": "0ccd4084fea4257e71db86927b38a060"
+  },
+  "deep": true,
+  "report": {
+    "app": {
+      "name": "Arc",
+      "bundleId": "company.thebrowser.Browser"
+    },
+    "from": {
+      "version": "1.172.2",
+      "build": "90755",
+      "takenAt": "2026-11-11T14:35:48.604Z",
+      "path": "Arc 1.172.2,90755 (Homebrew cask arc)"
+    },
+    "to": {
+      "version": "1.173.1",
+      "build": "90936",
+      "takenAt": "2026-11-13T14:45:39.225Z",
+      "path": "Arc 1.173.1,90936 (Homebrew cask arc)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain faphouse.com",
+        "detail": "faphouse.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ARCClients_BlockListClient.bundle/Contents/Resources/EasyList.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain filecrypt.to",
+        "detail": "static.filecrypt.to",
+        "where": [
+          "Contents/Resources/ARCClients_BlockListClient.bundle/Contents/Resources/EasyList.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain kaseya.com",
+        "detail": "www.kaseya.com",
+        "where": [
+          "Contents/Resources/ARCClients_BlockListClient.bundle/Contents/Resources/EasyList.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain smartshanghai.com",
+        "detail": "www.smartshanghai.com",
+        "where": [
+          "Contents/Resources/ARCClients_BlockListClient.bundle/Contents/Resources/EasyList.txt"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "ArcCore.framework 157.0.8103.51 → 157.0.8103.79",
+        "where": [
+          "Contents/Frameworks/ArcCore.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "1 domain no longer mentioned",
+        "detail": "shockvpn.com"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under cloudflare.com",
+        "detail": "challenges.cloudflare.com",
+        "where": [
+          "Contents/Resources/ARCClients_BlockListClient.bundle/Contents/Resources/EasyList.txt"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -661.2 KB (-0.1%), files 1110 → 1110"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 1.172.2 (90755) → 1.173.1 (90936)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 4,
+      "info": 5
+    },
+    "identical": false
+  }
+}

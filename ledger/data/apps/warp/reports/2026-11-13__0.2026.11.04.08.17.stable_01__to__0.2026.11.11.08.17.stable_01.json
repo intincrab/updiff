@@ -1,0 +1,94 @@
+{
+  "cask": "warp",
+  "name": "Warp",
+  "detectedAt": "2026-11-13T14:47:48.178Z",
+  "from": {
+    "version": "0.2026.11.04.08.17.stable_01",
+    "appVersion": "0.2026.11.04.08.17.01",
+    "build": "0.2026.11.04.08.17.01",
+    "url": "https://app.warp.dev/download/brew?version=v0.2026.11.04.08.17.stable_01&package=dmg",
+    "sha256": "d0f78afec7756466ca006e91008b1369b8b3ebd3c7e65805776f4bc33f41aece",
+    "bytes": 340970607,
+    "scannedAt": "2026-11-07T17:49:33.987Z",
+    "fingerprint": "28c7f11ec0e214fd6a347fcb43a6e44d"
+  },
+  "to": {
+    "version": "0.2026.11.11.08.17.stable_01",
+    "appVersion": "0.2026.11.11.08.17.01",
+    "build": "0.2026.11.11.08.17.01",
+    "url": "https://app.warp.dev/download/brew?version=v0.2026.11.11.08.17.stable_01&package=dmg",
+    "sha256": "8767bc168e167bfb43f7a5d3a66dc19eb576edab22fd8c6a909fa4f152fd85cb",
+    "bytes": 342228275,
+    "scannedAt": "2026-11-13T14:47:48.178Z",
+    "fingerprint": "bd3052350440e03c9050818a26b29627"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Warp",
+      "bundleId": "dev.warp.Warp-Stable"
+    },
+    "from": {
+      "version": "0.2026.11.04.08.17.01",
+      "build": "0.2026.11.04.08.17.01",
+      "takenAt": "2026-11-07T17:49:33.821Z",
+      "path": "Warp 0.2026.11.04.08.17.stable_01 (Homebrew cask warp)"
+    },
+    "to": {
+      "version": "0.2026.11.11.08.17.01",
+      "build": "0.2026.11.11.08.17.01",
+      "takenAt": "2026-11-13T14:47:48.093Z",
+      "path": "Warp 0.2026.11.11.08.17.stable_01 (Homebrew cask warp)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain helperurl.https",
+        "detail": "github.com.helperurl.https",
+        "where": [
+          "Contents/MacOS/stable"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "1 domain no longer mentioned",
+        "detail": "claude.com"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under warp.dev",
+        "detail": "go.warp.dev",
+        "where": [
+          "Contents/MacOS/stable"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +5.9 MB (+0.7%), files 249 → 249"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 0.2026.11.04.08.17.01 (0.2026.11.04.08.17.01) → 0.2026.11.11.08.17.01 (0.2026.11.11.08.17.01)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 4
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}

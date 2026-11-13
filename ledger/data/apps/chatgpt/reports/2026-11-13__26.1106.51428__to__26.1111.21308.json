@@ -1,0 +1,219 @@
+{
+  "cask": "chatgpt",
+  "name": "ChatGPT",
+  "detectedAt": "2026-11-13T14:46:43.421Z",
+  "from": {
+    "version": "26.1106.51428",
+    "appVersion": "26.1106.51428",
+    "build": "26605",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1106.51428.zip",
+    "sha256": "959adaad0a8b8cd0265ca1a53835af61827e2eaf659fd2bdad7ce39b712f257c",
+    "bytes": 820584997,
+    "scannedAt": "2026-11-11T14:36:59.454Z",
+    "fingerprint": "a811a685459abcf8f7865fd663b7397c",
+    "report": "reports/2026-11-11__26.1103.60933__to__26.1106.51428.json"
+  },
+  "to": {
+    "version": "26.1111.21308",
+    "appVersion": "26.1111.21308",
+    "build": "27194",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1111.21308.zip",
+    "sha256": "8186e39bb166199f648979c7e26c14891908905da3f454b8e6fc2c23a739bae7",
+    "bytes": 835870020,
+    "scannedAt": "2026-11-13T14:46:43.421Z",
+    "fingerprint": "1947270a821583cae31e8037ff1b5601"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "ChatGPT",
+      "bundleId": "com.openai.codex"
+    },
+    "from": {
+      "version": "26.1106.51428",
+      "build": "26605",
+      "takenAt": "2026-11-11T14:36:58.924Z",
+      "path": "ChatGPT 26.1106.51428 (Homebrew cask chatgpt)"
+    },
+    "to": {
+      "version": "26.1111.21308",
+      "build": "27194",
+      "takenAt": "2026-11-13T14:46:43.034Z",
+      "path": "ChatGPT 26.1111.21308 (Homebrew cask chatgpt)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New native Node module: shared-texture.node",
+        "where": [
+          "Contents/Resources/native/shared-texture.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New plug-in bundle: icon-codex.bundle",
+        "detail": "com.openai.codex.dock.icon-codex",
+        "where": [
+          "Contents/Resources/icon-codex.bundle"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New plug-in bundle: icon-space.bundle",
+        "detail": "com.openai.codex.dock.icon-space",
+        "where": [
+          "Contents/Resources/icon-space.bundle"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain activity.cc",
+        "detail": "restricted.aeon.email.activity.cc (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/134495.06b55d1a5c.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain activity.to",
+        "detail": "restricted.aeon.email.activity.to (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/134495.06b55d1a5c.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain azuredatabricks.net",
+        "detail": "azuredatabricks.net (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/956370.aff5cce818.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain brew.sh",
+        "detail": "formulae.brew.sh",
+        "where": [
+          "Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain chatgpt.comthis",
+        "detail": "codex-cloud-backend.chatgpt.comthis",
+        "where": [
+          "Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain databricks.com",
+        "detail": "databricks.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/956370.aff5cce818.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain nasa.gov",
+        "detail": "science.nasa.gov",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/198189.b33f9a9d1c.js",
+          "Contents/Resources/app.asar:webview/assets/async/207866.daa9bb0a10.js",
+          "Contents/Resources/app.asar:webview/assets/async/554325.2d99cd8961.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain operasoftware.operabrowser",
+        "detail": "errororg.mozilla.firefoxcom.google.chromecom.operasoftware.operabrowser",
+        "where": [
+          "Contents/Resources/codex-cli/bin/codex-exec-server"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain shopify.com",
+        "detail": "admin.shopify.com",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/174446.a340ee186d.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain wiz.io",
+        "detail": "app.wiz.io",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/418564.a65d552469.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "Codex Framework.framework 157.0.8103.51 → 157.0.8103.78",
+        "where": [
+          "Contents/Frameworks/Codex Framework.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "package",
+        "change": "changed",
+        "title": "3 bundled npm packages changed version",
+        "detail": "@oai/cua 0.2.6 → 0.2.7, @oai/cua-repl 0.1.3 → 0.1.5, @oai/sky 0.7.18 → 0.7.21"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "3 domains no longer mentioned",
+        "detail": "npms.io, openai.comhttps, openai.orghttps"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +26.6 MB (+1.4%), files 4082 → 4125"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 26.1106.51428 (26605) → 26.1111.21308 (27194)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 13,
+      "info": 5
+    },
+    "identical": false
+  }
+}

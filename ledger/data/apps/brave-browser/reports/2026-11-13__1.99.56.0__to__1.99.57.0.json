@@ -1,0 +1,74 @@
+{
+  "cask": "brave-browser",
+  "name": "Brave",
+  "detectedAt": "2026-11-13T14:46:10.167Z",
+  "from": {
+    "version": "1.99.56.0",
+    "appVersion": "157.1.99.56",
+    "build": "199.56",
+    "url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/199.56/Brave-Browser-arm64.dmg",
+    "sha256": "60c4c0be80edfa91168805f807a45980f6273896e2712e2179b67d9d61ebdb93",
+    "bytes": 232336953,
+    "scannedAt": "2026-11-11T14:36:24.695Z",
+    "fingerprint": "634e4194961c0c3b4b2b04d8bd7911ef",
+    "report": "reports/2026-11-11__1.99.55.0__to__1.99.56.0.json"
+  },
+  "to": {
+    "version": "1.99.57.0",
+    "appVersion": "157.1.99.57",
+    "build": "199.57",
+    "url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/199.57/Brave-Browser-arm64.dmg",
+    "sha256": "922934b233ddecfa49a9dc5629d40469fdb0b2d59c49547697eea0eec4087711",
+    "bytes": 232798314,
+    "scannedAt": "2026-11-13T14:46:10.167Z",
+    "fingerprint": "8e4358d67c8cc9d9d7eca10ab3e1190d"
+  },
+  "deep": true,
+  "report": {
+    "app": {
+      "name": "Brave Browser",
+      "bundleId": "com.brave.Browser"
+    },
+    "from": {
+      "version": "157.1.99.56",
+      "build": "199.56",
+      "takenAt": "2026-11-11T14:36:24.278Z",
+      "path": "Brave 1.99.56.0 (Homebrew cask brave-browser)"
+    },
+    "to": {
+      "version": "157.1.99.57",
+      "build": "199.57",
+      "takenAt": "2026-11-13T14:46:09.912Z",
+      "path": "Brave 1.99.57.0 (Homebrew cask brave-browser)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "Brave Browser Framework.framework 157.1.99.56 → 157.1.99.57",
+        "where": [
+          "Contents/Frameworks/Brave Browser Framework.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +194.1 KB (+0.0%), files 980 → 980"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 157.1.99.56 (199.56) → 157.1.99.57 (199.57)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 3
+    },
+    "identical": false
+  }
+}
