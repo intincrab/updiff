@@ -1,0 +1,65 @@
+{
+  "cask": "whatsapp",
+  "name": "WhatsApp",
+  "detectedAt": "2026-11-14T13:42:22.587Z",
+  "from": {
+    "version": "26.45.21",
+    "appVersion": "26.45.21",
+    "build": "1112473684",
+    "url": "https://web.whatsapp.com/desktop/mac_native/release/?version=2.26.45.21&extension=zip&configuration=Release&branch=master&is_buck=true",
+    "sha256": "27e43197d81bbb33e3f695fa1fe2ba3956618499a2be92caacbeca1c748ccde8",
+    "bytes": 324840174,
+    "scannedAt": "2026-11-13T14:47:55.794Z",
+    "fingerprint": "1f8ea5d6ac22740c641f993506c6fb64",
+    "report": "reports/2026-11-13__26.45.13__to__26.45.21.json"
+  },
+  "to": {
+    "version": "26.45.23",
+    "appVersion": "26.45.23",
+    "build": "1113304280",
+    "url": "https://web.whatsapp.com/desktop/mac_native/release/?version=2.26.45.23&extension=zip&configuration=Release&branch=master&is_buck=true",
+    "sha256": "ce3257051a2ab7cee1a9e1b8b8bd46d893a233328cd7e291f17776b51869111e",
+    "bytes": 328994410,
+    "scannedAt": "2026-11-14T13:42:22.587Z",
+    "fingerprint": "1c56d22236f201fce0f80a51ac1c6fd5"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "‎WhatsApp",
+      "bundleId": "net.whatsapp.WhatsApp"
+    },
+    "from": {
+      "version": "26.45.21",
+      "build": "1112473684",
+      "takenAt": "2026-11-13T14:47:55.681Z",
+      "path": "WhatsApp 26.45.21 (Homebrew cask whatsapp)"
+    },
+    "to": {
+      "version": "26.45.23",
+      "build": "1113304280",
+      "takenAt": "2026-11-14T13:42:22.486Z",
+      "path": "WhatsApp 26.45.23 (Homebrew cask whatsapp)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +8.1 MB (+1.1%), files 1631 → 1631"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 26.45.21 (1112473684) → 26.45.23 (1113304280)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 2
+    },
+    "identical": false
+  }
+}

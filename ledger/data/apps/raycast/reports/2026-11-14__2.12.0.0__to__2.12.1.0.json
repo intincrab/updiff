@@ -1,0 +1,74 @@
+{
+  "cask": "raycast",
+  "name": "Raycast",
+  "detectedAt": "2026-11-14T13:42:07.343Z",
+  "from": {
+    "version": "2.12.0.0",
+    "appVersion": "2.12.0.0",
+    "build": "0",
+    "url": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.12.0.0",
+    "sha256": "439e4b1b4c4373788894e08d573bf1197f3ce5f14b3a74a7da4cde748c277bab",
+    "bytes": 155141847,
+    "scannedAt": "2026-11-13T14:47:26.654Z",
+    "fingerprint": "5f5ef3d4a2832a9137412890b9e9c41b",
+    "report": "reports/2026-11-13__2.11.1.0__to__2.12.0.0.json"
+  },
+  "to": {
+    "version": "2.12.1.0",
+    "appVersion": "2.12.1.0",
+    "build": "0",
+    "url": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.12.1.0",
+    "sha256": "8d306491c4c76fc0312701254996041e00f6b6587c66714c632d64dbfe9e8096",
+    "bytes": 155221181,
+    "scannedAt": "2026-11-14T13:42:07.343Z",
+    "fingerprint": "40658eff41ab3371194f716ef9b87af3"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Raycast",
+      "bundleId": "com.raycast.macos"
+    },
+    "from": {
+      "version": "2.12.0.0",
+      "build": "0",
+      "takenAt": "2026-11-13T14:47:26.596Z",
+      "path": "Raycast 2.12.0.0 (Homebrew cask raycast)"
+    },
+    "to": {
+      "version": "2.12.1.0",
+      "build": "0",
+      "takenAt": "2026-11-14T13:42:07.274Z",
+      "path": "Raycast 2.12.1.0 (Homebrew cask raycast)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "MediaRemoteAdapter.framework 2.12.0.0 → 2.12.1.0",
+        "where": [
+          "Contents/Frameworks/MediaRemoteAdapter.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +96.6 KB (+0.0%), files 1103 → 1103"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 2.12.0.0 (0) → 2.12.1.0 (0)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 3
+    },
+    "identical": false
+  }
+}
