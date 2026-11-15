@@ -1,214 +1,186 @@
 {
-  "startedAt": "2026-11-14T13:41:13.498Z",
-  "finishedAt": "2026-11-14T13:42:22.761Z",
+  "startedAt": "2026-11-15T14:08:49.034Z",
+  "finishedAt": "2026-11-15T14:08:49.384Z",
   "outcomes": [
     {
       "cask": "1password",
       "status": "unchanged",
       "version": "8.12.44",
-      "ms": 171
+      "ms": 101
     },
     {
       "cask": "alt-tab",
       "status": "unchanged",
       "version": "11.10.1",
-      "ms": 89
+      "ms": 21
     },
     {
       "cask": "arc",
       "status": "unchanged",
       "version": "1.173.1,90936",
-      "ms": 63
+      "ms": 7
     },
     {
       "cask": "brave-browser",
       "status": "unchanged",
       "version": "1.99.57.0",
-      "ms": 63
+      "ms": 9
     },
     {
       "cask": "bruno",
       "status": "unchanged",
       "version": "4.3.0",
-      "ms": 53
+      "ms": 7
     },
     {
       "cask": "chatgpt",
       "status": "unchanged",
       "version": "26.1111.21308",
-      "ms": 50
+      "ms": 7
     },
     {
       "cask": "claude",
-      "status": "updated",
+      "status": "unchanged",
       "version": "5.11492.5,1403e2cf44abfb23809c8ae11238d5e9704a41c2",
-      "from": "5.11492.2,b1edc63367ca6fb5fa8d5a72604951a71b37dd58",
-      "report": "reports/2026-11-14__5.11492.2_b1edc63367ca6fb5fa8d5a72604951a71b37dd58__to__5.11492.5_1403e2cf44abfb23809c8ae11238d5e9704a41c2.json",
-      "counts": {
-        "high": 0,
-        "notable": 0,
-        "info": 2
-      },
-      "ms": 19429
+      "ms": 7
     },
     {
       "cask": "cursor",
-      "status": "updated",
+      "status": "unchanged",
       "version": "3.30.14,5f54c8173e5552412beb40702adac16275677fa0",
-      "from": "3.30.8,4a44c846d0b817fab060823f93c63ea2861ac192",
-      "report": "reports/2026-11-14__3.30.8_4a44c846d0b817fab060823f93c63ea2861ac192__to__3.30.14_5f54c8173e5552412beb40702adac16275677fa0.json",
-      "counts": {
-        "high": 0,
-        "notable": 1,
-        "info": 2
-      },
-      "ms": 27223
+      "ms": 13
     },
     {
       "cask": "discord",
       "status": "unchanged",
       "version": "0.0.422",
-      "ms": 123
+      "ms": 6
     },
     {
       "cask": "figma",
       "status": "unchanged",
       "version": "126.11.9",
-      "ms": 58
+      "ms": 13
     },
     {
       "cask": "firefox",
       "status": "unchanged",
       "version": "160.0",
-      "ms": 55
+      "ms": 7
     },
     {
       "cask": "ghostty",
       "status": "unchanged",
       "version": "1.4.0",
-      "ms": 59
+      "ms": 6
     },
     {
       "cask": "google-chrome",
       "status": "unchanged",
       "version": "157.0.8103.79",
-      "ms": 50
+      "ms": 7
     },
     {
       "cask": "insomnia",
       "status": "unchanged",
       "version": "13.4.0",
-      "ms": 54
+      "ms": 5
     },
     {
       "cask": "iterm2",
       "status": "unchanged",
       "version": "3.7.7",
-      "ms": 53
+      "ms": 5
     },
     {
       "cask": "linear",
       "status": "unchanged",
       "version": "1.32.8",
-      "ms": 63
+      "ms": 5
     },
     {
       "cask": "notion",
       "status": "unchanged",
       "version": "7.43.2",
-      "ms": 72
+      "ms": 5
     },
     {
       "cask": "obsidian",
       "status": "unchanged",
       "version": "1.15.1",
-      "ms": 19
+      "ms": 7
     },
     {
       "cask": "postman",
       "status": "unchanged",
       "version": "12.36.4",
-      "ms": 58
+      "ms": 15
     },
     {
       "cask": "raycast",
-      "status": "updated",
+      "status": "unchanged",
       "version": "2.12.1.0",
-      "from": "2.12.0.0",
-      "report": "reports/2026-11-14__2.12.0.0__to__2.12.1.0.json",
-      "counts": {
-        "high": 0,
-        "notable": 0,
-        "info": 3
-      },
-      "ms": 6051
+      "ms": 18
     },
     {
       "cask": "rectangle",
       "status": "unchanged",
       "version": "2.0.4",
-      "ms": 101
+      "ms": 14
     },
     {
       "cask": "signal",
       "status": "unchanged",
       "version": "8.35.0",
-      "ms": 213
+      "ms": 6
     },
     {
       "cask": "slack",
       "status": "unchanged",
       "version": "4.53.287",
-      "ms": 78
+      "ms": 8
     },
     {
       "cask": "spotify",
       "status": "unchanged",
       "version": "1.3.9.2055",
-      "ms": 53
+      "ms": 7
     },
     {
       "cask": "telegram",
       "status": "unchanged",
       "version": "13.2.0,283494",
-      "ms": 52
+      "ms": 7
     },
     {
       "cask": "visual-studio-code",
       "status": "unchanged",
       "version": "1.146.0",
-      "ms": 54
+      "ms": 8
     },
     {
       "cask": "warp",
       "status": "unchanged",
       "version": "0.2026.11.11.08.17.stable_01",
-      "ms": 129
+      "ms": 7
     },
     {
       "cask": "whatsapp",
-      "status": "updated",
+      "status": "unchanged",
       "version": "26.45.23",
-      "from": "26.45.21",
-      "report": "reports/2026-11-14__26.45.21__to__26.45.23.json",
-      "counts": {
-        "high": 0,
-        "notable": 0,
-        "info": 2
-      },
-      "ms": 14608
+      "ms": 8
     },
     {
       "cask": "zed",
       "status": "unchanged",
       "version": "1.28.1",
-      "ms": 100
+      "ms": 6
     },
     {
       "cask": "zoom",
       "status": "unchanged",
       "version": "7.2.5.90525",
-      "ms": 17
+      "ms": 6
     }
   ]
 }
