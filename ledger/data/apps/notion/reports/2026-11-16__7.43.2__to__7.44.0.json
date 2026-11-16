@@ -1,0 +1,84 @@
+{
+  "cask": "notion",
+  "name": "Notion",
+  "detectedAt": "2026-11-16T16:08:21.495Z",
+  "from": {
+    "version": "7.43.2",
+    "appVersion": "7.43.2",
+    "build": "7.43.2",
+    "url": "https://desktop-release.notion-static.com/Notion-7.43.2-arm64.dmg",
+    "sha256": "5891bcae3c7a16b76845627484eebe3e4701d1c95f3f9e458b7f85fea2306f96",
+    "bytes": 121428645,
+    "scannedAt": "2026-11-13T14:47:00.763Z",
+    "fingerprint": "5d0b1f89f6cce24d1c8dbbdaa18b410f",
+    "report": "reports/2026-11-13__7.43.0__to__7.43.2.json"
+  },
+  "to": {
+    "version": "7.44.0",
+    "appVersion": "7.44.0",
+    "build": "7.44.0",
+    "url": "https://desktop-release.notion-static.com/Notion-7.44.0-arm64.dmg",
+    "sha256": "535403a43eddbdcba166952ae6f384dcf8d06a7a751f903384f1ffb042d96387",
+    "bytes": 121496014,
+    "scannedAt": "2026-11-16T16:08:21.495Z",
+    "fingerprint": "d1894047618288eb95324c8611c7c7ef"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Notion",
+      "bundleId": "notion.id"
+    },
+    "from": {
+      "version": "7.43.2",
+      "build": "7.43.2",
+      "takenAt": "2026-11-13T14:47:00.688Z",
+      "path": "Notion 7.43.2 (Homebrew cask notion)"
+    },
+    "to": {
+      "version": "7.44.0",
+      "build": "7.44.0",
+      "takenAt": "2026-11-16T16:08:21.464Z",
+      "path": "Notion 7.44.0 (Homebrew cask notion)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain claudemcpcontent.com",
+        "detail": "1cbd18bf1818c780c9568384b0324fff.claudemcpcontent.com, e3ec78580794fbb221fa034a295f1450.claudemcpcontent.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.webpack/renderer/sqlite_browser/preload.js",
+          "Contents/Resources/app.asar:.webpack/renderer/popup/preload.js",
+          "Contents/Resources/app.asar:.webpack/renderer/internal_settings/preload.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "1 domain no longer mentioned",
+        "detail": "salesforce.com"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +357.0 KB (+0.1%), files 156 → 156"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 7.43.2 (7.43.2) → 7.44.0 (7.44.0)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 3
+    },
+    "identical": false
+  }
+}
