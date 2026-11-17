@@ -1,0 +1,983 @@
+{
+  "cask": "1password",
+  "name": "1Password",
+  "detectedAt": "2026-11-17T16:17:01.668Z",
+  "from": {
+    "version": "8.12.44",
+    "appVersion": "8.12.44",
+    "build": "8.12.44",
+    "url": "https://downloads.1password.com/mac/1Password-8.12.44-aarch64.zip",
+    "sha256": "9b24b1464bf43780f04e1afaf8b0742f2163ca94db8b0620059e7a05a2498fa1",
+    "bytes": 223397033,
+    "scannedAt": "2026-11-07T17:43:39.342Z",
+    "fingerprint": "c0749ea484b5bfd02c120b2d5c34ccb6"
+  },
+  "to": {
+    "version": "8.12.46",
+    "appVersion": "8.12.46",
+    "build": "8.12.46",
+    "url": "https://downloads.1password.com/mac/1Password-8.12.46-aarch64.zip",
+    "sha256": "7f44eecae6a52409748ba5ed6b94d6b383949f628e2cccd3d1e4798fa30461fc",
+    "bytes": 227739472,
+    "scannedAt": "2026-11-17T16:17:01.668Z",
+    "fingerprint": "e2e3c034b1118ddea076a31ddda9ffbf"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "1Password",
+      "bundleId": "com.1password.1password"
+    },
+    "from": {
+      "version": "8.12.44",
+      "build": "8.12.44",
+      "takenAt": "2026-11-07T17:43:39.277Z",
+      "path": "1Password 8.12.44 (Homebrew cask 1password)"
+    },
+    "to": {
+      "version": "8.12.46",
+      "build": "8.12.46",
+      "takenAt": "2026-11-17T16:17:01.526Z",
+      "path": "1Password 8.12.46 (Homebrew cask 1password)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "electron",
+        "change": "changed",
+        "title": "Electron 42.11.8 → 43.8.4",
+        "where": [
+          "Contents/Frameworks/Electron Framework.framework"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain 7-zip.org",
+        "detail": "www.7-zip.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain aist-nara.ac.jp",
+        "detail": "chasen.aist-nara.ac.jp",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain androidx.dev",
+        "detail": "androidx.dev",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain antigrain.com",
+        "detail": "antigrain.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain azillionmonkeys.com",
+        "detail": "www.azillionmonkeys.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain blackmagicdesign.com",
+        "detail": "software.blackmagicdesign.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain blueoakcouncil.org",
+        "detail": "blueoakcouncil.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain chromium.org",
+        "detail": "source.chromium.org, www.chromium.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain crummy.com",
+        "detail": "www.crummy.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain daringfireball.net",
+        "detail": "daringfireball.net",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain dearsystems.com",
+        "detail": "inventory.dearsystems.com",
+        "where": [
+          "Contents/Frameworks/index.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain demon.co.uk",
+        "detail": "www.finesse.demon.co.uk",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain easylist.to",
+        "detail": "easylist.to",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ffmpeg.org",
+        "detail": "git.ffmpeg.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain flotcharts.org",
+        "detail": "www.flotcharts.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain freedesktop.org",
+        "detail": "cgit.freedesktop.org, gitlab.freedesktop.org, wayland.freedesktop.org, www.freedesktop.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain freetype.org",
+        "detail": "freetype.org, www.freetype.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain fsf.org",
+        "detail": "fsf.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain fusejs.io",
+        "detail": "fusejs.io",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gnome.org",
+        "detail": "git.gnome.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gnu.org",
+        "detail": "www.gnu.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain google.github.io",
+        "detail": "google.github.io",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain googlecode.com",
+        "detail": "lao-dictionary.googlecode.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain googlesource.com",
+        "detail": "android.googlesource.com, aomedia.googlesource.com, boringssl.googlesource.com, chromium.googlesource.com, dawn.googlesource.com, eigen.googlesource.com, pdfium.googlesource.com, quiche.googlesource.com, swiftshader.googlesource.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gutenberg.org",
+        "detail": "www.gutenberg.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain halide-lang.org",
+        "detail": "halide-lang.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain harfbuzz.org",
+        "detail": "harfbuzz.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain hoehrmann.de",
+        "detail": "bjoern.hoehrmann.de",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain incits.org",
+        "detail": "standards.incits.org",
+        "where": [
+          "Contents/Frameworks/index.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain inforcloudsuite.com",
+        "detail": "fin-example-prd.inforcloudsuite.com, mingle-portal.inforcloudsuite.com",
+        "where": [
+          "Contents/Frameworks/index.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain inria.fr",
+        "detail": "core-math.gitlabpages.inria.fr",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain joyent.com",
+        "detail": "joyent.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain jquery.com",
+        "detail": "jquery.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain js.foundation",
+        "detail": "js.foundation",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain khronos.org",
+        "detail": "www.khronos.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain kyoto-u.ac.jp",
+        "detail": "www.kurims.kyoto-u.ac.jp",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain linux-usb.org",
+        "detail": "www.linux-usb.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain linuxtv.org",
+        "detail": "git.linuxtv.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain lit.dev",
+        "detail": "lit.dev",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain llvm.org",
+        "detail": "compiler-rt.llvm.org, libc.llvm.org, libcxx.llvm.org, libcxxabi.llvm.org, llvm.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mathiasbynens.be",
+        "detail": "mathiasbynens.be",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain modp.com",
+        "detail": "modp.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain musl-libc.org",
+        "detail": "www.musl-libc.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain nedproductions.biz",
+        "detail": "www.nedproductions.biz",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain npmjs.org",
+        "detail": "registry.npmjs.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain nuget.org",
+        "detail": "www.nuget.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain nuxi.nl",
+        "detail": "nuxi.nl",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain officekata.com",
+        "detail": "work.officekata.com",
+        "where": [
+          "Contents/Frameworks/index.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain openh264.org",
+        "detail": "www.openh264.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain palermo.edu",
+        "detail": "www.palermo.edu",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain pertinentdetail.org",
+        "detail": "www.pertinentdetail.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ploscompbiol.org",
+        "detail": "www.ploscompbiol.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain polymer-project.org",
+        "detail": "www.polymer-project.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain portaudio.com",
+        "detail": "www.portaudio.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain pypi.org",
+        "detail": "pypi.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain rarlab.com",
+        "detail": "www.rarlab.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain searchfox.org",
+        "detail": "searchfox.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sgi.com",
+        "detail": "oss.sgi.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sil.org",
+        "detail": "scripts.sil.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sizzlejs.com",
+        "detail": "sizzlejs.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain soft-switch.org",
+        "detail": "www.soft-switch.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain softsynth.com",
+        "detail": "www.softsynth.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sourceware.org",
+        "detail": "sourceware.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain tex-tipografia.com",
+        "detail": "www.tex-tipografia.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain thelig.ht",
+        "detail": "thelig.ht",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain torchmobile.com",
+        "detail": "www.torchmobile.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ucar.edu",
+        "detail": "www.cisl.ucar.edu",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain uiuc.edu",
+        "detail": "casper.beckman.uiuc.edu",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain unicode.org",
+        "detail": "www.unicode.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain unity3d.com",
+        "detail": "unity3d.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain unlicense.org",
+        "detail": "unlicense.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain v8.dev",
+        "detail": "v8.dev",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain videolan.org",
+        "detail": "code.videolan.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain webkit.org",
+        "detail": "webkit.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain xiph.org",
+        "detail": "gitlab.xiph.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain xmlsoft.org",
+        "detail": "xmlsoft.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain zlib.net",
+        "detail": "zlib.net",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain zod.dev",
+        "detail": "zod.dev",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "1 domain no longer mentioned",
+        "detail": "verou.me"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under android.com",
+        "detail": "source.android.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under apache.org",
+        "detail": "repo.maven.apache.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under deviantart.com",
+        "detail": "jelloween.deviantart.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under free.fr",
+        "detail": "gruntthepeon.free.fr",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under github.com",
+        "detail": "www.github.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under opensource.org",
+        "detail": "www.opensource.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under python.org",
+        "detail": "pypi.python.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under apple.com",
+        "detail": "opensource.apple.com, www.opensource.apple.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under google.com",
+        "detail": "code.google.com, dl.google.com, sites.google.com, source.corp.google.com",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under intuit.com",
+        "detail": "c8.qbo.intuit.com, qbo.intuit.com",
+        "where": [
+          "Contents/Frameworks/index.node"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under mozilla.org",
+        "detail": "dxr.mozilla.org, hg.mozilla.org, website-archive.mozilla.org",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under sourceforge.net",
+        "detail": "apngdis.sourceforge.net, bgoffice.sourceforge.net, hunspell.sourceforge.net",
+        "where": [
+          "Contents/Resources/LICENSES.chromium.html"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +23.3 MB (+4.2%), files 380 → 382"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 8.12.44 (8.12.44) → 8.12.46 (8.12.46)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 79,
+      "info": 15
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}

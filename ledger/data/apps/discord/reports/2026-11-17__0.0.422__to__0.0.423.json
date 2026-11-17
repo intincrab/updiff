@@ -1,0 +1,65 @@
+{
+  "cask": "discord",
+  "name": "Discord",
+  "detectedAt": "2026-11-17T16:17:12.700Z",
+  "from": {
+    "version": "0.0.422",
+    "appVersion": "0.0.422",
+    "build": "0.0.422",
+    "url": "https://stable.dl2.discordapp.net/distro/app/stable/osx/universal/0.0.422/Discord.dmg",
+    "sha256": "6fedd6856cbc48656704dfc718d52114e12ffae9ae904d429ae6e1ded2081fa2",
+    "bytes": 234424393,
+    "scannedAt": "2026-11-10T15:04:40.264Z",
+    "fingerprint": "5a876904f127a22b41d0495ced30efd2",
+    "report": "reports/2026-11-10__0.0.421__to__0.0.422.json"
+  },
+  "to": {
+    "version": "0.0.423",
+    "appVersion": "0.0.423",
+    "build": "0.0.423",
+    "url": "https://stable.dl2.discordapp.net/distro/app/stable/osx/universal/0.0.423/Discord.dmg",
+    "sha256": "8edb6957c30e78250909f4f746546077f25e032f9532852c4b1c2f8bfd37beb2",
+    "bytes": 234013358,
+    "scannedAt": "2026-11-17T16:17:12.700Z",
+    "fingerprint": "60b7555a54a7b6030e507d1fd22327d3"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Discord",
+      "bundleId": "com.hnc.Discord"
+    },
+    "from": {
+      "version": "0.0.422",
+      "build": "0.0.422",
+      "takenAt": "2026-11-10T15:04:40.197Z",
+      "path": "Discord 0.0.422 (Homebrew cask discord)"
+    },
+    "to": {
+      "version": "0.0.423",
+      "build": "0.0.423",
+      "takenAt": "2026-11-17T16:17:12.651Z",
+      "path": "Discord 0.0.423 (Homebrew cask discord)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -810.0 KB (-0.2%), files 286 → 286"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 0.0.422 (0.0.422) → 0.0.423 (0.0.423)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 2
+    },
+    "identical": false
+  }
+}

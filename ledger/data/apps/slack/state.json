@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "4.53.292",
+      "appVersion": "4.53.292",
+      "build": "453000292",
+      "url": "https://downloads.slack-edge.com/desktop-releases/mac/arm64/4.53.292/Slack-4.53.292-macOS.dmg",
+      "sha256": "b358a20e933a889e76faa46c581e3d9c59f036dd3be1692eb593db900646006a",
+      "bytes": 116783604,
+      "scannedAt": "2026-11-17T16:18:11.962Z",
+      "fingerprint": "2fe5060ef99b151f2e44aa4ea8cce950",
+      "report": "reports/2026-11-17__4.53.287__to__4.53.292.json"
+    },
+    {
       "version": "4.53.287",
       "appVersion": "4.53.287",
       "build": "453000287",
@@ -26,17 +37,17 @@
   "name": "Slack",
   "homepage": "https://slack.com/",
   "desc": "Team communication and collaboration software",
-  "lastCheckedAt": "2026-11-16T16:08:33.075Z",
+  "lastCheckedAt": "2026-11-17T16:17:43.346Z",
   "latest": {
-    "version": "4.53.287",
-    "appVersion": "4.53.287",
-    "build": "453000287",
-    "url": "https://downloads.slack-edge.com/desktop-releases/mac/arm64/4.53.287/Slack-4.53.287-macOS.dmg",
-    "sha256": "4d4b794cfca076d438122693889179ef6c59066a239413b76df9b51c6dd14082",
-    "bytes": 117181638,
-    "scannedAt": "2026-11-10T15:05:50.073Z",
-    "fingerprint": "9bd5a06ea57af79b8758cba52782404f",
-    "report": "reports/2026-11-10__4.53.280__to__4.53.287.json"
+    "version": "4.53.292",
+    "appVersion": "4.53.292",
+    "build": "453000292",
+    "url": "https://downloads.slack-edge.com/desktop-releases/mac/arm64/4.53.292/Slack-4.53.292-macOS.dmg",
+    "sha256": "b358a20e933a889e76faa46c581e3d9c59f036dd3be1692eb593db900646006a",
+    "bytes": 116783604,
+    "scannedAt": "2026-11-17T16:18:11.962Z",
+    "fingerprint": "2fe5060ef99b151f2e44aa4ea8cce950",
+    "report": "reports/2026-11-17__4.53.287__to__4.53.292.json"
   },
   "bundleId": "com.tinyspeck.slackmacgap"
 }

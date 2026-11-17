@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "26.46.15",
+      "appVersion": "26.46.15",
+      "build": "1116227193",
+      "url": "https://web.whatsapp.com/desktop/mac_native/release/?version=2.26.46.15&extension=zip&configuration=Release&branch=master&is_buck=true",
+      "sha256": "4494545f91c62594f6fa82cc924fef96eb3db8ceb6239d0a35f22db72ac5da6f",
+      "bytes": 335250752,
+      "scannedAt": "2026-11-17T16:18:40.893Z",
+      "fingerprint": "3ba9f1ce088d6ed28e7945327fe235f1",
+      "report": "reports/2026-11-17__26.46.12__to__26.46.15.json"
+    },
+    {
       "version": "26.46.12",
       "appVersion": "26.46.12",
       "build": "1114092258",
@@ -59,17 +70,17 @@
   "name": "WhatsApp",
   "homepage": "https://www.whatsapp.com/",
   "desc": "Native desktop client for WhatsApp",
-  "lastCheckedAt": "2026-11-16T16:08:33.369Z",
+  "lastCheckedAt": "2026-11-17T16:18:12.342Z",
   "latest": {
-    "version": "26.46.12",
-    "appVersion": "26.46.12",
-    "build": "1114092258",
-    "url": "https://web.whatsapp.com/desktop/mac_native/release/?version=2.26.46.12&extension=zip&configuration=Release&branch=master&is_buck=true",
-    "sha256": "a57187a427bd8abc19edfdf950481ba7ab36d91623d1f7123a0335f32de881f6",
-    "bytes": 332069415,
-    "scannedAt": "2026-11-16T16:08:46.762Z",
-    "fingerprint": "edd82add397608829813cf1ba22d5242",
-    "report": "reports/2026-11-16__26.45.23__to__26.46.12.json"
+    "version": "26.46.15",
+    "appVersion": "26.46.15",
+    "build": "1116227193",
+    "url": "https://web.whatsapp.com/desktop/mac_native/release/?version=2.26.46.15&extension=zip&configuration=Release&branch=master&is_buck=true",
+    "sha256": "4494545f91c62594f6fa82cc924fef96eb3db8ceb6239d0a35f22db72ac5da6f",
+    "bytes": 335250752,
+    "scannedAt": "2026-11-17T16:18:40.893Z",
+    "fingerprint": "3ba9f1ce088d6ed28e7945327fe235f1",
+    "report": "reports/2026-11-17__26.46.12__to__26.46.15.json"
   },
   "bundleId": "net.whatsapp.WhatsApp"
 }
