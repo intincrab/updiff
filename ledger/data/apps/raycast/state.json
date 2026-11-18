@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "2.13.0.0",
+      "appVersion": "2.13.0.0",
+      "build": "0",
+      "url": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.13.0.0",
+      "sha256": "4e18319a3e42bcb6d2d25566c6c2d5a60b756fca0feb8655e89e5463a60ad410",
+      "bytes": 158040130,
+      "scannedAt": "2026-11-18T15:53:24.021Z",
+      "fingerprint": "af858f85095fe24ac1b73c08e5bfe7b8",
+      "report": "reports/2026-11-18__2.12.1.0__to__2.13.0.0.json"
+    },
+    {
       "version": "2.12.1.0",
       "appVersion": "2.12.1.0",
       "build": "0",
@@ -37,17 +48,17 @@
   "name": "Raycast",
   "homepage": "https://raycast.com/",
   "desc": "Control your tools with a few keystrokes",
-  "lastCheckedAt": "2026-11-17T16:17:43.171Z",
+  "lastCheckedAt": "2026-11-18T15:53:18.432Z",
   "latest": {
-    "version": "2.12.1.0",
-    "appVersion": "2.12.1.0",
+    "version": "2.13.0.0",
+    "appVersion": "2.13.0.0",
     "build": "0",
-    "url": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.12.1.0",
-    "sha256": "8d306491c4c76fc0312701254996041e00f6b6587c66714c632d64dbfe9e8096",
-    "bytes": 155221181,
-    "scannedAt": "2026-11-14T13:42:07.343Z",
-    "fingerprint": "40658eff41ab3371194f716ef9b87af3",
-    "report": "reports/2026-11-14__2.12.0.0__to__2.12.1.0.json"
+    "url": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.13.0.0",
+    "sha256": "4e18319a3e42bcb6d2d25566c6c2d5a60b756fca0feb8655e89e5463a60ad410",
+    "bytes": 158040130,
+    "scannedAt": "2026-11-18T15:53:24.021Z",
+    "fingerprint": "af858f85095fe24ac1b73c08e5bfe7b8",
+    "report": "reports/2026-11-18__2.12.1.0__to__2.13.0.0.json"
   },
   "bundleId": "com.raycast.macos"
 }

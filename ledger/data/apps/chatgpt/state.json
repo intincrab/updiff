@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "26.1111.71025",
+      "appVersion": "26.1111.71025",
+      "build": "28661",
+      "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1111.71025.zip",
+      "sha256": "7edb7f133e41d947a9e11826f3669fd32be2ff6c6bbdaa01e40eb41b9e39e957",
+      "bytes": 835838478,
+      "scannedAt": "2026-11-18T15:51:53.302Z",
+      "fingerprint": "fce649bbbb084fa18574431acf194b12",
+      "report": "reports/2026-11-18__26.1111.21308__to__26.1111.71025.json"
+    },
+    {
       "version": "26.1111.21308",
       "appVersion": "26.1111.21308",
       "build": "27194",
@@ -48,17 +59,17 @@
   "name": "ChatGPT",
   "homepage": "https://chatgpt.com/",
   "desc": "OpenAI's official ChatGPT desktop app",
-  "lastCheckedAt": "2026-11-17T16:17:03.534Z",
+  "lastCheckedAt": "2026-11-18T15:51:17.297Z",
   "latest": {
-    "version": "26.1111.21308",
-    "appVersion": "26.1111.21308",
-    "build": "27194",
-    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1111.21308.zip",
-    "sha256": "8186e39bb166199f648979c7e26c14891908905da3f454b8e6fc2c23a739bae7",
-    "bytes": 835870020,
-    "scannedAt": "2026-11-13T14:46:43.421Z",
-    "fingerprint": "1947270a821583cae31e8037ff1b5601",
-    "report": "reports/2026-11-13__26.1106.51428__to__26.1111.21308.json"
+    "version": "26.1111.71025",
+    "appVersion": "26.1111.71025",
+    "build": "28661",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1111.71025.zip",
+    "sha256": "7edb7f133e41d947a9e11826f3669fd32be2ff6c6bbdaa01e40eb41b9e39e957",
+    "bytes": 835838478,
+    "scannedAt": "2026-11-18T15:51:53.302Z",
+    "fingerprint": "fce649bbbb084fa18574431acf194b12",
+    "report": "reports/2026-11-18__26.1111.21308__to__26.1111.71025.json"
   },
   "bundleId": "com.openai.codex"
 }

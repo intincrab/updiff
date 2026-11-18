@@ -1,0 +1,439 @@
+{
+  "cask": "claude",
+  "name": "Claude",
+  "detectedAt": "2026-11-18T15:52:03.221Z",
+  "from": {
+    "version": "5.11492.5,1403e2cf44abfb23809c8ae11238d5e9704a41c2",
+    "appVersion": "5.11492.5",
+    "build": "5.11492.5",
+    "url": "https://downloads.claude.ai/releases/darwin/universal/5.11492.5/Claude-1403e2cf44abfb23809c8ae11238d5e9704a41c2.zip",
+    "sha256": "a6f33df248c064acdd8c94418de1d125c7e87f85aadf5817802cba35335f794e",
+    "bytes": 389762687,
+    "scannedAt": "2026-11-14T13:41:33.305Z",
+    "fingerprint": "9645eb813f6c28059429618912821b2a",
+    "report": "reports/2026-11-14__5.11492.2_b1edc63367ca6fb5fa8d5a72604951a71b37dd58__to__5.11492.5_1403e2cf44abfb23809c8ae11238d5e9704a41c2.json"
+  },
+  "to": {
+    "version": "6.6395.0,d71a20056be3b25708751e98bef60759ea1f441b",
+    "appVersion": "6.6395.0",
+    "build": "6.6395.0",
+    "url": "https://downloads.claude.ai/releases/darwin/universal/6.6395.0/Claude-d71a20056be3b25708751e98bef60759ea1f441b.zip",
+    "sha256": "88c7b43039e77529930eda386a21141232bf2acb6762d04e6fbc2d028813847a",
+    "bytes": 399131567,
+    "scannedAt": "2026-11-18T15:52:03.221Z",
+    "fingerprint": "88116f844c4c2c4853c6593bf762c6cb"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Claude",
+      "bundleId": "com.anthropic.claudefordesktop"
+    },
+    "from": {
+      "version": "5.11492.5",
+      "build": "5.11492.5",
+      "takenAt": "2026-11-14T13:41:33.186Z",
+      "path": "Claude 5.11492.5,1403e2cf44abfb23809c8ae11238d5e9704a41c2 (Homebrew cask claude)"
+    },
+    "to": {
+      "version": "6.6395.0",
+      "build": "6.6395.0",
+      "takenAt": "2026-11-18T15:52:03.158Z",
+      "path": "Claude 6.6395.0,d71a20056be3b25708751e98bef60759ea1f441b (Homebrew cask claude)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New executable: alt-tool-runner",
+        "detail": "team Q6L2SF6YDW",
+        "where": [
+          "Contents/Helpers/alt-tool-runner"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New executable: artifact-app-installer",
+        "detail": "team Q6L2SF6YDW",
+        "where": [
+          "Contents/Helpers/artifact-app-installer"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New executable: artifact-app-notifier",
+        "detail": "team Q6L2SF6YDW",
+        "where": [
+          "Contents/Helpers/artifact-app-notifier"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "electron",
+        "change": "changed",
+        "title": "Electron 45.2.1 → 45.3.3",
+        "where": [
+          "Contents/Frameworks/Electron Framework.framework"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain a11yproject.com",
+        "detail": "a11yproject.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain bfldr.com",
+        "detail": "bfldr.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain cloudfront.net",
+        "detail": "cloudfront.net (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain concertpass.com",
+        "detail": "mirrors.concertpass.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ctan.org",
+        "detail": "ctan.org",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ctfassets.net",
+        "detail": "ctfassets.net (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain datocms-assets.com",
+        "detail": "datocms-assets.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain framerusercontent.com",
+        "detail": "framerusercontent.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ghost.io",
+        "detail": "ghost.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain hubspotusercontent-na1.net",
+        "detail": "hubspotusercontent-na1.net (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain illinois.edu",
+        "detail": "ctan.math.illinois.edu",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain kinsta.cloud",
+        "detail": "kinsta.cloud (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mzstatic.com",
+        "detail": "mzstatic.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain openoffice.org",
+        "detail": "openoffice.org",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-yuTTraBu.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain publicsuffix.org",
+        "detail": "publicsuffix.org",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sil.org",
+        "detail": "scripts.sil.org",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain storyblok.com",
+        "detail": "storyblok.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain umich.edu",
+        "detail": "zhanglab.ccmb.med.umich.edu",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain unicode.org",
+        "detail": "www.unicode.org",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain vercel-storage.com",
+        "detail": "vercel-storage.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain washington.edu",
+        "detail": "ctan.math.washington.edu",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain website-files.com",
+        "detail": "website-files.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain widen.net",
+        "detail": "widen.net (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "package",
+        "change": "changed",
+        "title": "1 bundled npm package changed version",
+        "detail": "ws 8.21.0 → 8.21.3"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "1 domain no longer mentioned",
+        "detail": "typeform.eu"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under amazonaws.com",
+        "detail": "amazonaws.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under anthropic.com",
+        "detail": "auth.example.tunnel.anthropic.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c8ccf33b2-CLh4lmaK.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under claude.ai",
+        "detail": "applinks.claude.ai",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c632c9594-CeQxIdVZ.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under githubusercontent.com",
+        "detail": "githubusercontent.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under google.com",
+        "detail": "dl.google.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c3069f793-Bpje-1TP.js",
+          "Contents/Resources/ion-dist.asar:assets/v1/c49d37e5f-DmVYph06.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under microsoft.com",
+        "detail": "go.microsoft.com",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-yuTTraBu.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under salesforce.com",
+        "detail": "appexchange.salesforce.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under sanity.io",
+        "detail": "sanity.io",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under windows.net",
+        "detail": "blob.core.windows.net",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/cbadf45a4-D4XINScb.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +20.7 MB (+2.2%), files 310 → 313"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 5.11492.5 (5.11492.5) → 6.6395.0 (6.6395.0)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 27,
+      "info": 13
+    },
+    "identical": false
+  }
+}

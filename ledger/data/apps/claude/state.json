@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "6.6395.0,d71a20056be3b25708751e98bef60759ea1f441b",
+      "appVersion": "6.6395.0",
+      "build": "6.6395.0",
+      "url": "https://downloads.claude.ai/releases/darwin/universal/6.6395.0/Claude-d71a20056be3b25708751e98bef60759ea1f441b.zip",
+      "sha256": "88c7b43039e77529930eda386a21141232bf2acb6762d04e6fbc2d028813847a",
+      "bytes": 399131567,
+      "scannedAt": "2026-11-18T15:52:03.221Z",
+      "fingerprint": "88116f844c4c2c4853c6593bf762c6cb",
+      "report": "reports/2026-11-18__5.11492.5_1403e2cf44abfb23809c8ae11238d5e9704a41c2__to__6.6395.0_d71a20056be3b25708751e98bef60759ea1f441b.json"
+    },
+    {
       "version": "5.11492.5,1403e2cf44abfb23809c8ae11238d5e9704a41c2",
       "appVersion": "5.11492.5",
       "build": "5.11492.5",
@@ -59,17 +70,17 @@
   "name": "Claude",
   "homepage": "https://claude.com/download",
   "desc": "Anthropic's official Claude AI desktop app",
-  "lastCheckedAt": "2026-11-17T16:17:03.621Z",
+  "lastCheckedAt": "2026-11-18T15:51:53.579Z",
   "latest": {
-    "version": "5.11492.5,1403e2cf44abfb23809c8ae11238d5e9704a41c2",
-    "appVersion": "5.11492.5",
-    "build": "5.11492.5",
-    "url": "https://downloads.claude.ai/releases/darwin/universal/5.11492.5/Claude-1403e2cf44abfb23809c8ae11238d5e9704a41c2.zip",
-    "sha256": "a6f33df248c064acdd8c94418de1d125c7e87f85aadf5817802cba35335f794e",
-    "bytes": 389762687,
-    "scannedAt": "2026-11-14T13:41:33.305Z",
-    "fingerprint": "9645eb813f6c28059429618912821b2a",
-    "report": "reports/2026-11-14__5.11492.2_b1edc63367ca6fb5fa8d5a72604951a71b37dd58__to__5.11492.5_1403e2cf44abfb23809c8ae11238d5e9704a41c2.json"
+    "version": "6.6395.0,d71a20056be3b25708751e98bef60759ea1f441b",
+    "appVersion": "6.6395.0",
+    "build": "6.6395.0",
+    "url": "https://downloads.claude.ai/releases/darwin/universal/6.6395.0/Claude-d71a20056be3b25708751e98bef60759ea1f441b.zip",
+    "sha256": "88c7b43039e77529930eda386a21141232bf2acb6762d04e6fbc2d028813847a",
+    "bytes": 399131567,
+    "scannedAt": "2026-11-18T15:52:03.221Z",
+    "fingerprint": "88116f844c4c2c4853c6593bf762c6cb",
+    "report": "reports/2026-11-18__5.11492.5_1403e2cf44abfb23809c8ae11238d5e9704a41c2__to__6.6395.0_d71a20056be3b25708751e98bef60759ea1f441b.json"
   },
   "bundleId": "com.anthropic.claudefordesktop"
 }

@@ -1,0 +1,65 @@
+{
+  "cask": "firefox",
+  "name": "Mozilla Firefox",
+  "detectedAt": "2026-11-18T15:52:27.053Z",
+  "from": {
+    "version": "160.0",
+    "appVersion": "160.0",
+    "build": "16026.11.4",
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/160.0/mac/en-US/Firefox%20160.0.dmg",
+    "sha256": "b270ccc60eb899bd0277bd078d7bd8690f5c4fc3e44b4fa9ee78ed2a3e89f0ca",
+    "bytes": 165955382,
+    "scannedAt": "2026-11-11T14:37:27.945Z",
+    "fingerprint": "b2147f85ccf4d50a07617fab0e38dde1",
+    "report": "reports/2026-11-11__159.0.1__to__160.0.json"
+  },
+  "to": {
+    "version": "160.0.1",
+    "appVersion": "160.0.1",
+    "build": "16026.11.16",
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/160.0.1/mac/en-US/Firefox%20160.0.1.dmg",
+    "sha256": "db9a522291d82cbe9a2b2922822def4db0a79d4fa3e614979039d705b13b1c25",
+    "bytes": 165761466,
+    "scannedAt": "2026-11-18T15:52:27.053Z",
+    "fingerprint": "54ed26b4cfd92bb515bcfab6cbf17ae6"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Firefox",
+      "bundleId": "org.mozilla.firefox"
+    },
+    "from": {
+      "version": "160.0",
+      "build": "16026.11.4",
+      "takenAt": "2026-11-11T14:37:27.844Z",
+      "path": "Mozilla Firefox 160.0 (Homebrew cask firefox)"
+    },
+    "to": {
+      "version": "160.0.1",
+      "build": "16026.11.16",
+      "takenAt": "2026-11-18T15:52:20.838Z",
+      "path": "Mozilla Firefox 160.0.1 (Homebrew cask firefox)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -155.0 KB (-0.0%), files 110 → 110"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 160.0 (16026.11.4) → 160.0.1 (16026.11.16)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 2
+    },
+    "identical": false
+  }
+}

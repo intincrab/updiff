@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "1.147.0",
+      "appVersion": "1.147.0",
+      "build": "1.147.0",
+      "url": "https://update.code.visualstudio.com/1.147.0/darwin-arm64/stable",
+      "sha256": "149d944feb599b076b48406b174e1c3cd1d510e9d673854777a20a6f4116a59a",
+      "bytes": 393619875,
+      "scannedAt": "2026-11-18T15:53:44.253Z",
+      "fingerprint": "f06ff8f066e7c3fb6afcd5c50596b013",
+      "report": "reports/2026-11-18__1.146.0__to__1.147.0.json"
+    },
+    {
       "version": "1.146.0",
       "appVersion": "1.146.0",
       "build": "1.146.0",
@@ -26,17 +37,17 @@
   "name": "Microsoft Visual Studio Code",
   "homepage": "https://code.visualstudio.com/",
   "desc": "Open-source code editor",
-  "lastCheckedAt": "2026-11-17T16:18:12.175Z",
+  "lastCheckedAt": "2026-11-18T15:53:24.474Z",
   "latest": {
-    "version": "1.146.0",
-    "appVersion": "1.146.0",
-    "build": "1.146.0",
-    "url": "https://update.code.visualstudio.com/1.146.0/darwin-arm64/stable",
-    "sha256": "6e8d27ee0c5a8f2aa3c43e373407eecd11c270c3fe7f46100ef682aac14bb648",
-    "bytes": 388189389,
-    "scannedAt": "2026-11-11T14:37:44.165Z",
-    "fingerprint": "2ea2690d637b12aea6a84a35071876dc",
-    "report": "reports/2026-11-11__1.145.2__to__1.146.0.json"
+    "version": "1.147.0",
+    "appVersion": "1.147.0",
+    "build": "1.147.0",
+    "url": "https://update.code.visualstudio.com/1.147.0/darwin-arm64/stable",
+    "sha256": "149d944feb599b076b48406b174e1c3cd1d510e9d673854777a20a6f4116a59a",
+    "bytes": 393619875,
+    "scannedAt": "2026-11-18T15:53:44.253Z",
+    "fingerprint": "f06ff8f066e7c3fb6afcd5c50596b013",
+    "report": "reports/2026-11-18__1.146.0__to__1.147.0.json"
   },
   "bundleId": "com.microsoft.VSCode"
 }

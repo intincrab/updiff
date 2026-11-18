@@ -1,0 +1,84 @@
+{
+  "cask": "raycast",
+  "name": "Raycast",
+  "detectedAt": "2026-11-18T15:53:24.021Z",
+  "from": {
+    "version": "2.12.1.0",
+    "appVersion": "2.12.1.0",
+    "build": "0",
+    "url": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.12.1.0",
+    "sha256": "8d306491c4c76fc0312701254996041e00f6b6587c66714c632d64dbfe9e8096",
+    "bytes": 155221181,
+    "scannedAt": "2026-11-14T13:42:07.343Z",
+    "fingerprint": "40658eff41ab3371194f716ef9b87af3",
+    "report": "reports/2026-11-14__2.12.0.0__to__2.12.1.0.json"
+  },
+  "to": {
+    "version": "2.13.0.0",
+    "appVersion": "2.13.0.0",
+    "build": "0",
+    "url": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.13.0.0",
+    "sha256": "4e18319a3e42bcb6d2d25566c6c2d5a60b756fca0feb8655e89e5463a60ad410",
+    "bytes": 158040130,
+    "scannedAt": "2026-11-18T15:53:24.021Z",
+    "fingerprint": "af858f85095fe24ac1b73c08e5bfe7b8"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Raycast",
+      "bundleId": "com.raycast.macos"
+    },
+    "from": {
+      "version": "2.12.1.0",
+      "build": "0",
+      "takenAt": "2026-11-14T13:42:07.274Z",
+      "path": "Raycast 2.12.1.0 (Homebrew cask raycast)"
+    },
+    "to": {
+      "version": "2.13.0.0",
+      "build": "0",
+      "takenAt": "2026-11-18T15:53:23.921Z",
+      "path": "Raycast 2.13.0.0 (Homebrew cask raycast)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain swift.org",
+        "detail": "docs.swift.org",
+        "where": [
+          "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/backend/data.darwin-arm64.node"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "MediaRemoteAdapter.framework 2.12.1.0 → 2.13.0.0",
+        "where": [
+          "Contents/Frameworks/MediaRemoteAdapter.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +23.6 MB (+9.7%), files 1103 → 1118"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 2.12.1.0 (0) → 2.13.0.0 (0)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 3
+    },
+    "identical": false
+  }
+}
