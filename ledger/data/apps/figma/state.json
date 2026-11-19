@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "126.11.11",
+      "appVersion": "126.11.11",
+      "build": "126.11.11",
+      "url": "https://desktop.figma.com/mac-arm/Figma-126.11.11.zip",
+      "sha256": "d52d56de2bf91e5e5d6feb2215c14d49a009a2cee9a3e5708e24f54f514bc2cc",
+      "bytes": 138296942,
+      "scannedAt": "2026-11-19T15:56:40.829Z",
+      "fingerprint": "e1af5900d66e447ef492cdbf5e4dfb16",
+      "report": "reports/2026-11-19__126.11.9__to__126.11.11.json"
+    },
+    {
       "version": "126.11.9",
       "appVersion": "126.11.9",
       "build": "126.11.9",
@@ -26,17 +37,17 @@
   "name": "Figma",
   "homepage": "https://www.figma.com/",
   "desc": "Collaborative team software",
-  "lastCheckedAt": "2026-11-18T15:52:03.564Z",
+  "lastCheckedAt": "2026-11-19T15:56:38.256Z",
   "latest": {
-    "version": "126.11.9",
-    "appVersion": "126.11.9",
-    "build": "126.11.9",
-    "url": "https://desktop.figma.com/mac-arm/Figma-126.11.9.zip",
-    "sha256": "62fb60a7291eec88438433aab9beba636a80c6bbda1d862f41b4312f46e69ec4",
-    "bytes": 138358776,
-    "scannedAt": "2026-11-13T14:46:56.613Z",
-    "fingerprint": "46102b41e4fac5ba0383b097a42a0db6",
-    "report": "reports/2026-11-13__126.11.8__to__126.11.9.json"
+    "version": "126.11.11",
+    "appVersion": "126.11.11",
+    "build": "126.11.11",
+    "url": "https://desktop.figma.com/mac-arm/Figma-126.11.11.zip",
+    "sha256": "d52d56de2bf91e5e5d6feb2215c14d49a009a2cee9a3e5708e24f54f514bc2cc",
+    "bytes": 138296942,
+    "scannedAt": "2026-11-19T15:56:40.829Z",
+    "fingerprint": "e1af5900d66e447ef492cdbf5e4dfb16",
+    "report": "reports/2026-11-19__126.11.9__to__126.11.11.json"
   },
   "bundleId": "com.figma.Desktop"
 }

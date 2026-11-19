@@ -1,0 +1,74 @@
+{
+  "cask": "figma",
+  "name": "Figma",
+  "detectedAt": "2026-11-19T15:56:40.829Z",
+  "from": {
+    "version": "126.11.9",
+    "appVersion": "126.11.9",
+    "build": "126.11.9",
+    "url": "https://desktop.figma.com/mac-arm/Figma-126.11.9.zip",
+    "sha256": "62fb60a7291eec88438433aab9beba636a80c6bbda1d862f41b4312f46e69ec4",
+    "bytes": 138358776,
+    "scannedAt": "2026-11-13T14:46:56.613Z",
+    "fingerprint": "46102b41e4fac5ba0383b097a42a0db6",
+    "report": "reports/2026-11-13__126.11.8__to__126.11.9.json"
+  },
+  "to": {
+    "version": "126.11.11",
+    "appVersion": "126.11.11",
+    "build": "126.11.11",
+    "url": "https://desktop.figma.com/mac-arm/Figma-126.11.11.zip",
+    "sha256": "d52d56de2bf91e5e5d6feb2215c14d49a009a2cee9a3e5708e24f54f514bc2cc",
+    "bytes": 138296942,
+    "scannedAt": "2026-11-19T15:56:40.829Z",
+    "fingerprint": "e1af5900d66e447ef492cdbf5e4dfb16"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Figma",
+      "bundleId": "com.figma.Desktop"
+    },
+    "from": {
+      "version": "126.11.9",
+      "build": "126.11.9",
+      "takenAt": "2026-11-13T14:46:56.561Z",
+      "path": "Figma 126.11.9 (Homebrew cask figma)"
+    },
+    "to": {
+      "version": "126.11.11",
+      "build": "126.11.11",
+      "takenAt": "2026-11-19T15:56:40.792Z",
+      "path": "Figma 126.11.11 (Homebrew cask figma)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "electron",
+        "change": "changed",
+        "title": "Electron 44.11.2 → 44.11.3",
+        "where": [
+          "Contents/Frameworks/Electron Framework.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +25.4 KB (+0.0%), files 294 → 294"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 126.11.9 (126.11.9) → 126.11.11 (126.11.11)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 2
+    },
+    "identical": false
+  }
+}

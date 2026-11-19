@@ -1,0 +1,75 @@
+{
+  "cask": "chatgpt",
+  "name": "ChatGPT",
+  "detectedAt": "2026-11-19T15:56:12.898Z",
+  "from": {
+    "version": "26.1111.71025",
+    "appVersion": "26.1111.71025",
+    "build": "28661",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1111.71025.zip",
+    "sha256": "7edb7f133e41d947a9e11826f3669fd32be2ff6c6bbdaa01e40eb41b9e39e957",
+    "bytes": 835838478,
+    "scannedAt": "2026-11-18T15:51:53.302Z",
+    "fingerprint": "fce649bbbb084fa18574431acf194b12",
+    "report": "reports/2026-11-18__26.1111.21308__to__26.1111.71025.json"
+  },
+  "to": {
+    "version": "26.1111.71704",
+    "appVersion": "26.1111.71704",
+    "build": "29030",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1111.71704.zip",
+    "sha256": "0c790d8ab58425539fe1d844066acb8b80415aa19a5c46d89409815112e8134d",
+    "bytes": 835851598,
+    "scannedAt": "2026-11-19T15:56:12.898Z",
+    "fingerprint": "e4cb85758d3cd6aace2a38b62357592c"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "ChatGPT",
+      "bundleId": "com.openai.codex"
+    },
+    "from": {
+      "version": "26.1111.71025",
+      "build": "28661",
+      "takenAt": "2026-11-18T15:51:52.660Z",
+      "path": "ChatGPT 26.1111.71025 (Homebrew cask chatgpt)"
+    },
+    "to": {
+      "version": "26.1111.71704",
+      "build": "29030",
+      "takenAt": "2026-11-19T15:56:12.303Z",
+      "path": "ChatGPT 26.1111.71704 (Homebrew cask chatgpt)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain url.provided",
+        "detail": "no.url.provided",
+        "where": [
+          "Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +32.1 KB (+0.0%), files 4125 → 4125"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 26.1111.71025 (28661) → 26.1111.71704 (29030)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 2
+    },
+    "identical": false
+  }
+}

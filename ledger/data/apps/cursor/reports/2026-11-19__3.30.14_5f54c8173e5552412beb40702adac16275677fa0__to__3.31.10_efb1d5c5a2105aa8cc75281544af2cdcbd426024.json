@@ -1,0 +1,729 @@
+{
+  "cask": "cursor",
+  "name": "Cursor",
+  "detectedAt": "2026-11-19T15:56:37.849Z",
+  "from": {
+    "version": "3.30.14,5f54c8173e5552412beb40702adac16275677fa0",
+    "appVersion": "3.30.14",
+    "build": "3.30.14",
+    "url": "https://downloads.cursor.com/production/5f54c8173e5552412beb40702adac16275677fa0/darwin/arm64/Cursor-darwin-arm64.zip",
+    "sha256": "090809041649da27b1235a7f3a9bdacdb35f20ae38fd0b6d6cf69f1918a145af",
+    "bytes": 310492740,
+    "scannedAt": "2026-11-14T13:42:00.611Z",
+    "fingerprint": "39d31900c1cf781d582b53d5e8b4f40c",
+    "report": "reports/2026-11-14__3.30.8_4a44c846d0b817fab060823f93c63ea2861ac192__to__3.30.14_5f54c8173e5552412beb40702adac16275677fa0.json"
+  },
+  "to": {
+    "version": "3.31.10,efb1d5c5a2105aa8cc75281544af2cdcbd426024",
+    "appVersion": "3.31.10",
+    "build": "3.31.10",
+    "url": "https://downloads.cursor.com/production/efb1d5c5a2105aa8cc75281544af2cdcbd426024/darwin/arm64/Cursor-darwin-arm64.zip",
+    "sha256": "745320b4e24febb33b0bbd7573006c24976db8019ad3d6e68a5207f934bd0584",
+    "bytes": 313065304,
+    "scannedAt": "2026-11-19T15:56:37.849Z",
+    "fingerprint": "d1bf7c7d33b0e461a5c28fbddc55d5c6"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Cursor",
+      "bundleId": "com.todesktop.230313mzl4w4u92"
+    },
+    "from": {
+      "version": "3.30.14",
+      "build": "3.30.14",
+      "takenAt": "2026-11-14T13:41:59.425Z",
+      "path": "Cursor 3.30.14,5f54c8173e5552412beb40702adac16275677fa0 (Homebrew cask cursor)"
+    },
+    "to": {
+      "version": "3.31.10",
+      "build": "3.31.10",
+      "takenAt": "2026-11-19T15:56:37.109Z",
+      "path": "Cursor 3.31.10,efb1d5c5a2105aa8cc75281544af2cdcbd426024 (Homebrew cask cursor)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain 1password.com",
+        "detail": "1password.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain amplitude.com",
+        "detail": "amplitude.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain apollo.io",
+        "detail": "apollo.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/apollo-io.gen-LTBC5Lsp.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain backname.io",
+        "detail": "backname.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/chat-B_SOuCrF.js",
+          "Contents/Resources/app/molten/dist/engine/engine.cjs"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain bigdata.com",
+        "detail": "bigdata.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/bigdata-com.gen-ogmN4Qnh.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain browser-intake-datadoghq.com",
+        "detail": "pci.browser-intake-datadoghq.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/main-Dk2zjJIb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain browser-intake-us5-datadoghq.com",
+        "detail": "browser-intake-us5-datadoghq.com",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/index.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain cal.com",
+        "detail": "cal.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/cal-com.gen-DpcbI9tg.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain cloudflare-quic.com",
+        "detail": "cloudflare-quic.com",
+        "where": [
+          "Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js",
+          "Contents/Resources/app/out/vs/workbench/workbench.glass.main.js",
+          "Contents/Resources/app/molten/dist/engine/engine.cjs"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain coupler.io",
+        "detail": "coupler.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/coupler-io.gen-IA9FAxND.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain crypto.com",
+        "detail": "crypto.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/crypto-com.gen-DJrQkzPV.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain d20xtzwzcl0ceb.cloudfront.net",
+        "detail": "d20xtzwzcl0ceb.cloudfront.net",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/main-Dk2zjJIb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain d3uc069fcn7uxw.cloudfront.net",
+        "detail": "d3uc069fcn7uxw.cloudfront.net",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/main-Dk2zjJIb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain datad0g-browser-agent.com",
+        "detail": "www.datad0g-browser-agent.com",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/main-Dk2zjJIb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain datad0g.com",
+        "detail": "datad0g.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/main-Dk2zjJIb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain datadoghq-browser-agent.com",
+        "detail": "www.datadoghq-browser-agent.com",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/main-Dk2zjJIb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain dd0g-gov.com",
+        "detail": "dd0g-gov.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/main-Dk2zjJIb.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain doordash.com",
+        "detail": "doordash.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain fellow.ai",
+        "detail": "fellow.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/fellow-ai.gen-CS6cclct.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain force.com",
+        "detail": "force.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain glean.com",
+        "detail": "glean.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gong.io",
+        "detail": "gong.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain grafana.com",
+        "detail": "grafana.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain grafana.net",
+        "detail": "grafana.net (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain instagram.com",
+        "detail": "instagram.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain kiwi.com",
+        "detail": "kiwi.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/kiwi-com.gen-3W7veU_p.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain lacolhost.com",
+        "detail": "lacolhost.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/chat-B_SOuCrF.js",
+          "Contents/Resources/app/molten/dist/engine/engine.cjs"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain lastminute.com",
+        "detail": "lastminute.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/lastminute-com.gen-CjFg1B0V.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain localtest.me",
+        "detail": "localtest.me (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/chat-B_SOuCrF.js",
+          "Contents/Resources/app/molten/dist/engine/engine.cjs"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain loom.com",
+        "detail": "loom.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain lvh.me",
+        "detail": "lvh.me (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/chat-B_SOuCrF.js",
+          "Contents/Resources/app/molten/dist/engine/engine.cjs"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain miro.com",
+        "detail": "miro.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mixpanel.com",
+        "detail": "mixpanel.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain netflix.com",
+        "detail": "netflix.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain nip.io",
+        "detail": "nip.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/chat-B_SOuCrF.js",
+          "Contents/Resources/app/molten/dist/engine/engine.cjs"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain office.com",
+        "detail": "outlook.office.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain office365.com",
+        "detail": "outlook.office365.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain planetscale.com",
+        "detail": "planetscale.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain postman.co",
+        "detail": "postman.co (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain postman.com",
+        "detail": "postman.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain reddit.com",
+        "detail": "reddit.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sharepoint.com",
+        "detail": "sharepoint.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain slack-gov.com",
+        "detail": "app.slack-gov.com, slack-gov.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/vs/workbench/workbench.glass.main.js",
+          "Contents/Resources/app/molten/dist/renderer/assets/project-ahzhPcqo.js",
+          "Contents/Resources/app/molten/dist/engine/engine.cjs"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain snowflake.com",
+        "detail": "app.snowflake.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain spotify.com",
+        "detail": "spotify.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain squarespace.com",
+        "detail": "mcp.squarespace.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js",
+          "Contents/Resources/app/out/vs/workbench/workbench.anysphere-ui-automations.js",
+          "Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sslip.io",
+        "detail": "sslip.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/chat-B_SOuCrF.js",
+          "Contents/Resources/app/molten/dist/engine/engine.cjs"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain synapse.org",
+        "detail": "synapse.org (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/synapse-org.gen-DVUrkEty.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain traefik.me",
+        "detail": "traefik.me (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/chat-B_SOuCrF.js",
+          "Contents/Resources/app/molten/dist/engine/engine.cjs"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ubereats.com",
+        "detail": "ubereats.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain vcap.me",
+        "detail": "vcap.me (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/chat-B_SOuCrF.js",
+          "Contents/Resources/app/molten/dist/engine/engine.cjs"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain windsor.ai",
+        "detail": "windsor.ai (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/windsor-ai.gen-Baqi1_YO.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain xip.io",
+        "detail": "xip.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/chat-B_SOuCrF.js",
+          "Contents/Resources/app/molten/dist/engine/engine.cjs"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain zendesk.com",
+        "detail": "zendesk.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain zoom.us",
+        "detail": "zoom.us (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "1 domain no longer mentioned",
+        "detail": "rolldown.rs"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under amazon.com",
+        "detail": "www.amazon.com",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under datadoghq.com",
+        "detail": "docs.datadoghq.com",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/main-Dk2zjJIb.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under ddog-gov.com",
+        "detail": "us2.ddog-gov.com",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/main-Dk2zjJIb.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under facebook.com",
+        "detail": "facebook.com",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under framer.com",
+        "detail": "framer.com",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under slack.com",
+        "detail": "www.slack.com",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/slack-data-B19O4TLj.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under stripe.com",
+        "detail": "dashboard.stripe.com",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under google.com",
+        "detail": "calendar.google.com, drive.google.com, mail.google.com",
+        "where": [
+          "Contents/Resources/app/out/main.js",
+          "Contents/Resources/app/out/vs/workbench/workbench.glass.main.js",
+          "Contents/Resources/app/molten/dist/renderer/assets/project-ahzhPcqo.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under live.com",
+        "detail": "onedrive.live.com, outlook.live.com",
+        "where": [
+          "Contents/Resources/app/out/main.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -3.5 MB (-0.4%), files 13428 → 13640"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 3.30.14 (3.30.14) → 3.31.10 (3.31.10)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 55,
+      "info": 12
+    },
+    "identical": false
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "cask": "postman",
+  "name": "Postman",
+  "detectedAt": "2026-11-19T15:56:55.910Z",
+  "from": {
+    "version": "12.37.2",
+    "appVersion": "12.37.2",
+    "build": "12.37.2",
+    "url": "https://dl.pstmn.io/download/version/12.37.2/osx_arm64",
+    "sha256": "f399d5a48c7d2e5ee4522d845b28775d219c969a978b57af4debae4b58ff8865",
+    "bytes": 210097189,
+    "scannedAt": "2026-11-18T15:53:18.317Z",
+    "fingerprint": "82f448d6f4554c46eeff1600a6f7ba1a",
+    "report": "reports/2026-11-18__12.37.1__to__12.37.2.json"
+  },
+  "to": {
+    "version": "12.37.3",
+    "appVersion": "12.37.3",
+    "build": "12.37.3",
+    "url": "https://dl.pstmn.io/download/version/12.37.3/osx_arm64",
+    "sha256": "773dab22af4de9760f9d7039cdfcf6a364c10d0544581f9b030bc1288f36579a",
+    "bytes": 210086697,
+    "scannedAt": "2026-11-19T15:56:55.910Z",
+    "fingerprint": "aba9264c35d27e0ad63d64b143861c75"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Postman",
+      "bundleId": "com.postmanlabs.mac"
+    },
+    "from": {
+      "version": "12.37.2",
+      "build": "12.37.2",
+      "takenAt": "2026-11-18T15:53:17.823Z",
+      "path": "Postman 12.37.2 (Homebrew cask postman)"
+    },
+    "to": {
+      "version": "12.37.3",
+      "build": "12.37.3",
+      "takenAt": "2026-11-19T15:56:55.658Z",
+      "path": "Postman 12.37.3 (Homebrew cask postman)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -41.3 KB (-0.0%), files 3516 → 3516"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 12.37.2 (12.37.2) → 12.37.3 (12.37.3)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 2
+    },
+    "identical": false
+  }
+}

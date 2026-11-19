@@ -1,0 +1,75 @@
+{
+  "cask": "zed",
+  "name": "Zed",
+  "detectedAt": "2026-11-19T15:57:27.803Z",
+  "from": {
+    "version": "1.28.1",
+    "appVersion": "1.28.1",
+    "build": "20261111.170014",
+    "url": "https://github.com/zed-industries/zed/releases/download/v1.28.1/Zed-aarch64.dmg",
+    "sha256": "0ca1a4f1e89e3825f49af26fa31afcf0cc3e50da1f4ba9889f0735f5f0beffe4",
+    "bytes": 88653699,
+    "scannedAt": "2026-11-12T15:29:51.258Z",
+    "fingerprint": "c2b9a2a26f80052e9ed19b924e537cec",
+    "report": "reports/2026-11-12__1.27.0__to__1.28.1.json"
+  },
+  "to": {
+    "version": "1.29.2",
+    "appVersion": "1.29.2",
+    "build": "20261118.195646",
+    "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/Zed-aarch64.dmg",
+    "sha256": "62fcf76dad0de21b69b5808f78576f9c0ca86d2319ace93616bd1af654fa136d",
+    "bytes": 88766646,
+    "scannedAt": "2026-11-19T15:57:27.803Z",
+    "fingerprint": "2b5b27e58fca503199768f0fe61cb8bf"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Zed",
+      "bundleId": "dev.zed.Zed"
+    },
+    "from": {
+      "version": "1.28.1",
+      "build": "20261111.170014",
+      "takenAt": "2026-11-12T15:29:51.151Z",
+      "path": "Zed 1.28.1 (Homebrew cask zed)"
+    },
+    "to": {
+      "version": "1.29.2",
+      "build": "20261118.195646",
+      "takenAt": "2026-11-19T15:57:27.707Z",
+      "path": "Zed 1.29.2 (Homebrew cask zed)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain github.comerror",
+        "detail": "api.github.comerror",
+        "where": [
+          "Contents/MacOS/zed"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +518.8 KB (+0.3%), files 8 → 8"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 1.28.1 (20261111.170014) → 1.29.2 (20261118.195646)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 2
+    },
+    "identical": false
+  }
+}

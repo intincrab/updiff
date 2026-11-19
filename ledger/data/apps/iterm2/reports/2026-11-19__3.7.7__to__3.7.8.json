@@ -1,0 +1,145 @@
+{
+  "cask": "iterm2",
+  "name": "iTerm2",
+  "detectedAt": "2026-11-19T15:56:47.448Z",
+  "from": {
+    "version": "3.7.7",
+    "appVersion": "3.7.7",
+    "build": "3.7.7",
+    "url": "https://iterm2.com/downloads/stable/iTerm2-3_7_7.zip",
+    "sha256": "549eb2b21464d7f4606165e51c36a6b1a252ac9a79958228a240152412759da2",
+    "bytes": 64888234,
+    "scannedAt": "2026-11-07T17:44:55.645Z",
+    "fingerprint": "b145cdf9dd14831c5327372020be8afd"
+  },
+  "to": {
+    "version": "3.7.8",
+    "appVersion": "3.7.8",
+    "build": "3.7.8",
+    "url": "https://iterm2.com/downloads/stable/iTerm2-3_7_8.zip",
+    "sha256": "c2cc95e9d072d8faec3527d06e4a8999d5f9800a505ccf2f02ec05a446d4a850",
+    "bytes": 78120806,
+    "scannedAt": "2026-11-19T15:56:47.448Z",
+    "fingerprint": "5270fea73f241fbd9ce10756d9358d95"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "iTerm2",
+      "bundleId": "com.googlecode.iterm2"
+    },
+    "from": {
+      "version": "3.7.7",
+      "build": "3.7.7",
+      "takenAt": "2026-11-07T17:44:55.527Z",
+      "path": "iTerm2 3.7.7 (Homebrew cask iterm2)"
+    },
+    "to": {
+      "version": "3.7.8",
+      "build": "3.7.8",
+      "takenAt": "2026-11-19T15:56:47.276Z",
+      "path": "iTerm2 3.7.8 (Homebrew cask iterm2)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "updater",
+        "change": "added",
+        "title": "Update feed set in the code",
+        "detail": "https://iterm2.com/appcasts/backup_update.xml?betas=, https://iterm2.com/appcasts/testing_modern.xml",
+        "where": [
+          "iTerm2 3.7.8 (Homebrew cask iterm2)"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New executable: Autoupdate",
+        "detail": "team H7V7XYVQ7D",
+        "where": [
+          "Contents/Frameworks/Sparkle.framework/Versions/B/Autoupdate"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New helper app: Updater.app",
+        "detail": "org.sparkle-project.Sparkle.Updater · v2.10.1 · team H7V7XYVQ7D",
+        "where": [
+          "Contents/Frameworks/Sparkle.framework/Versions/B/Updater.app"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain wikipedia.org",
+        "detail": "en.wikipedia.org",
+        "where": [
+          "Contents/Resources/Readability.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain x.ai",
+        "detail": "api.x.ai, console.x.ai",
+        "where": [
+          "Contents/MacOS/iTerm2",
+          "Contents/Resources/ai-models.json"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed executable: fileop",
+        "where": [
+          "Contents/Frameworks/Sparkle.framework/Versions/A/Resources/Autoupdate.app/Contents/MacOS/fileop"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed helper app: Autoupdate.app",
+        "where": [
+          "Contents/Frameworks/Sparkle.framework/Versions/A/Resources/Autoupdate.app"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "Sparkle.framework 1.22.0 1354-g4e0506a → 2.10.1-3254-g0858e9bc",
+        "where": [
+          "Contents/Frameworks/Sparkle.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +66.9 MB (+33.8%), files 1237 → 3979"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 3.7.7 (3.7.7) → 3.7.8 (3.7.8)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 5,
+      "info": 5
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}
