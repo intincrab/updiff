@@ -1,0 +1,85 @@
+{
+  "cask": "whatsapp",
+  "name": "WhatsApp",
+  "detectedAt": "2026-11-20T15:40:44.186Z",
+  "from": {
+    "version": "26.46.17",
+    "appVersion": "26.46.17",
+    "build": "1117167398",
+    "url": "https://web.whatsapp.com/desktop/mac_native/release/?version=2.26.46.17&extension=zip&configuration=Release&branch=master&is_buck=true",
+    "sha256": "60dd0f364b3af6f4eb40a531c1d247b3e8cceac160767f70d4a5f7d216417b88",
+    "bytes": 336624909,
+    "scannedAt": "2026-11-18T15:54:02.743Z",
+    "fingerprint": "237df59693b60e2642aa6587d3658914",
+    "report": "reports/2026-11-18__26.46.15__to__26.46.17.json"
+  },
+  "to": {
+    "version": "26.46.21",
+    "appVersion": "26.46.21",
+    "build": "1118946944",
+    "url": "https://web.whatsapp.com/desktop/mac_native/release/?version=2.26.46.21&extension=zip&configuration=Release&branch=master&is_buck=true",
+    "sha256": "c8c6455dc77c73586b3317f478e4f46d362d467d9908001a77d4504f155146fd",
+    "bytes": 352359628,
+    "scannedAt": "2026-11-20T15:40:44.186Z",
+    "fingerprint": "0b9cf420cc54ad4e98de0cbcc6e0aaf6"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "‎WhatsApp",
+      "bundleId": "net.whatsapp.WhatsApp"
+    },
+    "from": {
+      "version": "26.46.17",
+      "build": "1117167398",
+      "takenAt": "2026-11-18T15:54:02.595Z",
+      "path": "WhatsApp 26.46.17 (Homebrew cask whatsapp)"
+    },
+    "to": {
+      "version": "26.46.21",
+      "build": "1118946944",
+      "takenAt": "2026-11-20T15:40:44.114Z",
+      "path": "WhatsApp 26.46.21 (Homebrew cask whatsapp)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New framework: PsiphonTunnel.framework",
+        "detail": "com.facebook.PsiphonTunnel · v1.0 · team 57T9237FN3",
+        "where": [
+          "Contents/Frameworks/PsiphonTunnel.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under meta.com",
+        "detail": "meta.com",
+        "where": [
+          "Contents/MacOS/WhatsApp"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +36.4 MB (+4.6%), files 1631 → 1635"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 26.46.17 (1117167398) → 26.46.21 (1118946944)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 3
+    },
+    "identical": false
+  }
+}

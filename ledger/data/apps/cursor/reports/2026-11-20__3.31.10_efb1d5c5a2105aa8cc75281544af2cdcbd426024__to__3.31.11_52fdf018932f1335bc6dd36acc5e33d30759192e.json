@@ -1,0 +1,65 @@
+{
+  "cask": "cursor",
+  "name": "Cursor",
+  "detectedAt": "2026-11-20T15:40:13.656Z",
+  "from": {
+    "version": "3.31.10,efb1d5c5a2105aa8cc75281544af2cdcbd426024",
+    "appVersion": "3.31.10",
+    "build": "3.31.10",
+    "url": "https://downloads.cursor.com/production/efb1d5c5a2105aa8cc75281544af2cdcbd426024/darwin/arm64/Cursor-darwin-arm64.zip",
+    "sha256": "745320b4e24febb33b0bbd7573006c24976db8019ad3d6e68a5207f934bd0584",
+    "bytes": 313065304,
+    "scannedAt": "2026-11-19T15:56:37.849Z",
+    "fingerprint": "d1bf7c7d33b0e461a5c28fbddc55d5c6",
+    "report": "reports/2026-11-19__3.30.14_5f54c8173e5552412beb40702adac16275677fa0__to__3.31.10_efb1d5c5a2105aa8cc75281544af2cdcbd426024.json"
+  },
+  "to": {
+    "version": "3.31.11,52fdf018932f1335bc6dd36acc5e33d30759192e",
+    "appVersion": "3.31.11",
+    "build": "3.31.11",
+    "url": "https://downloads.cursor.com/production/52fdf018932f1335bc6dd36acc5e33d30759192e/darwin/arm64/Cursor-darwin-arm64.zip",
+    "sha256": "bdab2179ec6c6dcd3ae07a96891a7d275197844e09dbff7f895b90b26a1b85fe",
+    "bytes": 313167376,
+    "scannedAt": "2026-11-20T15:40:13.656Z",
+    "fingerprint": "f4825378827d3a88e5a0c574865293f0"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Cursor",
+      "bundleId": "com.todesktop.230313mzl4w4u92"
+    },
+    "from": {
+      "version": "3.31.10",
+      "build": "3.31.10",
+      "takenAt": "2026-11-19T15:56:37.109Z",
+      "path": "Cursor 3.31.10,efb1d5c5a2105aa8cc75281544af2cdcbd426024 (Homebrew cask cursor)"
+    },
+    "to": {
+      "version": "3.31.11",
+      "build": "3.31.11",
+      "takenAt": "2026-11-20T15:40:12.795Z",
+      "path": "Cursor 3.31.11,52fdf018932f1335bc6dd36acc5e33d30759192e (Homebrew cask cursor)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +264.2 KB (+0.0%), files 13640 → 13640"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 3.31.10 (3.31.10) → 3.31.11 (3.31.11)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 2
+    },
+    "identical": false
+  }
+}

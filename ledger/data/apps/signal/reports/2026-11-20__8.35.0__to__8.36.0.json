@@ -1,0 +1,100 @@
+{
+  "cask": "signal",
+  "name": "Signal",
+  "detectedAt": "2026-11-20T15:40:21.099Z",
+  "from": {
+    "version": "8.35.0",
+    "appVersion": "8.35.0",
+    "build": "1",
+    "url": "https://updates.signal.org/desktop/signal-desktop-mac-arm64-8.35.0.zip",
+    "sha256": "c977cd0e36f389b0ee8d8e384cb1d67c63029002d58dd68c6df1fa6a53ce79d7",
+    "bytes": 146526884,
+    "scannedAt": "2026-11-12T15:29:22.702Z",
+    "fingerprint": "0f582045e08d858dfb768e0ef23d40be",
+    "report": "reports/2026-11-12__8.34.0__to__8.35.0.json"
+  },
+  "to": {
+    "version": "8.36.0",
+    "appVersion": "8.36.0",
+    "build": "1",
+    "url": "https://updates.signal.org/desktop/signal-desktop-mac-arm64-8.36.0.zip",
+    "sha256": "2a5f42c7c9bd8fbb10ac082877832a76842ce82e4eb1389de335df11e13d08e3",
+    "bytes": 145574721,
+    "scannedAt": "2026-11-20T15:40:21.099Z",
+    "fingerprint": "4581189b10633e5304921abca012c18f"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Signal",
+      "bundleId": "org.whispersystems.signal-desktop"
+    },
+    "from": {
+      "version": "8.35.0",
+      "build": "1",
+      "takenAt": "2026-11-12T15:29:22.657Z",
+      "path": "Signal 8.35.0 (Homebrew cask signal)"
+    },
+    "to": {
+      "version": "8.36.0",
+      "build": "1",
+      "takenAt": "2026-11-20T15:40:21.061Z",
+      "path": "Signal 8.36.0 (Homebrew cask signal)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New native Node module: clonefile.node",
+        "where": [
+          "Contents/Resources/app.asar.unpacked/node_modules/@signalapp/clonefile/build/Release/clonefile.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "electron",
+        "change": "changed",
+        "title": "Electron 45.2.1 → 45.4.1",
+        "where": [
+          "Contents/Frameworks/Electron Framework.framework"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "package",
+        "change": "added",
+        "title": "1 new bundled npm package",
+        "detail": "@signalapp/clonefile@1.0.0",
+        "where": [
+          "Contents/Resources/app.asar"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "package",
+        "change": "changed",
+        "title": "2 bundled npm packages changed version",
+        "detail": "@signalapp/libsignal-client 0.106.0 → 0.106.2, node-addon-api 8.5.0|8.8.0 → 8.9.2"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -4.8 MB (-1.5%), files 275 → 276"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 8.35.0 (1) → 8.36.0 (1)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 3,
+      "info": 3
+    },
+    "identical": false
+  }
+}

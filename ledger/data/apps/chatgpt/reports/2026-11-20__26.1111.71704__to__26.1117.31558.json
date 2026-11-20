@@ -1,0 +1,510 @@
+{
+  "cask": "chatgpt",
+  "name": "ChatGPT",
+  "detectedAt": "2026-11-20T15:39:46.004Z",
+  "from": {
+    "version": "26.1111.71704",
+    "appVersion": "26.1111.71704",
+    "build": "29030",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1111.71704.zip",
+    "sha256": "0c790d8ab58425539fe1d844066acb8b80415aa19a5c46d89409815112e8134d",
+    "bytes": 835851598,
+    "scannedAt": "2026-11-19T15:56:12.898Z",
+    "fingerprint": "e4cb85758d3cd6aace2a38b62357592c",
+    "report": "reports/2026-11-19__26.1111.71025__to__26.1111.71704.json"
+  },
+  "to": {
+    "version": "26.1117.31558",
+    "appVersion": "26.1117.31558",
+    "build": "29513",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1117.31558.zip",
+    "sha256": "2e6927203a93e4e5238ff0411d11fd6ed23cb97a0e6b03b10e403f30d02e2d37",
+    "bytes": 723988688,
+    "scannedAt": "2026-11-20T15:39:46.004Z",
+    "fingerprint": "0f4a7fbe1ecb51b40198c6331a5e47e8"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "ChatGPT",
+      "bundleId": "com.openai.codex"
+    },
+    "from": {
+      "version": "26.1111.71704",
+      "build": "29030",
+      "takenAt": "2026-11-19T15:56:12.303Z",
+      "path": "ChatGPT 26.1111.71704 (Homebrew cask chatgpt)"
+    },
+    "to": {
+      "version": "26.1117.31558",
+      "build": "29513",
+      "takenAt": "2026-11-20T15:39:45.434Z",
+      "path": "ChatGPT 26.1117.31558 (Homebrew cask chatgpt)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain 126.com",
+        "detail": "126.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain aol.com",
+        "detail": "aol.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain appleid.com",
+        "detail": "privaterelay.appleid.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain facebook.com",
+        "detail": "www.facebook.com",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/507080.aea9f977ef.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain fastmail.com",
+        "detail": "fastmail.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain feedback.no",
+        "detail": "learninghub.feedback.no (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/136900.68b2d3e66d.js",
+          "Contents/Resources/app.asar:webview/assets/async/791175.76097624e3.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gmail.com",
+        "detail": "gmail.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gmx.ch",
+        "detail": "gmx.ch (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain hotmail.co.uk",
+        "detail": "hotmail.co.uk (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain hotmail.com",
+        "detail": "hotmail.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain hotmail.fr",
+        "detail": "hotmail.fr (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain hotmail.it",
+        "detail": "hotmail.it (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain icloud.com",
+        "detail": "icloud.com, private.icloud.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain interia.pl",
+        "detail": "interia.pl (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain launchgiftcards.com",
+        "detail": "openai.launchgiftcards.com",
+        "where": [
+          "Contents/Resources/app.asar:webview/detached-window.html",
+          "Contents/Resources/app.asar:webview/index.html"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mac.com",
+        "detail": "mac.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mailbox.org",
+        "detail": "mailbox.org (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain me.com",
+        "detail": "me.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain msn.com",
+        "detail": "msn.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain naver.com",
+        "detail": "naver.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain openai.comtracing",
+        "detail": "auth.openai.comtracing",
+        "where": [
+          "Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain outlook.be",
+        "detail": "outlook.be (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain pm.me",
+        "detail": "pm.me (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain proton.me",
+        "detail": "proton.me (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain protonmail.com",
+        "detail": "protonmail.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain provided.localoverflow",
+        "detail": "no.url.provided.localoverflow",
+        "where": [
+          "Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain rocketmail.com",
+        "detail": "rocketmail.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain swift.org",
+        "detail": "download.swift.org (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/early-bootstrap-916-34c79998699157a6.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain tuta.io",
+        "detail": "tuta.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain url.dll",
+        "detail": "url.dll",
+        "where": [
+          "Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain volny.cz",
+        "detail": "volny.cz (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain web.de",
+        "detail": "web.de (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain yahoo.com",
+        "detail": "yahoo.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain yahoo.fr",
+        "detail": "yahoo.fr (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ymail.com",
+        "detail": "ymail.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "Codex Framework.framework 157.0.8103.78 → 158.0.8127.37",
+        "where": [
+          "Contents/Frameworks/Codex Framework.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed executable: tectonic",
+        "where": [
+          "Contents/Resources/tectonic/tectonic"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed native Node module: pty.node",
+        "where": [
+          "Contents/Resources/app.asar.unpacked/node_modules/node-pty/build/Release/pty.node.dSYM/Contents/Resources/DWARF/pty.node"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "package",
+        "change": "changed",
+        "title": "3 bundled npm packages changed version",
+        "detail": "@oai/cua 0.2.7 → 0.2.8, @oai/cua-repl 0.1.5 → 0.1.6, @oai/sky 0.7.21 → 0.7.24"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "16 domains no longer mentioned",
+        "detail": "allow.no, beispiel.de, brew.sh, chatgpt-staging.comhttps, cloudfollowup.cloud, coverity.com, ejemplo.com, exemple.com, exemplo.com, exemplu.com, openwall.com, operasoftware.operabrowser, portal.sso-fips, primjer.com, recenttasksmenu.cloud, signin.dualstack"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under chatgpt.com",
+        "detail": "realtime.chatgpt.com",
+        "where": [
+          "Contents/Resources/app.asar:webview/detached-window.html",
+          "Contents/Resources/app.asar:webview/index.html",
+          "Contents/Resources/app.asar:webview/assets/async/120658.b2a18912a4.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under live.com",
+        "detail": "live.com",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/185223.93b5e63728.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under openai-staging.com",
+        "detail": "ads.openai-staging.com",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/281600.56dd86d557.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under openai.com",
+        "detail": "releases.openai.com",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/early-bootstrap-916-34c79998699157a6.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under openai.org",
+        "detail": "openhouse.openai.org",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/112112.17c2fcb324.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -387.5 MB (-19.9%), files 4125 → 3438"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 26.1111.71704 (29030) → 26.1117.31558 (29513)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 35,
+      "info": 12
+    },
+    "identical": false
+  }
+}

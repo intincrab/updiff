@@ -1,0 +1,174 @@
+{
+  "cask": "claude",
+  "name": "Claude",
+  "detectedAt": "2026-11-20T15:39:55.274Z",
+  "from": {
+    "version": "6.6395.1,8fc566f7b97e371bae421fc79c260de86c6a4106",
+    "appVersion": "6.6395.1",
+    "build": "6.6395.1",
+    "url": "https://downloads.claude.ai/releases/darwin/universal/6.6395.1/Claude-8fc566f7b97e371bae421fc79c260de86c6a4106.zip",
+    "sha256": "eaf23d2e65a6302c76aa180682d1c61ed4bf7adaead95b4cfa46eada96145467",
+    "bytes": 399137278,
+    "scannedAt": "2026-11-19T15:56:20.327Z",
+    "fingerprint": "f1fd4a492431b7918dd7c849d3b9992f",
+    "report": "reports/2026-11-19__6.6395.0_d71a20056be3b25708751e98bef60759ea1f441b__to__6.6395.1_8fc566f7b97e371bae421fc79c260de86c6a4106.json"
+  },
+  "to": {
+    "version": "6.28899.2,155ca43c0ad5a4bd5734795688543b65b464cf47",
+    "appVersion": "6.28899.2",
+    "build": "6.28899.2",
+    "url": "https://downloads.claude.ai/releases/darwin/universal/6.28899.2/Claude-155ca43c0ad5a4bd5734795688543b65b464cf47.zip",
+    "sha256": "693b9383d88cda46c3583b52dd7514abc6463dfe7af0a6bb59d3f1adb7447e64",
+    "bytes": 404686665,
+    "scannedAt": "2026-11-20T15:39:55.274Z",
+    "fingerprint": "087b21a7720ad10910d369d1ad7b6222"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Claude",
+      "bundleId": "com.anthropic.claudefordesktop"
+    },
+    "from": {
+      "version": "6.6395.1",
+      "build": "6.6395.1",
+      "takenAt": "2026-11-19T15:56:20.294Z",
+      "path": "Claude 6.6395.1,8fc566f7b97e371bae421fc79c260de86c6a4106 (Homebrew cask claude)"
+    },
+    "to": {
+      "version": "6.28899.2",
+      "build": "6.28899.2",
+      "takenAt": "2026-11-20T15:39:55.239Z",
+      "path": "Claude 6.28899.2,155ca43c0ad5a4bd5734795688543b65b464cf47 (Homebrew cask claude)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New executable: post-update-check",
+        "detail": "team Q6L2SF6YDW",
+        "where": [
+          "Contents/Helpers/post-update-check"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain icu-project.org",
+        "detail": "source.icu-project.org",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain llvm.org",
+        "detail": "llvm.org",
+        "where": [
+          "Contents/Resources/app.asar:resources/frame/types/slides/artifact-type/third-party-licenses.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain motion.dev",
+        "detail": "motion.dev",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain unlicense.org",
+        "detail": "unlicense.org",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "7 domains no longer mentioned",
+        "detail": "atlassian.net, httpbin.org, ironcladapp.com, jfrog.io, nyu.edu, skilljar.com, stackoverflow.com"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under anthropic.com",
+        "detail": "mcp-proxy-staging.anthropic.com",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BLGM4rvy.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under github.com",
+        "detail": "gist.github.com",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BLGM4rvy.js",
+          "Contents/Resources/ion-dist.asar:assets/v1/c04850347-Bt_Tc2Qo.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under intercom.io",
+        "detail": "widget.intercom.io",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-1-BtdOJW1_.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under typeform.com",
+        "detail": "form.typeform.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c71860c77-kLz47y66.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under example.com",
+        "detail": "mail.example.com, team.example.com",
+        "where": [
+          "Contents/Resources/app.asar:.vite/build/index.chunk-BLGM4rvy.js",
+          "Contents/Resources/ion-dist.asar:assets/v1/cd9350303-DFZCWOQj.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +14.4 MB (+1.5%), files 313 → 314"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 6.6395.1 (6.6395.1) → 6.28899.2 (6.28899.2)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 5,
+      "info": 8
+    },
+    "identical": false
+  }
+}

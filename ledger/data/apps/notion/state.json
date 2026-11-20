@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "7.44.1",
+      "appVersion": "7.44.1",
+      "build": "7.44.1",
+      "url": "https://desktop-release.notion-static.com/Notion-7.44.1-arm64.dmg",
+      "sha256": "fe9d2db639d202e758ecda773a0367a07e1fae03ae885ded1a458e77cd7b2f43",
+      "bytes": 121500157,
+      "scannedAt": "2026-11-20T15:40:17.581Z",
+      "fingerprint": "246890635265b06fead78d58b414523e",
+      "report": "reports/2026-11-20__7.44.0__to__7.44.1.json"
+    },
+    {
       "version": "7.44.0",
       "appVersion": "7.44.0",
       "build": "7.44.0",
@@ -48,17 +59,17 @@
   "name": "Notion",
   "homepage": "https://www.notion.com/",
   "desc": "App to write, plan, collaborate, and get organised",
-  "lastCheckedAt": "2026-11-19T15:56:47.640Z",
+  "lastCheckedAt": "2026-11-20T15:40:14.562Z",
   "latest": {
-    "version": "7.44.0",
-    "appVersion": "7.44.0",
-    "build": "7.44.0",
-    "url": "https://desktop-release.notion-static.com/Notion-7.44.0-arm64.dmg",
-    "sha256": "535403a43eddbdcba166952ae6f384dcf8d06a7a751f903384f1ffb042d96387",
-    "bytes": 121496014,
-    "scannedAt": "2026-11-16T16:08:21.495Z",
-    "fingerprint": "d1894047618288eb95324c8611c7c7ef",
-    "report": "reports/2026-11-16__7.43.2__to__7.44.0.json"
+    "version": "7.44.1",
+    "appVersion": "7.44.1",
+    "build": "7.44.1",
+    "url": "https://desktop-release.notion-static.com/Notion-7.44.1-arm64.dmg",
+    "sha256": "fe9d2db639d202e758ecda773a0367a07e1fae03ae885ded1a458e77cd7b2f43",
+    "bytes": 121500157,
+    "scannedAt": "2026-11-20T15:40:17.581Z",
+    "fingerprint": "246890635265b06fead78d58b414523e",
+    "report": "reports/2026-11-20__7.44.0__to__7.44.1.json"
   },
   "bundleId": "notion.id"
 }

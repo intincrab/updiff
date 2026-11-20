@@ -1,0 +1,65 @@
+{
+  "cask": "notion",
+  "name": "Notion",
+  "detectedAt": "2026-11-20T15:40:17.581Z",
+  "from": {
+    "version": "7.44.0",
+    "appVersion": "7.44.0",
+    "build": "7.44.0",
+    "url": "https://desktop-release.notion-static.com/Notion-7.44.0-arm64.dmg",
+    "sha256": "535403a43eddbdcba166952ae6f384dcf8d06a7a751f903384f1ffb042d96387",
+    "bytes": 121496014,
+    "scannedAt": "2026-11-16T16:08:21.495Z",
+    "fingerprint": "d1894047618288eb95324c8611c7c7ef",
+    "report": "reports/2026-11-16__7.43.2__to__7.44.0.json"
+  },
+  "to": {
+    "version": "7.44.1",
+    "appVersion": "7.44.1",
+    "build": "7.44.1",
+    "url": "https://desktop-release.notion-static.com/Notion-7.44.1-arm64.dmg",
+    "sha256": "fe9d2db639d202e758ecda773a0367a07e1fae03ae885ded1a458e77cd7b2f43",
+    "bytes": 121500157,
+    "scannedAt": "2026-11-20T15:40:17.581Z",
+    "fingerprint": "246890635265b06fead78d58b414523e"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Notion",
+      "bundleId": "notion.id"
+    },
+    "from": {
+      "version": "7.44.0",
+      "build": "7.44.0",
+      "takenAt": "2026-11-16T16:08:21.464Z",
+      "path": "Notion 7.44.0 (Homebrew cask notion)"
+    },
+    "to": {
+      "version": "7.44.1",
+      "build": "7.44.1",
+      "takenAt": "2026-11-20T15:40:17.522Z",
+      "path": "Notion 7.44.1 (Homebrew cask notion)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +2.9 KB (+0.0%), files 156 → 156"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 7.44.0 (7.44.0) → 7.44.1 (7.44.1)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 2
+    },
+    "identical": false
+  }
+}
