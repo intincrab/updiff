@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "0.2026.11.18.08.17.stable_04",
+      "appVersion": "0.2026.11.18.08.17.04",
+      "build": "0.2026.11.18.08.17.04",
+      "url": "https://app.warp.dev/download/brew?version=v0.2026.11.18.08.17.stable_04&package=dmg",
+      "sha256": "ff5127346cb10c63b499ad177f2c3916848234001cebe23420b53f0313131969",
+      "bytes": 343071564,
+      "scannedAt": "2026-11-21T14:50:41.042Z",
+      "fingerprint": "e5be4fa4c3bd0d6c9b578a5a7f268404",
+      "report": "reports/2026-11-21__0.2026.11.18.08.17.stable_01__to__0.2026.11.18.08.17.stable_04.json"
+    },
+    {
       "version": "0.2026.11.18.08.17.stable_01",
       "appVersion": "0.2026.11.18.08.17.01",
       "build": "0.2026.11.18.08.17.01",
@@ -37,17 +48,17 @@
   "name": "Warp",
   "homepage": "https://www.warp.dev/terminal",
   "desc": "Rust-based terminal",
-  "lastCheckedAt": "2026-11-20T15:40:21.349Z",
+  "lastCheckedAt": "2026-11-21T14:50:27.840Z",
   "latest": {
-    "version": "0.2026.11.18.08.17.stable_01",
-    "appVersion": "0.2026.11.18.08.17.01",
-    "build": "0.2026.11.18.08.17.01",
-    "url": "https://app.warp.dev/download/brew?version=v0.2026.11.18.08.17.stable_01&package=dmg",
-    "sha256": "56a886203ce823e391abd1b5e5e2e1b6f04e7bb760726270eb80252cc1a745c2",
-    "bytes": 343044647,
-    "scannedAt": "2026-11-20T15:40:33.027Z",
-    "fingerprint": "c6c525858a791d20e40cb5d9012b83a3",
-    "report": "reports/2026-11-20__0.2026.11.11.08.17.stable_01__to__0.2026.11.18.08.17.stable_01.json"
+    "version": "0.2026.11.18.08.17.stable_04",
+    "appVersion": "0.2026.11.18.08.17.04",
+    "build": "0.2026.11.18.08.17.04",
+    "url": "https://app.warp.dev/download/brew?version=v0.2026.11.18.08.17.stable_04&package=dmg",
+    "sha256": "ff5127346cb10c63b499ad177f2c3916848234001cebe23420b53f0313131969",
+    "bytes": 343071564,
+    "scannedAt": "2026-11-21T14:50:41.042Z",
+    "fingerprint": "e5be4fa4c3bd0d6c9b578a5a7f268404",
+    "report": "reports/2026-11-21__0.2026.11.18.08.17.stable_01__to__0.2026.11.18.08.17.stable_04.json"
   },
   "bundleId": "dev.warp.Warp-Stable"
 }

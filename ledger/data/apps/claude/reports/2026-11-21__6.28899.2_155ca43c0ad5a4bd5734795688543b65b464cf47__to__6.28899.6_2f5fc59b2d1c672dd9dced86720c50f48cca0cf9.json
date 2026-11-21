@@ -1,0 +1,65 @@
+{
+  "cask": "claude",
+  "name": "Claude",
+  "detectedAt": "2026-11-21T14:49:58.012Z",
+  "from": {
+    "version": "6.28899.2,155ca43c0ad5a4bd5734795688543b65b464cf47",
+    "appVersion": "6.28899.2",
+    "build": "6.28899.2",
+    "url": "https://downloads.claude.ai/releases/darwin/universal/6.28899.2/Claude-155ca43c0ad5a4bd5734795688543b65b464cf47.zip",
+    "sha256": "693b9383d88cda46c3583b52dd7514abc6463dfe7af0a6bb59d3f1adb7447e64",
+    "bytes": 404686665,
+    "scannedAt": "2026-11-20T15:39:55.274Z",
+    "fingerprint": "087b21a7720ad10910d369d1ad7b6222",
+    "report": "reports/2026-11-20__6.6395.1_8fc566f7b97e371bae421fc79c260de86c6a4106__to__6.28899.2_155ca43c0ad5a4bd5734795688543b65b464cf47.json"
+  },
+  "to": {
+    "version": "6.28899.6,2f5fc59b2d1c672dd9dced86720c50f48cca0cf9",
+    "appVersion": "6.28899.6",
+    "build": "6.28899.6",
+    "url": "https://downloads.claude.ai/releases/darwin/universal/6.28899.6/Claude-2f5fc59b2d1c672dd9dced86720c50f48cca0cf9.zip",
+    "sha256": "ae58c31858b41dd2a3bca78da26433f4f17c044ce3c2486128fb82a82e457f16",
+    "bytes": 404693227,
+    "scannedAt": "2026-11-21T14:49:58.012Z",
+    "fingerprint": "a847f4d01b43550c9f4c7f364c52912c"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Claude",
+      "bundleId": "com.anthropic.claudefordesktop"
+    },
+    "from": {
+      "version": "6.28899.2",
+      "build": "6.28899.2",
+      "takenAt": "2026-11-20T15:39:55.239Z",
+      "path": "Claude 6.28899.2,155ca43c0ad5a4bd5734795688543b65b464cf47 (Homebrew cask claude)"
+    },
+    "to": {
+      "version": "6.28899.6",
+      "build": "6.28899.6",
+      "takenAt": "2026-11-21T14:49:57.953Z",
+      "path": "Claude 6.28899.6,2f5fc59b2d1c672dd9dced86720c50f48cca0cf9 (Homebrew cask claude)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -73.7 KB (-0.0%), files 314 → 314"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 6.28899.2 (6.28899.2) → 6.28899.6 (6.28899.6)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 2
+    },
+    "identical": false
+  }
+}

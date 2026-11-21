@@ -1,0 +1,65 @@
+{
+  "cask": "iterm2",
+  "name": "iTerm2",
+  "detectedAt": "2026-11-21T14:50:25.511Z",
+  "from": {
+    "version": "3.7.8",
+    "appVersion": "3.7.8",
+    "build": "3.7.8",
+    "url": "https://iterm2.com/downloads/stable/iTerm2-3_7_8.zip",
+    "sha256": "c2cc95e9d072d8faec3527d06e4a8999d5f9800a505ccf2f02ec05a446d4a850",
+    "bytes": 78120806,
+    "scannedAt": "2026-11-19T15:56:47.448Z",
+    "fingerprint": "5270fea73f241fbd9ce10756d9358d95",
+    "report": "reports/2026-11-19__3.7.7__to__3.7.8.json"
+  },
+  "to": {
+    "version": "3.7.9",
+    "appVersion": "3.7.9",
+    "build": "3.7.9",
+    "url": "https://iterm2.com/downloads/stable/iTerm2-3_7_9.zip",
+    "sha256": "beb96a1089b061c80e030101947aee13d54ba5e4058ad00b82e79633be29d3d2",
+    "bytes": 78118306,
+    "scannedAt": "2026-11-21T14:50:25.511Z",
+    "fingerprint": "a4246cf7933fc344ee4004ef41ce518f"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "iTerm2",
+      "bundleId": "com.googlecode.iterm2"
+    },
+    "from": {
+      "version": "3.7.8",
+      "build": "3.7.8",
+      "takenAt": "2026-11-19T15:56:47.276Z",
+      "path": "iTerm2 3.7.8 (Homebrew cask iterm2)"
+    },
+    "to": {
+      "version": "3.7.9",
+      "build": "3.7.9",
+      "takenAt": "2026-11-21T14:50:25.291Z",
+      "path": "iTerm2 3.7.9 (Homebrew cask iterm2)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -43.7 KB (-0.0%), files 3979 → 3979"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 3.7.8 (3.7.8) → 3.7.9 (3.7.9)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 2
+    },
+    "identical": false
+  }
+}

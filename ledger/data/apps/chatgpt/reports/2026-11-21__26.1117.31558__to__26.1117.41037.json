@@ -1,0 +1,65 @@
+{
+  "cask": "chatgpt",
+  "name": "ChatGPT",
+  "detectedAt": "2026-11-21T14:49:48.957Z",
+  "from": {
+    "version": "26.1117.31558",
+    "appVersion": "26.1117.31558",
+    "build": "29513",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1117.31558.zip",
+    "sha256": "2e6927203a93e4e5238ff0411d11fd6ed23cb97a0e6b03b10e403f30d02e2d37",
+    "bytes": 723988688,
+    "scannedAt": "2026-11-20T15:39:46.004Z",
+    "fingerprint": "0f4a7fbe1ecb51b40198c6331a5e47e8",
+    "report": "reports/2026-11-20__26.1111.71704__to__26.1117.31558.json"
+  },
+  "to": {
+    "version": "26.1117.41037",
+    "appVersion": "26.1117.41037",
+    "build": "29803",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1117.41037.zip",
+    "sha256": "bc0a42d01a9bdede1c1c2b876151a818560d6b1eaf1f45ae402d3d2229c34220",
+    "bytes": 724006681,
+    "scannedAt": "2026-11-21T14:49:48.957Z",
+    "fingerprint": "e4aaaf80d74eb569d9561be515424627"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "ChatGPT",
+      "bundleId": "com.openai.codex"
+    },
+    "from": {
+      "version": "26.1117.31558",
+      "build": "29513",
+      "takenAt": "2026-11-20T15:39:45.434Z",
+      "path": "ChatGPT 26.1117.31558 (Homebrew cask chatgpt)"
+    },
+    "to": {
+      "version": "26.1117.41037",
+      "build": "29803",
+      "takenAt": "2026-11-21T14:49:48.307Z",
+      "path": "ChatGPT 26.1117.41037 (Homebrew cask chatgpt)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +27.3 KB (+0.0%), files 3438 → 3438"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 26.1117.31558 (29513) → 26.1117.41037 (29803)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 2
+    },
+    "identical": false
+  }
+}

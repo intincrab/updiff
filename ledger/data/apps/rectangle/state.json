@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "2.0.5",
+      "appVersion": "2.0.5",
+      "build": "112",
+      "url": "https://github.com/rxhanson/Rectangle/releases/download/v2.0.5/Rectangle2.0.5.dmg",
+      "sha256": "4dec773a2f550d64147d88e07d987ce8119bdff045f1c6993a9a5eeb9f68496c",
+      "bytes": 4940143,
+      "scannedAt": "2026-11-21T14:50:27.357Z",
+      "fingerprint": "534829b64eeaedb392e0a802f0bf61da",
+      "report": "reports/2026-11-21__2.0.4__to__2.0.5.json"
+    },
+    {
       "version": "2.0.4",
       "appVersion": "2.0.4",
       "build": "111",
@@ -27,16 +38,16 @@
   "homepage": "https://rectangleapp.com/",
   "desc": "Move and resize windows using keyboard shortcuts or snap areas",
   "latest": {
-    "version": "2.0.4",
-    "appVersion": "2.0.4",
-    "build": "111",
-    "url": "https://github.com/rxhanson/Rectangle/releases/download/v2.0.4/Rectangle2.0.4.dmg",
-    "sha256": "9f820a2e56bd2c27cdda4fb4556de3cbcfcbac052d9eeb2179d49e2dae277abc",
-    "bytes": 4960820,
-    "scannedAt": "2026-11-07T17:31:41.587Z",
-    "fingerprint": "cc382955278002c799e4d9168a28d242",
-    "report": "reports/2026-11-07__2.0.3__to__2.0.4.json"
+    "version": "2.0.5",
+    "appVersion": "2.0.5",
+    "build": "112",
+    "url": "https://github.com/rxhanson/Rectangle/releases/download/v2.0.5/Rectangle2.0.5.dmg",
+    "sha256": "4dec773a2f550d64147d88e07d987ce8119bdff045f1c6993a9a5eeb9f68496c",
+    "bytes": 4940143,
+    "scannedAt": "2026-11-21T14:50:27.357Z",
+    "fingerprint": "534829b64eeaedb392e0a802f0bf61da",
+    "report": "reports/2026-11-21__2.0.4__to__2.0.5.json"
   },
   "bundleId": "com.knollsoft.Rectangle",
-  "lastCheckedAt": "2026-11-20T15:40:17.840Z"
+  "lastCheckedAt": "2026-11-21T14:50:26.015Z"
 }
