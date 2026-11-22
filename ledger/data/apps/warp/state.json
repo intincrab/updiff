@@ -48,7 +48,7 @@
   "name": "Warp",
   "homepage": "https://www.warp.dev/terminal",
   "desc": "Rust-based terminal",
-  "lastCheckedAt": "2026-11-21T14:50:27.840Z",
+  "lastCheckedAt": "2026-11-22T14:44:43.287Z",
   "latest": {
     "version": "0.2026.11.18.08.17.stable_04",
     "appVersion": "0.2026.11.18.08.17.04",
