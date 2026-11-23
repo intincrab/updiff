@@ -1,0 +1,72 @@
+{
+  "cask": "postman",
+  "name": "Postman",
+  "detectedAt": "2026-11-23T18:31:07.662Z",
+  "from": {
+    "version": "12.37.3",
+    "appVersion": "12.37.3",
+    "build": "12.37.3",
+    "url": "https://dl.pstmn.io/download/version/12.37.3/osx_arm64",
+    "sha256": "773dab22af4de9760f9d7039cdfcf6a364c10d0544581f9b030bc1288f36579a",
+    "bytes": 210086697,
+    "scannedAt": "2026-11-19T15:56:55.910Z",
+    "fingerprint": "aba9264c35d27e0ad63d64b143861c75",
+    "report": "reports/2026-11-19__12.37.2__to__12.37.3.json"
+  },
+  "to": {
+    "version": "12.38.0",
+    "appVersion": "12.38.0",
+    "build": "12.38.0",
+    "url": "https://dl.pstmn.io/download/version/12.38.0/osx_arm64",
+    "sha256": "8882c0b531455b48179a44595bf91df97e543c178a559eacbbfa69856bf6602c",
+    "bytes": 210154046,
+    "scannedAt": "2026-11-23T18:31:07.662Z",
+    "fingerprint": "c3754c4e4034c2443fd8648849e72c6e"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Postman",
+      "bundleId": "com.postmanlabs.mac"
+    },
+    "from": {
+      "version": "12.37.3",
+      "build": "12.37.3",
+      "takenAt": "2026-11-19T15:56:55.658Z",
+      "path": "Postman 12.37.3 (Homebrew cask postman)"
+    },
+    "to": {
+      "version": "12.38.0",
+      "build": "12.38.0",
+      "takenAt": "2026-11-23T18:31:06.905Z",
+      "path": "Postman 12.38.0 (Homebrew cask postman)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "1 domain no longer mentioned",
+        "detail": "to.be"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +538.3 KB (+0.1%), files 3516 → 3517"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 12.37.3 (12.37.3) → 12.38.0 (12.38.0)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 3
+    },
+    "identical": false
+  }
+}
