@@ -1,0 +1,156 @@
+{
+  "cask": "chatgpt",
+  "name": "ChatGPT",
+  "detectedAt": "2026-11-24T17:59:40.047Z",
+  "from": {
+    "version": "26.1117.41037",
+    "appVersion": "26.1117.41037",
+    "build": "29803",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1117.41037.zip",
+    "sha256": "bc0a42d01a9bdede1c1c2b876151a818560d6b1eaf1f45ae402d3d2229c34220",
+    "bytes": 724006681,
+    "scannedAt": "2026-11-21T14:49:48.957Z",
+    "fingerprint": "e4aaaf80d74eb569d9561be515424627",
+    "report": "reports/2026-11-21__26.1117.31558__to__26.1117.41037.json"
+  },
+  "to": {
+    "version": "26.1120.41243",
+    "appVersion": "26.1120.41243",
+    "build": "30607",
+    "url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1120.41243.zip",
+    "sha256": "ef8aad31409e2ee3993a9e740cf3e94e79e2d7219e50f48adea2217d4acf79d4",
+    "bytes": 662370483,
+    "scannedAt": "2026-11-24T17:59:40.047Z",
+    "fingerprint": "4a97ce590bdc248bc9211d1fac1d6d12"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "ChatGPT",
+      "bundleId": "com.openai.codex"
+    },
+    "from": {
+      "version": "26.1117.41037",
+      "build": "29803",
+      "takenAt": "2026-11-21T14:49:48.307Z",
+      "path": "ChatGPT 26.1117.41037 (Homebrew cask chatgpt)"
+    },
+    "to": {
+      "version": "26.1120.41243",
+      "build": "30607",
+      "takenAt": "2026-11-24T17:59:39.662Z",
+      "path": "ChatGPT 26.1120.41243 (Homebrew cask chatgpt)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ctfassets.net",
+        "detail": "images.ctfassets.net",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/300121.510ba3c4e9.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mothershipy.com",
+        "detail": "openai.mothershipy.com",
+        "where": [
+          "Contents/Resources/app.asar:webview/assets/async/235044.75ba1e119e.js",
+          "Contents/Resources/app.asar:webview/assets/async/607855.18c016cf4c.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain provided.localioreadcafilesource",
+        "detail": "no.url.provided.localioreadcafilesource",
+        "where": [
+          "Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain provided.localmaybedone",
+        "detail": "no.url.provided.localmaybedone",
+        "where": [
+          "Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed executable: codex-exec-server",
+        "where": [
+          "Contents/Resources/codex-cli/bin/codex-exec-server"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed executable: rg",
+        "where": [
+          "Contents/Resources/rg"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed native Node module: classic-level.node",
+        "where": [
+          "Contents/Resources/cua_node/lib/node_modules/@oai/cua/dist/lib/js/oai_js_browser/dist/skill/node_modules/classic-level/prebuilds/darwin-x64+arm64/classic-level.node"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed native Node module: classic-level.node",
+        "where": [
+          "Contents/Resources/plugins/openai-bundled/plugins/chrome/node_modules/classic-level/prebuilds/darwin-x64+arm64/classic-level.node"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "package",
+        "change": "changed",
+        "title": "1 bundled npm package changed version",
+        "detail": "@oai/sky 0.7.24 → 0.7.26"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "1 domain no longer mentioned",
+        "detail": "url.provided"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -121.4 MB (-7.8%), files 3438 → 3228"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 26.1117.41037 (29803) → 26.1120.41243 (30607)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 4,
+      "info": 8
+    },
+    "identical": false
+  }
+}

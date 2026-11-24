@@ -1,0 +1,65 @@
+{
+  "cask": "arc",
+  "name": "Arc",
+  "detectedAt": "2026-11-24T17:59:06.216Z",
+  "from": {
+    "version": "1.174.1,91404",
+    "appVersion": "1.174.1",
+    "build": "91404",
+    "url": "https://releases.arc.net/release/Arc-1.174.1-91404.zip",
+    "sha256": "460838fb835db73f7ebf2158318bd2acf8a20153554c831851c1b4ddf2c19b3b",
+    "bytes": 469714761,
+    "scannedAt": "2026-11-21T14:49:19.194Z",
+    "fingerprint": "819dc8cbc163745abd68aab14ea4c686",
+    "report": "reports/2026-11-21__1.174.0_91305__to__1.174.1_91404.json"
+  },
+  "to": {
+    "version": "1.174.2,91442",
+    "appVersion": "1.174.2",
+    "build": "91442",
+    "url": "https://releases.arc.net/release/Arc-1.174.2-91442.zip",
+    "sha256": "bc666402b5e7cdad30e92a17d40650291b6067f572e5c4212b7872089f93073a",
+    "bytes": 469717045,
+    "scannedAt": "2026-11-24T17:59:06.216Z",
+    "fingerprint": "029d7f3b3e7b956f7a7fc06ab8905d19"
+  },
+  "deep": true,
+  "report": {
+    "app": {
+      "name": "Arc",
+      "bundleId": "company.thebrowser.Browser"
+    },
+    "from": {
+      "version": "1.174.1",
+      "build": "91404",
+      "takenAt": "2026-11-21T14:49:19.005Z",
+      "path": "Arc 1.174.1,91404 (Homebrew cask arc)"
+    },
+    "to": {
+      "version": "1.174.2",
+      "build": "91442",
+      "takenAt": "2026-11-24T17:59:05.920Z",
+      "path": "Arc 1.174.2,91442 (Homebrew cask arc)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +16.4 KB (+0.0%), files 1112 → 1112"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 1.174.1 (91404) → 1.174.2 (91442)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 2
+    },
+    "identical": false
+  }
+}

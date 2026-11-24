@@ -1,0 +1,65 @@
+{
+  "cask": "warp",
+  "name": "Warp",
+  "detectedAt": "2026-11-24T18:01:47.498Z",
+  "from": {
+    "version": "0.2026.11.18.08.17.stable_04",
+    "appVersion": "0.2026.11.18.08.17.04",
+    "build": "0.2026.11.18.08.17.04",
+    "url": "https://app.warp.dev/download/brew?version=v0.2026.11.18.08.17.stable_04&package=dmg",
+    "sha256": "ff5127346cb10c63b499ad177f2c3916848234001cebe23420b53f0313131969",
+    "bytes": 343071564,
+    "scannedAt": "2026-11-21T14:50:41.042Z",
+    "fingerprint": "e5be4fa4c3bd0d6c9b578a5a7f268404",
+    "report": "reports/2026-11-21__0.2026.11.18.08.17.stable_01__to__0.2026.11.18.08.17.stable_04.json"
+  },
+  "to": {
+    "version": "0.2026.11.18.08.17.stable_05",
+    "appVersion": "0.2026.11.18.08.17.05",
+    "build": "0.2026.11.18.08.17.05",
+    "url": "https://app.warp.dev/download/brew?version=v0.2026.11.18.08.17.stable_05&package=dmg",
+    "sha256": "56c7caf4137c41adad30229601aaacd26a19b5a6cee59f82b5ef38381fa41883",
+    "bytes": 343072502,
+    "scannedAt": "2026-11-24T18:01:47.498Z",
+    "fingerprint": "5b407615e434cb713fd471ef5c4bc8c4"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Warp",
+      "bundleId": "dev.warp.Warp-Stable"
+    },
+    "from": {
+      "version": "0.2026.11.18.08.17.04",
+      "build": "0.2026.11.18.08.17.04",
+      "takenAt": "2026-11-21T14:50:40.884Z",
+      "path": "Warp 0.2026.11.18.08.17.stable_04 (Homebrew cask warp)"
+    },
+    "to": {
+      "version": "0.2026.11.18.08.17.05",
+      "build": "0.2026.11.18.08.17.05",
+      "takenAt": "2026-11-24T18:01:47.431Z",
+      "path": "Warp 0.2026.11.18.08.17.stable_05 (Homebrew cask warp)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -46.2 KB (-0.0%), files 249 → 249"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 0.2026.11.18.08.17.04 (0.2026.11.18.08.17.04) → 0.2026.11.18.08.17.05 (0.2026.11.18.08.17.05)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 2
+    },
+    "identical": false
+  }
+}

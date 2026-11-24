@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "161.0",
+      "appVersion": "161.0",
+      "build": "16126.11.18",
+      "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/161.0/mac/en-US/Firefox%20161.0.dmg",
+      "sha256": "18f398ada9ba9faa5458dc01c2a68fc7df35517283be2e7a421a0867c5f47f83",
+      "bytes": 167399384,
+      "scannedAt": "2026-11-24T18:00:41.315Z",
+      "fingerprint": "f9e385fe32eab7f3c650b78884116bb9",
+      "report": "reports/2026-11-24__160.0.1__to__161.0.json"
+    },
+    {
       "version": "160.0.1",
       "appVersion": "160.0.1",
       "build": "16026.11.16",
@@ -37,17 +48,17 @@
   "name": "Mozilla Firefox",
   "homepage": "https://www.mozilla.org/firefox/",
   "desc": "Web browser",
-  "lastCheckedAt": "2026-11-23T18:30:43.467Z",
+  "lastCheckedAt": "2026-11-24T18:00:26.579Z",
   "latest": {
-    "version": "160.0.1",
-    "appVersion": "160.0.1",
-    "build": "16026.11.16",
-    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/160.0.1/mac/en-US/Firefox%20160.0.1.dmg",
-    "sha256": "db9a522291d82cbe9a2b2922822def4db0a79d4fa3e614979039d705b13b1c25",
-    "bytes": 165761466,
-    "scannedAt": "2026-11-18T15:52:27.053Z",
-    "fingerprint": "54ed26b4cfd92bb515bcfab6cbf17ae6",
-    "report": "reports/2026-11-18__160.0__to__160.0.1.json"
+    "version": "161.0",
+    "appVersion": "161.0",
+    "build": "16126.11.18",
+    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/161.0/mac/en-US/Firefox%20161.0.dmg",
+    "sha256": "18f398ada9ba9faa5458dc01c2a68fc7df35517283be2e7a421a0867c5f47f83",
+    "bytes": 167399384,
+    "scannedAt": "2026-11-24T18:00:41.315Z",
+    "fingerprint": "f9e385fe32eab7f3c650b78884116bb9",
+    "report": "reports/2026-11-24__160.0.1__to__161.0.json"
   },
   "bundleId": "org.mozilla.firefox"
 }

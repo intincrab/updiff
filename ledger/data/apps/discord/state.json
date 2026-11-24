@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "0.0.424",
+      "appVersion": "0.0.424",
+      "build": "0.0.424",
+      "url": "https://stable.dl2.discordapp.net/distro/app/stable/osx/universal/0.0.424/Discord.dmg",
+      "sha256": "38617824808249eecce6377d6e467936bf695f62662dbcf372e95c930a7b7e4d",
+      "bytes": 234017026,
+      "scannedAt": "2026-11-24T18:00:26.461Z",
+      "fingerprint": "b993e32225d72857e32252e3e5ec01b7",
+      "report": "reports/2026-11-24__0.0.423__to__0.0.424.json"
+    },
+    {
       "version": "0.0.423",
       "appVersion": "0.0.423",
       "build": "0.0.423",
@@ -37,17 +48,17 @@
   "name": "Discord",
   "homepage": "https://discord.com/",
   "desc": "Voice and text chat software",
-  "lastCheckedAt": "2026-11-23T18:30:43.371Z",
+  "lastCheckedAt": "2026-11-24T18:00:05.682Z",
   "latest": {
-    "version": "0.0.423",
-    "appVersion": "0.0.423",
-    "build": "0.0.423",
-    "url": "https://stable.dl2.discordapp.net/distro/app/stable/osx/universal/0.0.423/Discord.dmg",
-    "sha256": "8edb6957c30e78250909f4f746546077f25e032f9532852c4b1c2f8bfd37beb2",
-    "bytes": 234013358,
-    "scannedAt": "2026-11-17T16:17:12.700Z",
-    "fingerprint": "60b7555a54a7b6030e507d1fd22327d3",
-    "report": "reports/2026-11-17__0.0.422__to__0.0.423.json"
+    "version": "0.0.424",
+    "appVersion": "0.0.424",
+    "build": "0.0.424",
+    "url": "https://stable.dl2.discordapp.net/distro/app/stable/osx/universal/0.0.424/Discord.dmg",
+    "sha256": "38617824808249eecce6377d6e467936bf695f62662dbcf372e95c930a7b7e4d",
+    "bytes": 234017026,
+    "scannedAt": "2026-11-24T18:00:26.461Z",
+    "fingerprint": "b993e32225d72857e32252e3e5ec01b7",
+    "report": "reports/2026-11-24__0.0.423__to__0.0.424.json"
   },
   "bundleId": "com.hnc.Discord"
 }

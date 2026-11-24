@@ -1,0 +1,242 @@
+{
+  "cask": "cursor",
+  "name": "Cursor",
+  "detectedAt": "2026-11-24T18:00:05.303Z",
+  "from": {
+    "version": "3.31.15,3eb8c13390837371c7c2f2013dc57fdbc802c753",
+    "appVersion": "3.31.15",
+    "build": "3.31.15",
+    "url": "https://downloads.cursor.com/production/3eb8c13390837371c7c2f2013dc57fdbc802c753/darwin/arm64/Cursor-darwin-arm64.zip",
+    "sha256": "0a25a373ca8f4fbc365ec4661da68acd8c29a4123195cb4660b17bbf065ac54f",
+    "bytes": 313833006,
+    "scannedAt": "2026-11-21T14:50:20.704Z",
+    "fingerprint": "69f104f70150cb4d7a85274327a95d68",
+    "report": "reports/2026-11-21__3.31.11_52fdf018932f1335bc6dd36acc5e33d30759192e__to__3.31.15_3eb8c13390837371c7c2f2013dc57fdbc802c753.json"
+  },
+  "to": {
+    "version": "3.32.4,0925c4b8226c56947c43f0b555fb98e187a7e029",
+    "appVersion": "3.32.4",
+    "build": "3.32.4",
+    "url": "https://downloads.cursor.com/production/0925c4b8226c56947c43f0b555fb98e187a7e029/darwin/arm64/Cursor-darwin-arm64.zip",
+    "sha256": "2d15a19927fe11ce177c2b67fa890ec43b2950f33b6be5dce770dc4a5c1364ae",
+    "bytes": 313125599,
+    "scannedAt": "2026-11-24T18:00:05.303Z",
+    "fingerprint": "b1419867d6a83ca841b600560201a3c7"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Cursor",
+      "bundleId": "com.todesktop.230313mzl4w4u92"
+    },
+    "from": {
+      "version": "3.31.15",
+      "build": "3.31.15",
+      "takenAt": "2026-11-21T14:50:19.619Z",
+      "path": "Cursor 3.31.15,3eb8c13390837371c7c2f2013dc57fdbc802c753 (Homebrew cask cursor)"
+    },
+    "to": {
+      "version": "3.32.4",
+      "build": "3.32.4",
+      "takenAt": "2026-11-24T18:00:04.305Z",
+      "path": "Cursor 3.32.4,0925c4b8226c56947c43f0b555fb98e187a7e029 (Homebrew cask cursor)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "package",
+        "change": "added",
+        "title": "1 new bundled npm package",
+        "detail": "@pierre/highlights@0.5.0",
+        "where": [
+          "Contents/Resources/app"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain comment.info",
+        "detail": "comment.info, string.comment.info (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/node_modules/@pierre/highlights/dist/themes.js",
+          "Contents/Resources/app/molten/node_modules/@pierre/highlights/dist/themes/catppuccin-frappe.js",
+          "Contents/Resources/app/molten/node_modules/@pierre/highlights/dist/themes/catppuccin-latte.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain d37nollg2rip8h.cloudfront.net",
+        "detail": "d37nollg2rip8h.cloudfront.net",
+        "where": [
+          "Contents/Resources/app/molten/dist/engine/engine.cjs"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain d382xw8y1ur6si.cloudfront.net",
+        "detail": "d382xw8y1ur6si.cloudfront.net",
+        "where": [
+          "Contents/Resources/app/molten/dist/engine/engine.cjs"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain frontapp.com",
+        "detail": "frontapp.com, mcp.frontapp.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js",
+          "Contents/Resources/app/out/vs/workbench/workbench.glass.main.js",
+          "Contents/Resources/app/extensions/cursor-mcp/dist/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain managed-agent-editor-tools.to",
+        "detail": "ui-copy.managed-agent-editor-tools.to (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/de.gen-SURafJpj.js",
+          "Contents/Resources/app/molten/dist/renderer/assets/es.gen-tBvdtrVF.js",
+          "Contents/Resources/app/molten/dist/renderer/assets/fr.gen-CbmDkA-E.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain managed-agent-editor-trigger-row.in",
+        "detail": "ui-copy.managed-agent-editor-trigger-row.in (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/de.gen-SURafJpj.js",
+          "Contents/Resources/app/molten/dist/renderer/assets/es.gen-tBvdtrVF.js",
+          "Contents/Resources/app/molten/dist/renderer/assets/fr.gen-CbmDkA-E.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain osv.dev",
+        "detail": "osv.dev",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/security-agents-CDUGmiFr.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain spacex.com",
+        "detail": "api.cursor-staging.spacex.com, api.cursor.spacex.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/molten/dist/engine/user-store-sync-worker.cjs",
+          "Contents/Resources/app/extensions/cursor-agent-host/dist/7334.js",
+          "Contents/Resources/app/extensions/cursor-agent-exec/dist/main.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain strava.com",
+        "detail": "mcp.strava.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/main.js",
+          "Contents/Resources/app/out/vs/workbench/workbench.anysphere-ui.js",
+          "Contents/Resources/app/out/vs/code/electron-utility/mcpProcess/mcpProcessMain.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "package",
+        "change": "changed",
+        "title": "1 bundled npm package changed version",
+        "detail": "@typespec/ts-http-runtime 0.3.5 → 0.3.9"
+      },
+      {
+        "severity": "info",
+        "category": "package",
+        "change": "removed",
+        "title": "42 bundled npm packages removed",
+        "detail": "@shikijs/core, @shikijs/engine-javascript, @shikijs/engine-oniguruma, @shikijs/langs, @shikijs/primitive, @shikijs/themes, @shikijs/types, @shikijs/vscode-textmate, @ungap/structured-clone, ccount, character-entities-html4, character-entities-legacy, comma-separated-tokens, dequal, devlop, hast-util-to-html, hast-util-whitespace, html-void-elements, mdast-util-to-hast, micromark-util-character, micromark-util-encode, micromark-util-sanitize-uri, micromark-util-symbol, micromark-util-types, oniguruma-parser, oniguruma-to-es, property-information, regex, regex-recursion, regex-utilities, shiki, space-separated-tokens, stringify-entities, trim-lines, unist-util-is, unist-util-position, unist-util-stringify-position, unist-util-visit, unist-util-visit-parents, vfile, vfile-message, zwitch"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "3 domains no longer mentioned",
+        "detail": "cursor.app, general-purpose.io, shiki.style"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under azure.com",
+        "detail": "my-resource.openai.azure.com",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/api-keys-settings-D6_h1BfU.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under microsoft.com",
+        "detail": "developer.microsoft.com",
+        "where": [
+          "Contents/Resources/app/molten/dist/renderer/assets/teams-DPBRQVc3.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under x.ai",
+        "detail": "status.x.ai",
+        "where": [
+          "Contents/Resources/app/out/main.js",
+          "Contents/Resources/app/out/vs/workbench/workbench.desktop.main.js",
+          "Contents/Resources/app/out/vs/workbench/workbench.glass.main.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under amazonaws.com",
+        "detail": "agent-stores-012832591215-us-gov-west-1-an.s3-fips.us-gov-west-1.amazonaws.com, agent-stores-012832591215-us-gov-west-1-an.s3.us-gov-west-1.amazonaws.com, agent-stores-012832591284-us-gov-west-1-an.s3-fips.us-gov-west-1.amazonaws.com, agent-stores-012832591284-us-gov-west-1-an.s3.us-gov-west-1.amazonaws.com, anysphere-binaries.s3.us-east-1.amazonaws.com",
+        "where": [
+          "Contents/Resources/app/molten/dist/engine/user-store-sync-worker.cjs",
+          "Contents/Resources/app/extensions/cursor-agent-host/dist/7334.js",
+          "Contents/Resources/app/extensions/cursor-agent-exec/dist/main.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -7.8 MB (-0.8%), files 13649 → 13177"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 3.31.15 (3.31.15) → 3.32.4 (3.32.4)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 10,
+      "info": 9
+    },
+    "identical": false
+  }
+}

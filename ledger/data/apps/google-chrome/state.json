@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "158.0.8127.89",
+      "appVersion": "158.0.8127.89",
+      "build": "8127.89",
+      "url": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
+      "sha256": "b7b8c9169275631c1065b865ba2e64bf0f620fa4e507b72c1b5abb5383d2b0f1",
+      "bytes": 289260301,
+      "scannedAt": "2026-11-24T18:01:22.447Z",
+      "fingerprint": "ef71d57d331796628796d5581591023b",
+      "report": "reports/2026-11-24__158.0.8127.37__to__158.0.8127.89.json"
+    },
+    {
       "version": "158.0.8127.37",
       "appVersion": "158.0.8127.37",
       "build": "8127.37",
@@ -61,16 +72,16 @@
   "homepage": "https://www.google.com/chrome/",
   "desc": "Web browser",
   "latest": {
-    "version": "158.0.8127.37",
-    "appVersion": "158.0.8127.37",
-    "build": "8127.37",
+    "version": "158.0.8127.89",
+    "appVersion": "158.0.8127.89",
+    "build": "8127.89",
     "url": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
-    "sha256": "75b9fdb7573aab8a89f1b00319692a1f785fb4e6fd07e97916a13b00b3d34bae",
-    "bytes": 289267733,
-    "scannedAt": "2026-11-18T15:53:02.484Z",
-    "fingerprint": "22ccebdd4b0474a2411a1edff0396f09",
-    "report": "reports/2026-11-18__157.0.8103.79__to__158.0.8127.37.json"
+    "sha256": "b7b8c9169275631c1065b865ba2e64bf0f620fa4e507b72c1b5abb5383d2b0f1",
+    "bytes": 289260301,
+    "scannedAt": "2026-11-24T18:01:22.447Z",
+    "fingerprint": "ef71d57d331796628796d5581591023b",
+    "report": "reports/2026-11-24__158.0.8127.37__to__158.0.8127.89.json"
   },
   "bundleId": "com.google.Chrome",
-  "lastCheckedAt": "2026-11-23T18:30:43.556Z"
+  "lastCheckedAt": "2026-11-24T18:00:41.443Z"
 }
