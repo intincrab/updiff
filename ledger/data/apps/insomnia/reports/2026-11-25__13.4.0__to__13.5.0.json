@@ -1,0 +1,193 @@
+{
+  "cask": "insomnia",
+  "name": "Insomnia",
+  "detectedAt": "2026-11-25T17:29:51.585Z",
+  "from": {
+    "version": "13.4.0",
+    "appVersion": "13.4.0",
+    "build": "13.4.0",
+    "url": "https://github.com/Kong/insomnia/releases/download/core%4013.4.0/Insomnia.Core-13.4.0.dmg",
+    "sha256": "d07738de010d5d3aa4a850f3dd788ae403ec38b7f6676862d2b9c687893c99c1",
+    "bytes": 401444007,
+    "scannedAt": "2026-11-07T17:44:52.840Z",
+    "fingerprint": "d9fdafbb259de01314c844dfcd5ce9da"
+  },
+  "to": {
+    "version": "13.5.0",
+    "appVersion": "13.5.0",
+    "build": "13.5.0",
+    "url": "https://github.com/Kong/insomnia/releases/download/core%4013.5.0/Insomnia.Core-13.5.0.dmg",
+    "sha256": "bf10dc8e0bd59636938b9122fc957632f74e5a8843b6f511101c9083c3a73337",
+    "bytes": 405713650,
+    "scannedAt": "2026-11-25T17:29:51.585Z",
+    "fingerprint": "54ffcfadc47fbece901c9361589332b7"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Insomnia",
+      "bundleId": "com.insomnia.app"
+    },
+    "from": {
+      "version": "13.4.0",
+      "build": "13.4.0",
+      "takenAt": "2026-11-07T17:44:52.762Z",
+      "path": "Insomnia 13.4.0 (Homebrew cask insomnia)"
+    },
+    "to": {
+      "version": "13.5.0",
+      "build": "13.5.0",
+      "takenAt": "2026-11-25T17:29:45.473Z",
+      "path": "Insomnia 13.5.0 (Homebrew cask insomnia)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "package",
+        "change": "added",
+        "title": "11 new bundled npm packages",
+        "detail": "@scalar/helpers@0.16.4, @scalar/json-magic@0.17.0, @scalar/json-schema-validator@0.1.17, @scalar/openapi-parser@0.29.19, @scalar/openapi-types@0.9.8, @scalar/openapi-upgrader@0.4.6, @scalar/openapi-validator@0.1.17, @scalar/types@0.26.0, pathe@2.0.3, tagged-tag@1.0.0, type-fest@5.10.0",
+        "where": [
+          "Contents/Resources/app.asar"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain app.com",
+        "detail": "app.com",
+        "where": [
+          "Contents/Resources/app.asar:node_modules/@scalar/helpers/dist/url/extract-server-from-path.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain jaketrent.com",
+        "detail": "jaketrent.com",
+        "where": [
+          "Contents/Resources/app.asar:node_modules/@scalar/helpers/dist/array/is-defined.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain playwright.dev",
+        "detail": "playwright.dev",
+        "where": [
+          "Contents/Resources/app.asar:node_modules/@scalar/helpers/dist/playwright/docker.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain redocly.com",
+        "detail": "redocly.com",
+        "where": [
+          "Contents/Resources/app.asar:node_modules/@scalar/openapi-upgrader/dist/2.0-to-3.0/upgrade-from-two-to-three.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain scalar.com",
+        "detail": "api.scalar.com, dashboard.scalar.com, proxy.scalar.com, registry.scalar.com, scalar.com",
+        "where": [
+          "Contents/Resources/app.asar:node_modules/@scalar/types/dist/api-reference/base-configuration.js",
+          "Contents/Resources/app.asar:node_modules/@scalar/helpers/dist/url/make-powered-by-url.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain unjs.io",
+        "detail": "unhead.unjs.io",
+        "where": [
+          "Contents/Resources/app.asar:node_modules/@scalar/types/dist/api-reference/api-reference-configuration.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "package",
+        "change": "changed",
+        "title": "29 bundled npm packages changed version",
+        "detail": "@apidevtools/json-schema-ref-parser 14.0.1|16.0.5|9.1.2 → 9.1.2, @apidevtools/swagger-parser 10.0.3|12.1.0|13.1.0 → 10.0.3, @azure/msal-common 16.12.0 → 16.16.2, @azure/msal-node 5.5.0 → 7.2.2, @getinsomnia/node-libcurl 3.3.0 → 3.3.2, @google/genai 2.30.0 → 2.32.0, @huggingface/jinja 0.5.10 → 0.5.13, @kong/insomnia-plugin-ai 1.0.12 → 1.0.14, @kong/insomnia-plugin-external-vault 0.1.5 → 0.1.6, @node-llama-cpp/mac-arm64-metal 3.22.2 → 3.22.3, @node-llama-cpp/mac-x64 3.22.2 → 3.22.3, @simple-git/argv-parser 1.1.1 → 3.0.0, @stoplight/spectral-core 1.22.0 → 1.24.0, @stoplight/spectral-formats 1.8.2 → 1.9.0, @stoplight/spectral-rulesets 1.22.1 → 1.23.0, ajv-formats 2.1.1 → 2.1.1|3.0.1, argparse 2.0.1|3.0.3 → 2.0.1|3.0.4, dompurify 3.4.16 → 3.4.17, form-data 4.0.4 → 4.0.6, graphql 16.13.2 → 16.15.0, nanoid 5.1.11 → 5.1.16, node-forge 1.4.0 → 1.4.2, node-llama-cpp 3.22.2 → 3.22.3, openai 7.39.0 → 7.59.0, simple-git 3.36.0 → 4.1.0, swagger-ui-dist 5.32.1 → 5.34.1, undici 8.12.2 → 8.12.2|8.12.3|8.12.4, yaml 1.10.3|2.8.3 → 1.10.3|2.9.1, zod 3.25.76|4.6.5 → 3.25.76|4.6.7"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "4 domains no longer mentioned",
+        "detail": "apidevtools.com, microsoft-ppe.com, nonexistanturl.com, windows-ppe.net"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under docker.com",
+        "detail": "hub.docker.com",
+        "where": [
+          "Contents/Resources/app.asar:node_modules/@scalar/helpers/dist/playwright/docker.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under openapis.org",
+        "detail": "www.openapis.org",
+        "where": [
+          "Contents/Resources/app.asar:node_modules/@scalar/openapi-upgrader/dist/3.0-to-3.1/upgrade-from-three-to-three-one.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under example.com",
+        "detail": "api1.example.com, api2.example.com",
+        "where": [
+          "Contents/Resources/app.asar:node_modules/@scalar/openapi-parser/dist/utils/join/join.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under openai.com",
+        "detail": "au.api.openai.com, in.api.openai.com, jp.api.openai.com",
+        "where": [
+          "Contents/Resources/app.asar:node_modules/openai/internal/data-residency.js",
+          "Contents/Resources/app.asar:node_modules/openai/internal/data-residency.mjs"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +15.8 MB (+1.4%), files 676 → 676"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 13.4.0 (13.4.0) → 13.5.0 (13.5.0)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 7,
+      "info": 8
+    },
+    "identical": false,
+    "notes": [
+      "Notarization was only checked on one side, so it was not compared."
+    ]
+  }
+}

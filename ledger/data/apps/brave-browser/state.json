@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "1.100.59.0,200.59",
+      "appVersion": "158.1.100.59",
+      "build": "200.59",
+      "url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/200.59/Brave-Browser-arm64.dmg",
+      "sha256": "976e78ec17ee5bc5e758acb7a7ece8fbd36ae0134cfd4e523b2f411b4fcefc02",
+      "bytes": 252843229,
+      "scannedAt": "2026-11-25T17:28:50.579Z",
+      "fingerprint": "ad661ac7511b6df5692edf4232856bbf",
+      "report": "reports/2026-11-25__1.100.58.0_200.58__to__1.100.59.0_200.59.json"
+    },
+    {
       "version": "1.100.58.0,200.58",
       "appVersion": "158.1.100.58",
       "build": "200.58",
@@ -48,17 +59,17 @@
   "name": "Brave",
   "homepage": "https://brave.com/",
   "desc": "Web browser focusing on privacy",
-  "lastCheckedAt": "2026-11-24T17:59:06.587Z",
+  "lastCheckedAt": "2026-11-25T17:28:10.648Z",
   "latest": {
-    "version": "1.100.58.0,200.58",
-    "appVersion": "158.1.100.58",
-    "build": "200.58",
-    "url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/200.58/Brave-Browser-arm64.dmg",
-    "sha256": "0e26fb4c64c42ce7a6b1a1c0e2184d334668b0c51563bcf0831437e4b9920b3f",
-    "bytes": 252901957,
-    "scannedAt": "2026-11-20T15:39:17.854Z",
-    "fingerprint": "426a76147d4eb2d2dfa86103aca55d11",
-    "report": "reports/2026-11-20__1.99.57.0__to__1.100.58.0_200.58.json"
+    "version": "1.100.59.0,200.59",
+    "appVersion": "158.1.100.59",
+    "build": "200.59",
+    "url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/200.59/Brave-Browser-arm64.dmg",
+    "sha256": "976e78ec17ee5bc5e758acb7a7ece8fbd36ae0134cfd4e523b2f411b4fcefc02",
+    "bytes": 252843229,
+    "scannedAt": "2026-11-25T17:28:50.579Z",
+    "fingerprint": "ad661ac7511b6df5692edf4232856bbf",
+    "report": "reports/2026-11-25__1.100.58.0_200.58__to__1.100.59.0_200.59.json"
   },
   "bundleId": "com.brave.Browser"
 }

@@ -1,6 +1,17 @@
 {
   "history": [
     {
+      "version": "1.174.3,91540",
+      "appVersion": "1.174.3",
+      "build": "91540",
+      "url": "https://releases.arc.net/release/Arc-1.174.3-91540.zip",
+      "sha256": "635b589e560762bde2d0b43bc7135328e5d4039a2110fc943286ac191c64b4d0",
+      "bytes": 469740279,
+      "scannedAt": "2026-11-25T17:28:10.498Z",
+      "fingerprint": "0c49b22f4e9f38e9b16b0233d95d4114",
+      "report": "reports/2026-11-25__1.174.2_91442__to__1.174.3_91540.json"
+    },
+    {
       "version": "1.174.2,91442",
       "appVersion": "1.174.2",
       "build": "91442",
@@ -70,17 +81,17 @@
   "name": "Arc",
   "homepage": "https://arc.net/",
   "desc": "Chromium based browser",
-  "lastCheckedAt": "2026-11-24T17:58:40.668Z",
+  "lastCheckedAt": "2026-11-25T17:27:45.114Z",
   "latest": {
-    "version": "1.174.2,91442",
-    "appVersion": "1.174.2",
-    "build": "91442",
-    "url": "https://releases.arc.net/release/Arc-1.174.2-91442.zip",
-    "sha256": "bc666402b5e7cdad30e92a17d40650291b6067f572e5c4212b7872089f93073a",
-    "bytes": 469717045,
-    "scannedAt": "2026-11-24T17:59:06.216Z",
-    "fingerprint": "029d7f3b3e7b956f7a7fc06ab8905d19",
-    "report": "reports/2026-11-24__1.174.1_91404__to__1.174.2_91442.json"
+    "version": "1.174.3,91540",
+    "appVersion": "1.174.3",
+    "build": "91540",
+    "url": "https://releases.arc.net/release/Arc-1.174.3-91540.zip",
+    "sha256": "635b589e560762bde2d0b43bc7135328e5d4039a2110fc943286ac191c64b4d0",
+    "bytes": 469740279,
+    "scannedAt": "2026-11-25T17:28:10.498Z",
+    "fingerprint": "0c49b22f4e9f38e9b16b0233d95d4114",
+    "report": "reports/2026-11-25__1.174.2_91442__to__1.174.3_91540.json"
   },
   "bundleId": "company.thebrowser.Browser"
 }

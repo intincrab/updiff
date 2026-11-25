@@ -1,0 +1,436 @@
+{
+  "cask": "visual-studio-code",
+  "name": "Microsoft Visual Studio Code",
+  "detectedAt": "2026-11-25T17:30:15.362Z",
+  "from": {
+    "version": "1.147.0",
+    "appVersion": "1.147.0",
+    "build": "1.147.0",
+    "url": "https://update.code.visualstudio.com/1.147.0/darwin-arm64/stable",
+    "sha256": "149d944feb599b076b48406b174e1c3cd1d510e9d673854777a20a6f4116a59a",
+    "bytes": 393619875,
+    "scannedAt": "2026-11-18T15:53:44.253Z",
+    "fingerprint": "f06ff8f066e7c3fb6afcd5c50596b013",
+    "report": "reports/2026-11-18__1.146.0__to__1.147.0.json"
+  },
+  "to": {
+    "version": "1.148.0",
+    "appVersion": "1.148.0",
+    "build": "1.148.0",
+    "url": "https://update.code.visualstudio.com/1.148.0/darwin-arm64/stable",
+    "sha256": "5a6d11ecf8bed45860f81379bc55d1551e561c37076cb4ab8e2c562b3017e183",
+    "bytes": 390423209,
+    "scannedAt": "2026-11-25T17:30:15.362Z",
+    "fingerprint": "eb5c09e1c748b7568875a3601b42bbd3"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Code",
+      "bundleId": "com.microsoft.VSCode"
+    },
+    "from": {
+      "version": "1.147.0",
+      "build": "1.147.0",
+      "takenAt": "2026-11-18T15:53:43.774Z",
+      "path": "Microsoft Visual Studio Code 1.147.0 (Homebrew cask visual-studio-code)"
+    },
+    "to": {
+      "version": "1.148.0",
+      "build": "1.148.0",
+      "takenAt": "2026-11-25T17:30:15.069Z",
+      "path": "Microsoft Visual Studio Code 1.148.0 (Homebrew cask visual-studio-code)"
+    },
+    "findings": [
+      {
+        "severity": "high",
+        "category": "entitlement",
+        "change": "added",
+        "title": "Executable copilot-runtime can now control other apps through Apple Events",
+        "detail": "com.apple.security.automation.apple-events = true",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/prebuilds/darwin-arm64/copilot-runtime"
+        ]
+      },
+      {
+        "severity": "high",
+        "category": "entitlement",
+        "change": "added",
+        "title": "Executable copilot-runtime can now record from the microphone",
+        "detail": "com.apple.security.device.audio-input = true",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/prebuilds/darwin-arm64/copilot-runtime"
+        ]
+      },
+      {
+        "severity": "high",
+        "category": "entitlement",
+        "change": "added",
+        "title": "Executable copilot-runtime can now use the camera",
+        "detail": "com.apple.security.device.camera = true",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/prebuilds/darwin-arm64/copilot-runtime"
+        ]
+      },
+      {
+        "severity": "high",
+        "category": "entitlement",
+        "change": "added",
+        "title": "Executable rg can now control other apps through Apple Events",
+        "detail": "com.apple.security.automation.apple-events = true",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/ripgrep/bin/darwin-arm64/rg"
+        ]
+      },
+      {
+        "severity": "high",
+        "category": "entitlement",
+        "change": "added",
+        "title": "Executable rg can now record from the microphone",
+        "detail": "com.apple.security.device.audio-input = true",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/ripgrep/bin/darwin-arm64/rg"
+        ]
+      },
+      {
+        "severity": "high",
+        "category": "entitlement",
+        "change": "added",
+        "title": "Executable rg can now use the camera",
+        "detail": "com.apple.security.device.camera = true",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/ripgrep/bin/darwin-arm64/rg"
+        ]
+      },
+      {
+        "severity": "high",
+        "category": "entitlement",
+        "change": "added",
+        "title": "Executable tgrep can now control other apps through Apple Events",
+        "detail": "com.apple.security.automation.apple-events = true",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/tgrep/bin/darwin-arm64/tgrep"
+        ]
+      },
+      {
+        "severity": "high",
+        "category": "entitlement",
+        "change": "added",
+        "title": "Executable tgrep can now record from the microphone",
+        "detail": "com.apple.security.device.audio-input = true",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/tgrep/bin/darwin-arm64/tgrep"
+        ]
+      },
+      {
+        "severity": "high",
+        "category": "entitlement",
+        "change": "added",
+        "title": "Executable tgrep can now use the camera",
+        "detail": "com.apple.security.device.camera = true",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/tgrep/bin/darwin-arm64/tgrep"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New executable: copilot-runtime",
+        "detail": "team UBF8T346G9 · entitlements: com.apple.security.automation.apple-events, com.apple.security.cs.allow-jit, com.apple.security.device.audio-input, com.apple.security.device.camera",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/prebuilds/darwin-arm64/copilot-runtime"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New executable: rg",
+        "detail": "team UBF8T346G9 · entitlements: com.apple.security.automation.apple-events, com.apple.security.cs.allow-jit, com.apple.security.device.audio-input, com.apple.security.device.camera",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/ripgrep/bin/darwin-arm64/rg"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New executable: tgrep",
+        "detail": "team UBF8T346G9 · entitlements: com.apple.security.automation.apple-events, com.apple.security.cs.allow-jit, com.apple.security.device.audio-input, com.apple.security.device.camera",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/tgrep/bin/darwin-arm64/tgrep"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New native Node module: msal-node-runtime.node",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/prebuilds/darwin-arm64/msal-node-runtime.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New native Node module: runtime.node",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@microsoft/copilot-sdk-darwin-arm64/prebuilds/darwin-arm64/runtime.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "electron",
+        "change": "changed",
+        "title": "Electron 43.8.9 → 43.8.10",
+        "where": [
+          "Contents/Frameworks/Electron Framework.framework"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain bevry.me",
+        "detail": "bevry.me",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain dalek.rs",
+        "detail": "dalek.rs",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain hyper.rs",
+        "detail": "hyper.rs",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain lib.rs",
+        "detail": "lib.rs",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain modal.cloud",
+        "detail": "automations.modal.cloud (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/nls.keys.json",
+          "Contents/Resources/app/out/nls.metadata.json"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain pijul.org",
+        "detail": "pijul.org",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain remotes.no",
+        "detail": "remotes.no (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/app/out/nls.keys.json",
+          "Contents/Resources/app/out/nls.metadata.json"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain rust-lang.github.io",
+        "detail": "rust-lang.github.io",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain rust-lang.org",
+        "detail": "doc.rust-lang.org",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain rust-random.github.io",
+        "detail": "rust-random.github.io",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain serde.rs",
+        "detail": "serde.rs",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain stebalien.com",
+        "detail": "stebalien.com",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain time-rs.github.io",
+        "detail": "time-rs.github.io",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain tokio.rs",
+        "detail": "tokio.rs",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain vscode.devnames",
+        "detail": "vscode.devnames",
+        "where": [
+          "Contents/Resources/app/bin/code-tunnel"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain wasm-bindgen.github.io",
+        "detail": "wasm-bindgen.github.io",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed executable: copilot-runtime",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@github/copilot-sdk-darwin-arm64/prebuilds/darwin-arm64/copilot-runtime"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed executable: rg",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@github/copilot-sdk-darwin-arm64/ripgrep/bin/darwin-arm64/rg"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed executable: tgrep",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@github/copilot-sdk-darwin-arm64/tgrep/bin/darwin-arm64/tgrep"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed native Node module: msal-node-runtime.node",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@github/copilot-sdk-darwin-arm64/prebuilds/darwin-arm64/msal-node-runtime.node"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "removed",
+        "title": "Removed native Node module: runtime.node",
+        "where": [
+          "Contents/Resources/app/node_modules.asar.unpacked/@github/copilot-sdk-darwin-arm64/prebuilds/darwin-arm64/runtime.node"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "5 domains no longer mentioned",
+        "detail": "castleproject.org, novell.com, ryanjuckett.com, visualstudio.comdownload, xamarin.com"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under unicode.org",
+        "detail": "icu4x.unicode.org",
+        "where": [
+          "Contents/Resources/app/ThirdPartyNotices.txt"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -1.5 MB (-0.2%), files 3456 → 3457"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 1.147.0 (1.147.0) → 1.148.0 (1.148.0)"
+      }
+    ],
+    "counts": {
+      "high": 9,
+      "notable": 22,
+      "info": 9
+    },
+    "identical": false
+  }
+}

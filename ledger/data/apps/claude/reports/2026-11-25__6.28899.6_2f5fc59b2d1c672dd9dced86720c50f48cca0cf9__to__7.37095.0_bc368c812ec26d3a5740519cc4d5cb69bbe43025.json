@@ -1,0 +1,859 @@
+{
+  "cask": "claude",
+  "name": "Claude",
+  "detectedAt": "2026-11-25T17:29:33.348Z",
+  "from": {
+    "version": "6.28899.6,2f5fc59b2d1c672dd9dced86720c50f48cca0cf9",
+    "appVersion": "6.28899.6",
+    "build": "6.28899.6",
+    "url": "https://downloads.claude.ai/releases/darwin/universal/6.28899.6/Claude-2f5fc59b2d1c672dd9dced86720c50f48cca0cf9.zip",
+    "sha256": "ae58c31858b41dd2a3bca78da26433f4f17c044ce3c2486128fb82a82e457f16",
+    "bytes": 404693227,
+    "scannedAt": "2026-11-21T14:49:58.012Z",
+    "fingerprint": "a847f4d01b43550c9f4c7f364c52912c",
+    "report": "reports/2026-11-21__6.28899.2_155ca43c0ad5a4bd5734795688543b65b464cf47__to__6.28899.6_2f5fc59b2d1c672dd9dced86720c50f48cca0cf9.json"
+  },
+  "to": {
+    "version": "7.37095.0,bc368c812ec26d3a5740519cc4d5cb69bbe43025",
+    "appVersion": "7.37095.0",
+    "build": "7.37095.0",
+    "url": "https://downloads.claude.ai/releases/darwin/universal/7.37095.0/Claude-bc368c812ec26d3a5740519cc4d5cb69bbe43025.zip",
+    "sha256": "800806556cacece6bdacbb9f3aef1849a9ed8d6fc2ee0eb2ed881a098d094eab",
+    "bytes": 407313465,
+    "scannedAt": "2026-11-25T17:29:33.348Z",
+    "fingerprint": "f4941b1adc558540dec9648d09841f5c"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Claude",
+      "bundleId": "com.anthropic.claudefordesktop"
+    },
+    "from": {
+      "version": "6.28899.6",
+      "build": "6.28899.6",
+      "takenAt": "2026-11-21T14:49:57.953Z",
+      "path": "Claude 6.28899.6,2f5fc59b2d1c672dd9dced86720c50f48cca0cf9 (Homebrew cask claude)"
+    },
+    "to": {
+      "version": "7.37095.0",
+      "build": "7.37095.0",
+      "takenAt": "2026-11-25T17:29:33.277Z",
+      "path": "Claude 7.37095.0,bc368c812ec26d3a5740519cc4d5cb69bbe43025 (Homebrew cask claude)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "code",
+        "change": "added",
+        "title": "New native Node module: usernet.node",
+        "where": [
+          "Contents/Resources/app.asar.unpacked/node_modules/@ant/claude-swift/build/Release/usernet.node"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ac.in",
+        "detail": "ac.in (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ac.jp",
+        "detail": "ac.jp (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ac.nz",
+        "detail": "ac.nz (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ac.uk",
+        "detail": "ac.uk (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain appspot.com",
+        "detail": "appspot.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain asn.au",
+        "detail": "asn.au (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain astral.sh",
+        "detail": "docs.astral.sh",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c4fa092cc-D6rlql9B.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain azurewebsites.net",
+        "detail": "azurewebsites.net (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain bellard.org",
+        "detail": "bellard.org",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c6bf19e8f-DEmbg5On.js",
+          "Contents/Resources/ion-dist.asar:assets/v1/c73ff8fc2-B863lUaM.js",
+          "Contents/Resources/ion-dist.asar:assets/v1/c788b5dbe-D3Ejt7Ak.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain co.il",
+        "detail": "co.il (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain co.in",
+        "detail": "co.in (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain co.jp",
+        "detail": "co.jp (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain co.kr",
+        "detail": "co.kr (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain co.nz",
+        "detail": "co.nz (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain co.uk",
+        "detail": "co.uk (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain co.za",
+        "detail": "co.za (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain com.au",
+        "detail": "com.au (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain com.br",
+        "detail": "com.br (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain com.cn",
+        "detail": "com.cn (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain com.co",
+        "detail": "com.co (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain com.hk",
+        "detail": "com.hk (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain com.mx",
+        "detail": "com.mx (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain com.sg",
+        "detail": "com.sg (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain com.tr",
+        "detail": "com.tr (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain com.tw",
+        "detail": "com.tw (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain daringfireball.net",
+        "detail": "daringfireball.net",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain drifty.com",
+        "detail": "drifty.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain edu.au",
+        "detail": "edu.au (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain edu.cn",
+        "detail": "edu.cn (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain firebaseapp.com",
+        "detail": "firebaseapp.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain firm.in",
+        "detail": "firm.in (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain fly.dev",
+        "detail": "fly.dev (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gen.in",
+        "detail": "gen.in (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain github.io",
+        "detail": "github.io (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain go.jp",
+        "detail": "go.jp (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gov.au",
+        "detail": "gov.au (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gov.br",
+        "detail": "gov.br (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gov.cn",
+        "detail": "gov.cn (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gov.in",
+        "detail": "gov.in (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain gov.uk",
+        "detail": "gov.uk (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain govt.nz",
+        "detail": "govt.nz (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain herokuapp.com",
+        "detail": "herokuapp.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain id.au",
+        "detail": "id.au (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain intercom-reporting.com",
+        "detail": "www.intercom-reporting.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-36-EnFiRsZp.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain intercom-sheets.com",
+        "detail": "intercom-sheets.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-36-EnFiRsZp.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain jedwatson.github.io",
+        "detail": "jedwatson.github.io",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c9746f39d-Bb1a1wIU.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ltd.uk",
+        "detail": "ltd.uk (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain lukeed.com",
+        "detail": "lukeed.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain mathiasbynens.be",
+        "detail": "mathiasbynens.be",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain me.uk",
+        "detail": "me.uk (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain ne.jp",
+        "detail": "ne.jp (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain net.au",
+        "detail": "net.au (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain net.br",
+        "detail": "net.br (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain net.cn",
+        "detail": "net.cn (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain net.in",
+        "detail": "net.in (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain net.nz",
+        "detail": "net.nz (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain net.uk",
+        "detail": "net.uk (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain nodejs.org",
+        "detail": "nodejs.org",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c4fa092cc-D6rlql9B.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain onrender.com",
+        "detail": "onrender.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain or.jp",
+        "detail": "or.jp (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain org.au",
+        "detail": "org.au (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain org.br",
+        "detail": "org.br (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain org.cn",
+        "detail": "org.cn (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain org.in",
+        "detail": "org.in (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain org.nz",
+        "detail": "org.nz (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain org.uk",
+        "detail": "org.uk (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain pages.dev",
+        "detail": "pages.dev (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain paulmillr.com",
+        "detail": "paulmillr.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain plc.uk",
+        "detail": "plc.uk (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain rokt33r.github.io",
+        "detail": "rokt33r.github.io",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain rsms.me",
+        "detail": "rsms.me",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sindresorhus.com",
+        "detail": "sindresorhus.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain sourcelair.com",
+        "detail": "www.sourcelair.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain wooorm.com",
+        "detail": "wooorm.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain workers.dev",
+        "detail": "workers.dev (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/shared-63-DAtR_yRe.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under claude.com",
+        "detail": "websitemain.claude.com",
+        "where": [
+          "Contents/Resources/app.asar:resources/frame/shell/frame-shell-deferred.js",
+          "Contents/Resources/app.asar:.vite/build/index.chunk-zlLu4KiP.js",
+          "Contents/Resources/ion-dist.asar:assets/v1/frame-shell-deferred-dSsN7zzP.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under claudeusercontent.com",
+        "detail": "staging.claudeusercontent.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c666b7aff-DOI7ddiP.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New hosts under google.com",
+        "detail": "cloud.google.com, firebase.google.com",
+        "where": [
+          "Contents/Resources/ion-dist.asar:assets/v1/c71860c77-CR1A97dV.js",
+          "Contents/Resources/ion-dist.asar:third-party-notices.txt"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +6.0 MB (+0.6%), files 314 → 315"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 6.28899.6 (6.28899.6) → 7.37095.0 (7.37095.0)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 76,
+      "info": 5
+    },
+    "identical": false
+  }
+}
