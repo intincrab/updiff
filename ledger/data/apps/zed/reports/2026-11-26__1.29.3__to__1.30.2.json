@@ -1,0 +1,85 @@
+{
+  "cask": "zed",
+  "name": "Zed",
+  "detectedAt": "2026-11-26T17:08:49.939Z",
+  "from": {
+    "version": "1.29.3",
+    "appVersion": "1.29.2",
+    "build": "20261118.195646",
+    "url": "https://github.com/zed-industries/zed/releases/download/v1.29.2/Zed-aarch64.dmg",
+    "sha256": "62fcf76dad0de21b69b5808f78576f9c0ca86d2319ace93616bd1af654fa136d",
+    "bytes": 88766646,
+    "scannedAt": "2026-11-21T14:50:43.383Z",
+    "fingerprint": "2b5b27e58fca503199768f0fe61cb8bf",
+    "report": "reports/2026-11-19__1.28.1__to__1.29.2.json"
+  },
+  "to": {
+    "version": "1.30.2",
+    "appVersion": "1.30.2",
+    "build": "20261125.161922",
+    "url": "https://github.com/zed-industries/zed/releases/download/v1.30.2/Zed-aarch64.dmg",
+    "sha256": "36ab60379627730fc3ac6ab79bc57dba7a1cf6d6df8117b8e22190d9b639fff5",
+    "bytes": 88057394,
+    "scannedAt": "2026-11-26T17:08:49.939Z",
+    "fingerprint": "42796b4173f68ebee501f7eb281f5176"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Zed",
+      "bundleId": "dev.zed.Zed"
+    },
+    "from": {
+      "version": "1.29.3",
+      "build": "20261120.153417",
+      "takenAt": "2026-11-21T14:50:43.314Z",
+      "path": "Zed 1.29.3 (Homebrew cask zed)"
+    },
+    "to": {
+      "version": "1.30.2",
+      "build": "20261125.161922",
+      "takenAt": "2026-11-26T17:08:49.868Z",
+      "path": "Zed 1.30.2 (Homebrew cask zed)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain git-scm.com",
+        "detail": "git-scm.com",
+        "where": [
+          "Contents/MacOS/git"
+        ]
+      },
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain kernel.org",
+        "detail": "lore.kernel.org",
+        "where": [
+          "Contents/MacOS/git"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size -2.1 MB (-1.2%), files 8 → 8"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 1.29.3 (20261120.153417) → 1.30.2 (20261125.161922)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 2,
+      "info": 2
+    },
+    "identical": false
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "cask": "raycast",
+  "name": "Raycast",
+  "detectedAt": "2026-11-26T17:08:12.276Z",
+  "from": {
+    "version": "2.13.1.0",
+    "appVersion": "2.13.1.0",
+    "build": "0",
+    "url": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.13.1.0",
+    "sha256": "e62777491febe5bfadf461d3f9a1ce761c2e661e635bc13e6921a16d75660c77",
+    "bytes": 158040066,
+    "scannedAt": "2026-11-19T15:57:01.118Z",
+    "fingerprint": "28208788982ff6f5eef6e18ad68e3a07",
+    "report": "reports/2026-11-19__2.13.0.0__to__2.13.1.0.json"
+  },
+  "to": {
+    "version": "2.14.0.0",
+    "appVersion": "2.14.0.0",
+    "build": "0",
+    "url": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.14.0.0",
+    "sha256": "2d16632864409809ee868fa6d86bf6316c3931b8aed57e31ecaf028f748aee29",
+    "bytes": 158682109,
+    "scannedAt": "2026-11-26T17:08:12.276Z",
+    "fingerprint": "b610ee16a1a872312c9911e0b4dde742"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Raycast",
+      "bundleId": "com.raycast.macos"
+    },
+    "from": {
+      "version": "2.13.1.0",
+      "build": "0",
+      "takenAt": "2026-11-19T15:57:01.022Z",
+      "path": "Raycast 2.13.1.0 (Homebrew cask raycast)"
+    },
+    "to": {
+      "version": "2.14.0.0",
+      "build": "0",
+      "takenAt": "2026-11-26T17:08:12.214Z",
+      "path": "Raycast 2.14.0.0 (Homebrew cask raycast)"
+    },
+    "findings": [
+      {
+        "severity": "notable",
+        "category": "host",
+        "change": "added",
+        "title": "New domain bank.com",
+        "detail": "bank.com (seen only as a bare string, not in a URL)",
+        "where": [
+          "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/browser-settings-view-DXGlNRfT.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "MediaRemoteAdapter.framework 2.13.1.0 → 2.14.0.0",
+        "where": [
+          "Contents/Frameworks/MediaRemoteAdapter.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "removed",
+        "title": "6 domains no longer mentioned",
+        "detail": "browser.dev, chrome.dev, edgemac.dev, expo.dev, npmjs.org, pastebin.com"
+      },
+      {
+        "severity": "info",
+        "category": "host",
+        "change": "added",
+        "title": "New host under chatgpt.com",
+        "detail": "chatgpt.com",
+        "where": [
+          "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/ai-chat-window-ToT03co0.js",
+          "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/use-memory-entries-Dcz6OhFq.js"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +691.8 KB (+0.3%), files 1118 → 1181"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 2.13.1.0 (0) → 2.14.0.0 (0)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 1,
+      "info": 5
+    },
+    "identical": false
+  }
+}
