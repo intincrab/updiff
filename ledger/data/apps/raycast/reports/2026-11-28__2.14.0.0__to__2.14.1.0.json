@@ -1,0 +1,74 @@
+{
+  "cask": "raycast",
+  "name": "Raycast",
+  "detectedAt": "2026-11-28T15:43:08.339Z",
+  "from": {
+    "version": "2.14.0.0",
+    "appVersion": "2.14.0.0",
+    "build": "0",
+    "url": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.14.0.0",
+    "sha256": "2d16632864409809ee868fa6d86bf6316c3931b8aed57e31ecaf028f748aee29",
+    "bytes": 158682109,
+    "scannedAt": "2026-11-26T17:08:12.276Z",
+    "fingerprint": "b610ee16a1a872312c9911e0b4dde742",
+    "report": "reports/2026-11-26__2.13.1.0__to__2.14.0.0.json"
+  },
+  "to": {
+    "version": "2.14.1.0",
+    "appVersion": "2.14.1.0",
+    "build": "0",
+    "url": "https://x.raycast-releases.com/download?platform=macos&architecture=arm64&version=2.14.1.0",
+    "sha256": "a043158c0f68c53104ae486a45f7b2752e3899be661cbd046ee488b02e3e341c",
+    "bytes": 158652241,
+    "scannedAt": "2026-11-28T15:43:08.339Z",
+    "fingerprint": "65bab5df32d05bee41c7c3b80dd41230"
+  },
+  "deep": false,
+  "report": {
+    "app": {
+      "name": "Raycast",
+      "bundleId": "com.raycast.macos"
+    },
+    "from": {
+      "version": "2.14.0.0",
+      "build": "0",
+      "takenAt": "2026-11-26T17:08:12.214Z",
+      "path": "Raycast 2.14.0.0 (Homebrew cask raycast)"
+    },
+    "to": {
+      "version": "2.14.1.0",
+      "build": "0",
+      "takenAt": "2026-11-28T15:43:08.195Z",
+      "path": "Raycast 2.14.1.0 (Homebrew cask raycast)"
+    },
+    "findings": [
+      {
+        "severity": "info",
+        "category": "code",
+        "change": "changed",
+        "title": "MediaRemoteAdapter.framework 2.14.0.0 → 2.14.1.0",
+        "where": [
+          "Contents/Frameworks/MediaRemoteAdapter.framework"
+        ]
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Size +213 B (+0.0%), files 1181 → 1181"
+      },
+      {
+        "severity": "info",
+        "category": "identity",
+        "change": "changed",
+        "title": "Version 2.14.0.0 (0) → 2.14.1.0 (0)"
+      }
+    ],
+    "counts": {
+      "high": 0,
+      "notable": 0,
+      "info": 3
+    },
+    "identical": false
+  }
+}
